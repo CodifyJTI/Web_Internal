@@ -1,0 +1,139 @@
+/* === BAGIAN FAQ (Baru & Lebih Baik) === */
+.faq-section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 80px 20px;
+  background-color: #f8f9fa; /* Latar belakang abu-abu muda */
+  color: #1e293b; /* Set warna teks default */
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Judul */
+.faq-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.faq-subtitle {
+  font-size: 18px;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* Daftar Accordion */
+.faq-list {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+/* === DESAIN ITEM FAQ BARU (Shadow, bukan border) === */
+.faq-item {
+  /* Hapus border, ganti pakai shadow */
+  border-radius: 12px; /* Radius lebih besar */
+  margin-bottom: 15px;
+  background: #fff; /* Latar belakang kartu putih */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Shadow lembut */
+  transition: box-shadow 0.3s ease;
+  overflow: hidden; /* PENTING: untuk rounded corner di answer */
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* Shadow lebih jelas saat hover */
+}
+
+.faq-question {
+  width: 100%;
+  padding: 22px 25px; /* Padding lebih nyaman */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: left;
+}
+
+/* === ANIMASI IKON BARU === */
+.faq-icon {
+  font-size: 28px;
+  font-weight: 300; /* Bikin + lebih tipis */
+  color: #007bff; /* Ganti warna ikon jadi biru */
+  transition: transform 0.3s ease-in-out; /* Animasi putar */
+}
+
+.faq-icon.open {
+  transform: rotate(45deg); /* Putar 45 derajat (jadi 'x') */
+}
+
+/* === ANIMASI JAWABAN (SLIDE) BARU === */
+.faq-answer {
+  /* Sembunyikan jawaban secara default */
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 25px; /* Padding kiri/kanan, 0 atas/bawah */
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding-bottom: 25px; /* Padding bawah di dalam <p> */
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Tampilkan jawaban saat 'open' */
+.faq-answer.open {
+  max-height: 200px; /* Set ke tinggi maks (cukup besar) */
+  /* Padding akan dianimasikan dari 0 25px -> 0 25px */
+}
+
+/* === DESAIN KARTU CTA BARU === */
+.still-questions-cta {
+  padding: 40px;
+  background: #ffffff; /* Latar belakang putih */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Shadow lebih kuat */
+  color: #1e293b; /* Teks gelap */
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #007bff; /* Judul biru, lebih menarik */
+  margin: 0 0 10px 0;
+}
+
+.cta-text {
+  font-size: 16px;
+  color: #475569;
+  margin: 0 0 25px 0;
+}
+
+/* Tombol CTA Baru (biru solid) */
+.cta-contact-button {
+  display: inline-block;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: #007bff; /* Tombol biru solid (Primary) */
+  color: #fff; /* Teks putih */
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-contact-button:hover {
+  background: #0056b3; /* Biru lebih gelap saat hover */
+}

@@ -1,0 +1,104 @@
+/* Styling untuk ServiceDetail.jsx (Layout 2 Kolom) */
+.service-detail-section {
+  /* Hapus semua style 'kartu' (background, border, shadow, padding) */
+  
+  /* --- LAYOUT 2 KOLOM --- */
+  display: flex;
+  align-items: center;
+  gap: 64px; /* Jarak antara teks dan gambar */
+  padding: 60px 0; /* Jarak atas/bawah antar section */
+}
+
+/* Kolom kiri untuk Teks */
+.service-detail-content {
+  flex: 1; /* Ambil sisa ruang */
+  min-width: 0; 
+}
+
+/* Kolom kanan untuk Gambar */
+.service-detail-image {
+  flex-basis: 45%; /* Lebar gambar sekitar 45% */
+  text-align: center;
+}
+
+.service-detail-image img {
+  max-width: 100%;
+  height: auto;
+  /* Hapus 'border-radius: 50%' jika gambar Anda sudah bulat */
+}
+
+/* Styling untuk Teks di Kolom Kiri */
+.service-subtitle {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.service-title {
+  font-size: 2.5rem; 
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+/* Grid 2x2 untuk Sub-Services */
+.sub-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.sub-service-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.sub-service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.learn-more-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #007bff; /* Ganti dengan warna link utama Anda */
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .service-detail-section {
+    flex-direction: column-reverse; /* Gambar di atas, teks di bawah */
+    gap: 40px;
+    padding: 40px 0;
+  }
+  
+  .service-detail-image {
+    flex-basis: auto; 
+    width: 70%; /* Perkecil gambar di mobile */
+  }
+}
+@media (max-width: 500px) {
+  .sub-services-grid {
+    grid-template-columns: 1fr; /* 1 kolom di mobile */
+    gap: 24px;
+  }
+  
+  .service-title {
+    font-size: 2rem;
+  }
+}

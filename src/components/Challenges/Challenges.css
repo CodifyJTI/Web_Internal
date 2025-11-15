@@ -1,0 +1,54 @@
+.challenges-section {
+  padding: 80px 40px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #000000;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.challenge-card {
+  background-color: #f0f4f8;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+}
+
+.challenge-card h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #000000;
+}
+
+.challenge-card p {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.challenge-icon {
+  width: 50px; /* Atur ukuran ikon */
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.challenge-card {
+  /* ...kode yang sudah ada... */
+  text-align: center; /* Pusatkaan teks di kartu agar ikon rapi */
+}

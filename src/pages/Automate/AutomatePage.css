@@ -1,0 +1,318 @@
+.automate-page {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* --- Hero Section --- */
+.automate-hero {
+  padding: 120px 20px;
+  text-align: center;
+  background-color: #f9fafb; /* Latar abu-abu muda */
+}
+
+.automate-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.automate-hero span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.automate-hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 24px 0;
+  line-height: 1.1;
+}
+
+.automate-hero p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* --- Main Content Layout --- */
+.automate-main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.automate-section {
+  margin-bottom: 100px;
+}
+
+.layout-2col {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.layout-2col-reverse {
+  flex-direction: row-reverse;
+}
+
+.automate-text-content {
+  flex: 1;
+}
+
+.automate-image-content {
+  flex: 1;
+}
+
+.automate-image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background-color: #eee;
+}
+
+/* Typography Content */
+.automate-text-content h2,
+.automate-text-content h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.automate-text-content h3 {
+  font-size: 2rem;
+}
+
+.automate-text-content p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.section-dash {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+/* Subgrid */
+.automate-subgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.subgrid-item h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 16px 0 8px 0;
+  color: #1a1a1a;
+}
+
+.subgrid-item .subgrid-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Icon List (dari Section 3) */
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 32px;
+}
+.icon-list li {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.icon-list-icon {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
+.icon-list strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+.text-link {
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* --- STYLING BARU UNTUK SECTION 4 (GRID 3 KARTU) --- */
+.automate-grid-section {
+  text-align: center; 
+  background-color: #f9fafb; /* Latar abu-abu muda */
+  padding: 80px 20px;
+  border-radius: 12px;
+  margin-top: 100px;
+}
+.automate-grid-section .automate-text-content {
+  text-align: center;
+}
+.automate-grid-section .automate-text-content h2,
+.automate-grid-section .automate-text-content p {
+  text-align: center;
+}
+.automate-3col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 32px;
+  margin-bottom: 40px;
+}
+.automate-grid-card {
+  text-align: center; 
+  background-color: #f9fafb; /* Samakan dengan bg section */
+  padding: 20px;
+}
+.automate-card-icon {
+  font-size: 2.5rem; /* Ukuran icon */
+  margin-bottom: 24px;
+  color: #1a1a1a; /* Warna icon */
+}
+.automate-grid-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+.automate-grid-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.automate-grid-links {
+  text-align: center;
+}
+.automate-grid-links .text-link {
+  margin: 0 10px;
+}
+/* --- AKHIR STYLING BARU --- */
+
+
+/* --- Testimonial Section --- */
+.automate-testimonial-section {
+  background-color: #f9f9f9;
+  padding: 100px 20px;
+  text-align: center;
+}
+.testi-container { max-width: 800px; margin: 0 auto; }
+.testi-stars { font-size: 1.5rem; letter-spacing: 4px; color: #1a1a1a; margin-bottom: 32px; }
+.testi-quote { font-size: 1.8rem; font-weight: 600; color: #1a1a1a; line-height: 1.4; margin: 0 0 40px 0; }
+.testi-author-block { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.author-info { text-align: left; }
+.author-name { display: block; font-weight: 700; color: #1a1a1a; font-size: 1rem; }
+.author-title { display: block; font-size: 0.9rem; color: #666; }
+.author-divider { width: 1px; height: 40px; background-color: #ccc; margin: 0 16px; }
+.client-logo-text { font-size: 1.3rem; font-weight: 700; color: #1a1a1a; display: flex; align-items: center; gap: 4px; }
+
+
+/* --- CTA Section --- */
+.automate-cta-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+}
+.automate-cta-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.automate-cta-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.automate-cta-text p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}
+.automate-cta-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/* --- Tombol dari SimplifyPage.css --- */
+.cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.cta-button-primary {
+  background-color: #007bff;
+  color: #ffffff;
+  border-color: #007bff;
+}
+.cta-button-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+.cta-button-secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #cccccc;
+}
+.cta-button-secondary:hover {
+  background-color: #f9f9f9;
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .layout-2col,
+  .layout-2col-reverse {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .automate-image-content {
+      order: -1; 
+  }
+  .automate-hero h1 {
+      font-size: 3rem;
+  }
+  .automate-cta-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+  }
+  .automate-subgrid {
+    grid-template-columns: 1fr;
+  }
+  .automate-3col-grid {
+    grid-template-columns: 1fr; /* Tumpuk 1 kolom di mobile */
+    gap: 40px;
+  }
+}

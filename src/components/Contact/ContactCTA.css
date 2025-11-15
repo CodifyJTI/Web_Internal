@@ -1,0 +1,128 @@
+/* === BAGIAN CONTACT CTA (FULL WIDTH) === */
+.contact-cta-section {
+  width: 100%; /* KUNCI #1: Pastikan section penuh */
+  padding: 100px 20px; /* Padding atas/bawah, 20px kiri/kanan untuk mobile */
+  box-sizing: border-box;
+
+  /* Menggunakan gambar background dari /public */
+  background-image: linear-gradient(
+      rgba(0, 48, 73, 0.75), /* Overlay gelap */
+      rgba(21, 82, 122, 0.75) /* Overlay biru (lebih baik dari putih) */
+    ),
+    url("/backround.png"); /* Pastikan file ini ada di folder /public */
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Efek parallax */
+  color: white;
+}
+
+/* KUNCI #2: Container untuk menengahkan konten */
+.contact-cta-container {
+  max-width: 1200px; /* Lebar konten maksimum */
+  margin: 0 auto; /* Tengah secara horizontal */
+
+  display: flex;
+  justify-content: space-between; /* Teks kiri, form kanan */
+  align-items: center;
+  gap: 60px; /* Jarak antar kolom */
+}
+
+/* --- Kolom Kiri: Teks --- */
+.cta-content {
+  flex: 1; /* Biarkan sisi teks mengambil ruang */
+  max-width: 500px;
+  text-align: left;
+}
+
+.cta-content h2 {
+  font-size: 2.8rem;
+  color: white; /* Pastikan putih */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.cta-content p {
+  /* Ganti dari .subtitle ke <p> agar lebih standar */
+  font-size: 1.1rem;
+  color: white;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* --- Kolom Kanan: Form --- */
+.contact-form {
+  flex: 1; /* Biarkan sisi form mengambil ruang */
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Elemen Form --- */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ddd; /* Lebih baik ada border tipis */
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #1a1a1a; /* Teks input harus hitam */
+  box-sizing: border-box; /* Hindari overflow */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999; /* Placeholder lebih jelas */
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.terms-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #555; /* Teks checkbox 'I accept' */
+}
+
+.connect-button {
+  background-color: #007bff; /* Biru konsisten dgn desain lain */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.connect-button:hover {
+  background-color: #0056b3;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  .contact-cta-container {
+    flex-direction: column; /* Tumpuk di mobile */
+    gap: 40px;
+  }
+
+  .cta-content {
+    text-align: center; /* Tengahkan teks di mobile */
+    max-width: 600px;
+  }
+
+  .contact-form {
+    max-width: 600px;
+  }
+}

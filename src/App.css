@@ -1,0 +1,15 @@
+/* === App.css (BERSIH) === */
+
+/* #root adalah 'pembungkus' utama aplikasi Anda.
+  Kita pastikan dia tidak punya margin atau padding aneh.
+*/
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Semua style bawaan Vite/React lainnya 
+  (.logo, .card, @keyframes, .read-the-docs, dll.)
+  telah dihapus karena tidak digunakan di halaman Anda.
+*/

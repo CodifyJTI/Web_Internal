@@ -1,0 +1,95 @@
+/* Styling untuk ServicesHero.jsx */
+.services-hero {
+  background-color: #ffffff; /* Putih */
+  padding: 80px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left; /* Rata kiri */
+}
+
+.hero-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  display: block;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+  max-width: 800px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.core-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 32px;
+  text-align: left; /* Teks di dalam kartu rata kiri */
+}
+
+.core-service-card {
+  padding: 24px;
+}
+
+/* --- INI BAGIAN YANG DIUBAH --- */
+.service-icon {
+  /* HAPUS 'color' dari sini */
+  margin-bottom: 20px;
+  /* Pastikan gambar tidak lebih besar dari containernya */
+  line-height: 0; 
+}
+
+/* TAMBAHAN BARU untuk styling <img> di dalam .service-icon */
+.service-icon img {
+  height: 40px; /* Atur tinggi gambar */
+  width: 40px;  /* Atur lebar gambar */
+  object-fit: contain; /* Agar gambar pas dan tidak penyok */
+}
+/* --- AKHIR BAGIAN YANG DIUBAH --- */
+
+.core-service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.core-service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.service-link {
+  font-weight: 600;
+  color: #007bff; /* Ganti warna ini */
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 900px) {
+  .core-services-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

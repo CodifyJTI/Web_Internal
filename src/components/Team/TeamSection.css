@@ -1,0 +1,131 @@
+.team-section {
+  width: 100%; /* Ditambahkan untuk konsistensi */
+  box-sizing: border-box; /* Ditambahkan untuk konsistensi */
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.team-subtitle {
+  font-size: 18px;
+  color: #64748b;
+  margin-bottom: 50px;
+}
+
+.team-grid {
+  display: grid;
+  gap: 30px;
+  /* Default 2 kolom di mobile kecil */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Menjadi 3 kolom di tablet (sesuai desain) */
+@media (min-width: 600px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tetap 3 kolom di desktop (sesuai desain) */
+@media (min-width: 1024px) {
+  .team-grid {
+    /* DIUBAH: Dari 6 menjadi 3 agar sesuai desain */
+    grid-template-columns: repeat(3, 1fr);
+    /* Batasi lebar grid agar tidak terlalu renggang */
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background-color: #3bbef4;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(59, 190, 244, 0.3);
+}
+
+.member-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.member-role {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 5px;
+}
+
+/* --- Bagian CTA "Hiring" --- */
+.hiring-cta {
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; /* Tumpuk di mobile */
+  align-items: center;
+  gap: 20px;
+}
+
+/* Layout desktop untuk CTA */
+@media (min-width: 768px) {
+  .hiring-cta {
+    flex-direction: row; /* Berdampingan */
+    /* DIUBAH: dari 'center' ke 'space-between' */
+    justify-content: space-between;
+    align-items: center; /* Pastikan tetap sejajar vertikal */
+    gap: 40px;
+  }
+}
+
+.hiring-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.hiring-button {
+  background-color: #3bbef4;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 4px 8px rgba(59, 190, 244, 0.4);
+}
+
+.hiring-button:hover {
+  background-color: #27a9db;
+  transform: translateY(-1px);
+}

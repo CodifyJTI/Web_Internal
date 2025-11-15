@@ -1,0 +1,75 @@
+.testi-section {
+  background-color: #f9f9f9; /* Latar abu-abu muda */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testi-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testi-stars {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+}
+
+.testi-quote {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin: 0 0 40px 0;
+}
+
+.testi-author-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.author-avatar-placeholder {
+  width: 48px;
+  height: 48px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-info {
+  text-align: left;
+}
+
+.author-name {
+  display: block;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 1rem;
+}
+
+.author-title {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.author-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #ccc;
+  margin: 0 16px;
+}
+
+.client-logo-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

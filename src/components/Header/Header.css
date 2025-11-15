@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Biar elemennya gak loncat-loncat */
+.header-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.header-logo a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+}
+
+/* Nav */
+.header-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.header-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: #0056ff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header-inner {
+    padding: 12px 20px;
+  }
+
+  .header-nav {
+    gap: 16px;
+  }
+}

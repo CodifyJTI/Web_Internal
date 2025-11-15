@@ -1,0 +1,43 @@
+/* === index.css (BERSIH & BENAR) === */
+
+:root {
+  /* Atur default ke light mode sesuai desain Anda */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547; /* Teks gelap */
+  background-color: #ffffff; /* Latar belakang putih */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* KUNCI PERBAIKAN:
+  Hapus 'display: flex' dan 'place-items: center' dari body.
+  Kita hanya perlu 'margin: 0' agar halaman penuh.
+*/
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Anda bisa hapus sisa CSS bawaan (a, h1, button) 
+  jika Anda mengaturnya di file komponen lain.
+*/
+a {
+  font-weight: 500;
+  color: #007bff; /* Ganti ke warna biru Anda */
+  text-decoration: inherit;
+}
+a:hover {
+  color: #0056b3;
+}

@@ -1,0 +1,154 @@
+.footer {
+  width: 100%; /* Ditambahkan untuk konsistensi */
+  box-sizing: border-box; /* Ditambahkan untuk konsistensi */
+  
+  /* --- PERBAIKAN WARNA --- */
+  background-color: #1e293b; /* Background gelap (bisa ganti ke #1a1a1a) */
+  color: #adb5bd; /* Teks default abu-abu muda */
+  padding: 60px 20px 0 20px; /* Padding konsisten */
+}
+
+.footer-top-section {
+  display: grid;
+  /* 3 Kolom: Kontak lebih lebar, Link-link sama rata */
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  padding-bottom: 30px;
+  /* Tambah border bawah untuk pemisah */
+  border-bottom: 1px solid #3e4c5f; 
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff; /* DIUBAH: Teks putih */
+  display: block;
+  margin-bottom: 25px;
+}
+
+.contact-subheading {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #adb5bd; /* DIUBAH: Teks abu-abu muda */
+}
+
+.address-detail,
+.contact-detail {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #e9ecef; /* DIUBAH: Teks putih pudar */
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #e9ecef; /* DIUBAH: Ikon putih */
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Tetap biru saat hover */
+}
+
+/* Styling untuk Blok Tautan */
+.footer-links-block h4 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* DIUBAH: Judul putih */
+  font-weight: bold;
+}
+
+.footer-links-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-block a {
+  color: #adb5bd; /* DIUBAH: Link abu-abu muda */
+  text-decoration: none;
+  line-height: 2;
+  font-size: 0.9rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.footer-links-block a:hover {
+  color: #007bff; /* Biru saat hover */
+}
+
+/* Bagian Bawah Footer (Copyright dan Legal Links) */
+.footer-bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 0.85rem;
+  color: #adb5bd; /* DIUBAH: Teks abu-abu muda */
+  padding: 25px 0; /* Padding atas bawah */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+.legal-links a {
+  color: #adb5bd; /* DIUBAH: Link abu-abu muda */
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+  color: #007bff; /* Biru saat hover */
+}
+
+
+/* --- PERBAIKAN RESPONSIVE --- */
+@media (max-width: 992px) {
+  .footer-top-section {
+    /* Ubah grid jadi 2 kolom di tablet */
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 40px; /* Kurangi padding di mobile */
+  }
+
+  .footer-top-section {
+    /* Ubah grid jadi 1 kolom di mobile */
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom-section {
+    /* Tumpuk copyright & legal links */
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .legal-links {
+    /* Reset margin agar rapi */
+    margin: 0;
+  }
+
+  .legal-links a:first-child {
+    margin-left: 0; /* Hapus margin kiri di link pertama */
+  }
+}

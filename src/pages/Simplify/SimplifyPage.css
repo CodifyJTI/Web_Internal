@@ -1,0 +1,260 @@
+/* CSS LENGKAP untuk SimplifyPage.jsx */
+
+.simplify-page {
+  background-color: #ffffff;
+  overflow-x: hidden; /* Mencegah horizontal scroll */
+}
+
+/* --- Hero Section (Sudah Selesai) --- */
+.simplify-page .simplify-hero {
+  padding: 120px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.simplify-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.simplify-hero span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.simplify-hero h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 16px 0 24px 0;
+  line-height: 1.2;
+}
+.simplify-hero p {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.cta-button-primary {
+  background-color: #007bff;
+  color: #ffffff;
+  border-color: #007bff;
+}
+.cta-button-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+.cta-button-secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-color: #cccccc;
+}
+.cta-button-secondary:hover {
+  background-color: #f9f9f9;
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+}
+
+/* --- STYLING KONTEN UTAMA --- */
+.simplify-main-content {
+  max-width: 1100px; /* Lebarkan max-width */
+  margin: 0 auto;
+  padding: 60px 20px 80px 20px;
+}
+
+/* Base untuk semua section di main */
+.simplify-section {
+  margin-bottom: 80px; /* Jarak antar section */
+}
+
+/* --- PERBAIKAN LAYOUT 2 KOLOM --- */
+.layout-2col {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* Jarak teks dan gambar */
+}
+
+/* Teks di kiri, gambar di kanan */
+.layout-2col .simplify-text-content {
+  flex: 1; /* Ambil 50% ruang */
+  min-width: 0; /* Mencegah text overflow */
+  text-align: left; /* Rata kiri */
+}
+.layout-2col .simplify-image-content {
+  flex: 1; /* Ambil 50% ruang */
+  text-align: center;
+}
+/* Balik urutan: gambar di kiri, teks di kanan */
+.layout-2col-reverse {
+  flex-direction: row-reverse;
+}
+/* --- AKHIR PERBAIKAN LAYOUT --- */
+
+.simplify-image-content img {
+  max-width: 100%;
+  width: 100%; /* Paksa gambar mengisi container */
+  height: auto;
+  border-radius: 8px; /* Bikin sudut gambar tumpul */
+  background-color: #f0f0f0; /* Warna placeholder */
+  display: block;
+}
+
+/* Styling Teks */
+.simplify-text-content .section-dash {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.simplify-text-content h2,
+.simplify-text-content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-align: left; /* Rata kiri */
+}
+.simplify-text-content h3 {
+  font-size: 1.8rem;
+}
+.simplify-text-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  text-align: left; /* Rata kiri */
+  max-width: none; /* Hapus max-width */
+  margin: 0 0 20px 0;
+}
+
+/* Sub-grid */
+.success-subgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 32px 0;
+}
+.subgrid-item .subgrid-icon {
+  font-size: 1.5rem; 
+  margin-bottom: 10px;
+  display: block;
+}
+.subgrid-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.subgrid-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.text-link {
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* --- STYLING BARU UNTUK ICON LIST --- */
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+}
+.icon-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.icon-list .icon-list-icon {
+  font-weight: bold;
+  color: #007bff; /* Ganti warna icon */
+  margin-top: 4px; /* Sejajarkan dengan teks */
+}
+.icon-list p {
+  margin: 0; /* Hapus margin default paragraf */
+}
+/* --- AKHIR STYLING BARU --- */
+
+
+/* Styling Testimonial & FAQ (Tetap di tengah) */
+.simplify-testimonial,
+.simplify-faq {
+  text-align: center;
+}
+.simplify-faq h2 {
+  text-align: center;
+}
+.simplify-faq p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.simplify-testimonial blockquote {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #333;
+  margin: 0 auto 15px auto;
+  padding: 0;
+  border-left: none;
+  max-width: 700px; /* Batasi lebar quote */
+}
+.simplify-testimonial p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .layout-2col {
+    flex-direction: column; /* Tumpuk di mobile */
+    gap: 40px;
+  }
+  .layout-2col-reverse {
+    flex-direction: column; /* Tumpuk di mobile */
+  }
+  .layout-2col .simplify-image-content {
+     /* Balik urutan di mobile agar gambar di atas teks */
+    order: -1;
+  }
+  .layout-2col-reverse .simplify-image-content {
+    order: -1;
+  }
+}
+@media (max-width: 600px) {
+  .simplify-hero h1 {
+    font-size: 3rem;
+  }
+  .simplify-text-content h2,
+  .simplify-text-content h3 {
+    font-size: 1.8rem;
+  }
+  .success-subgrid {
+    grid-template-columns: 1fr; /* 1 kolom di mobile */
+  }
+}

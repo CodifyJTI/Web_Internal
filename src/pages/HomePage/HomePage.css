@@ -1,0 +1,30 @@
+.homepage-container {
+    /* Memastikan halaman mengambil tinggi penuh viewport */
+    min-height: 100vh; 
+    /* Menggunakan flexbox agar konten footer tetap di bawah */
+    display: flex;
+    flex-direction: column;
+    /* Memastikan background konsisten (putih) */
+    background-color: #ffffff; 
+}
+
+/* Memastikan konten utama (yang berisi Hero, Challenges, Solutions, dll.) 
+   mengambil ruang yang tersisa di antara header dan footer. */
+main {
+    flex-grow: 1; 
+}
+
+.homepage-container {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; 
+    
+    /* HAPUS padding atau margin yang mungkin menyebabkan ruang putih di samping */
+    padding: 0; 
+    margin: 0;
+}
+
+main {
+    flex-grow: 1; 
+}
