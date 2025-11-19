@@ -6,7 +6,7 @@ import Footer from '../../components/Footer/Footer.jsx';
 import ContactCTA from '../../components/Contact/ContactCTA.jsx';
 
 // Import CSS Khusus Halaman Ini
-import './PortfolioPage.css';
+import './PortofolioPage.css';
 
 function PortfolioPage() {
   return (
@@ -156,8 +156,6 @@ function PortfolioPage() {
         </section>
 
       </main>
-
-      {/* Menggunakan Komponen ContactCTA yang sudah ada */}
       <ContactCTA />
       
       <Footer />

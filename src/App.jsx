@@ -9,7 +9,7 @@ import ServicesPage from './pages/Services/ServicesPage.jsx';
 import SimplifyPage from './pages/Simplify/SimplifyPage.jsx';
 import IntegratePage from './pages/Integrate/IntegratePage.jsx';
 import AutomatePage from './pages/Automate/AutomatePage.jsx';
-import PortfolioPage from './pages/Portfolio/PortfolioPage.jsx';
+import PortfolioPage from './pages/Porto/PortofolioPage.jsx';
 
 function App() {
   return (
