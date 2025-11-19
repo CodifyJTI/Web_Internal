@@ -1,4 +1,8 @@
-/* Styling untuk ServicesHero.jsx */
+.services-hero .hero-content * {
+  color: #0a0a0a !important;
+  text-shadow: none !important;
+}
+
 .services-hero {
   background-color: #ffffff; /* Putih */
   padding: 80px 0;

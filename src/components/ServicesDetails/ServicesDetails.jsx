@@ -1,20 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ServicesDetails.css';
 
 function ServicesDetail({ id, subtitle, title, image, description, subServices }) {
   return (
     <section id={id} className="service-detail-section">
-      
-      {/* =========================================================
-        == PASTIKAN 'div' PEMBUNGKUS INI ADA == 
-        =========================================================
-      */}
       <div className="service-detail-content"> 
         <span className="service-subtitle">{subtitle}</span>
         <h2 className="service-title">{title}</h2>
         <p className="service-description">{description}</p>
-        
-        {/* Grid 2x2 untuk Sub-Services */}
+
         <div className="sub-services-grid">
           {subServices.map((service, index) => (
             <div key={index} className="sub-service-card">
@@ -23,21 +18,16 @@ function ServicesDetail({ id, subtitle, title, image, description, subServices }
             </div>
           ))}
         </div>
-
-        <a href="#" className="learn-more-link">
+        
+        <Link to={`/services/${id}`} className="learn-more-link">
           Learn More about {subtitle}
-        </a>
-      </div>
-      {/* =========================================================
-        == BATAS AKHIR 'div' PEMBUNGKUS == 
-        =========================================================
-      */}
+        </Link>
 
-      {/* Kolom Kanan: Gambar */}
+      </div>
+
       <div className="service-detail-image">
         <img src={image} alt={`${subtitle} service illustration`} />
       </div>
-
     </section>
   );
 }

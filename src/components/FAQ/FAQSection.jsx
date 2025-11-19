@@ -64,17 +64,6 @@ function FAQSection() {
             </div>
           ))}
         </div>
-
-        {/* --- Kartu CTA Baru --- */}
-        <div className="still-questions-cta">
-          <h3 className="cta-title">Still have questions?</h3>
-          <p className="cta-text">
-            Don't hesitate to reach out to our team for detailed information.
-          </p>
-          <a href="#contact" className="cta-contact-button">
-            Contact Us
-          </a>
-        </div>
       </div>
     </section>
   );
