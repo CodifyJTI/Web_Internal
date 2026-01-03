@@ -15,11 +15,8 @@ import './AboutUsPage.css';
 
 function AboutUsPage() {
   return (
-    // Hapus wrapper 'about-us-container' yang tidak perlu
     <> 
       <Header />
-
-      {/* Hapus className dari 'main' */}
       <main>
         <AboutUsHero />
         <CorePillars />
@@ -27,7 +24,6 @@ function AboutUsPage() {
         <Milestones />
         <FAQSection />
       </main>
-
       <ContactCTA />
       <Footer />
     </>
