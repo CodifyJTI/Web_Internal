@@ -10,6 +10,7 @@ import SimplifyPage from './pages/Simplify/SimplifyPage.jsx';
 import IntegratePage from './pages/Integrate/IntegratePage.jsx';
 import AutomatePage from './pages/Automate/AutomatePage.jsx';
 import PortfolioPage from './pages/Porto/PortofolioPage.jsx';
+import ContactPage from './pages/Contact/ContactPage.jsx';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
 
       {/* Portfolio */}
       <Route path="/portfolio" element={<PortfolioPage />} />
+
+      {/* Contact */}
+      <Route path="/contact" element={<ContactPage />} />
     </Routes>
   );
 }
