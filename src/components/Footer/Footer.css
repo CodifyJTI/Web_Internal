@@ -3,69 +3,69 @@
   box-sizing: border-box; /* Ditambahkan untuk konsistensi */
   
   /* --- PERBAIKAN WARNA --- */
-  background-color: #1e293b; /* Background gelap (bisa ganti ke #1a1a1a) */
-  color: #adb5bd; /* Teks default abu-abu muda */
-  padding: 60px 20px 0 20px; /* Padding konsisten */
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: var(--space-xl) var(--space-md) 0 var(--space-md);
 }
 
 .footer-top-section {
   display: grid;
   /* 3 Kolom: Kontak lebih lebar, Link-link sama rata */
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 50px;
+  gap: var(--space-xl);
   max-width: 1200px;
-  margin: 0 auto 30px auto;
-  padding-bottom: 30px;
+  margin: 0 auto var(--space-lg) auto;
+  padding-bottom: var(--space-lg);
   /* Tambah border bawah untuk pemisah */
-  border-bottom: 1px solid #3e4c5f; 
+  border-bottom: 1px solid var(--border-dark); 
 }
 
 .footer-logo {
   font-size: 1.8rem;
-  font-weight: bold;
-  color: #ffffff; /* DIUBAH: Teks putih */
+  font-weight: var(--font-weight-bold);
+  color: var(--text-on-dark);
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: var(--space-md);
 }
 
 .contact-subheading {
   font-size: 0.9rem;
-  margin-bottom: 20px;
-  color: #adb5bd; /* DIUBAH: Teks abu-abu muda */
+  margin-bottom: var(--space-md);
+  color: var(--text-light);
 }
 
 .address-detail,
 .contact-detail {
   font-size: 0.9rem;
-  line-height: 1.5;
-  margin-bottom: 15px;
-  color: #e9ecef; /* DIUBAH: Teks putih pudar */
+  line-height: var(--line-height-base);
+  margin-bottom: var(--space-sm);
+  color: var(--text-on-dark);
 }
 
 /* Social Icons */
 .social-icons {
-  margin-top: 30px;
+  margin-top: var(--space-lg);
   display: flex;
-  gap: 15px;
+  gap: var(--space-sm);
 }
 
 .social-icons a {
-  color: #e9ecef; /* DIUBAH: Ikon putih */
+  color: var(--text-on-dark);
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #007bff; /* Tetap biru saat hover */
+  color: var(--color-primary);
 }
 
 /* Styling untuk Blok Tautan */
 .footer-links-block h4 {
   font-size: 1.1rem;
-  margin-bottom: 20px;
-  color: #ffffff; /* DIUBAH: Judul putih */
-  font-weight: bold;
+  margin-bottom: var(--space-md);
+  color: var(--text-on-dark);
+  font-weight: var(--font-weight-bold);
 }
 
 .footer-links-block ul {
@@ -75,7 +75,7 @@
 }
 
 .footer-links-block a {
-  color: #adb5bd; /* DIUBAH: Link abu-abu muda */
+  color: var(--text-light);
   text-decoration: none;
   line-height: 2;
   font-size: 0.9rem;
@@ -84,7 +84,7 @@
 }
 
 .footer-links-block a:hover {
-  color: #007bff; /* Biru saat hover */
+  color: var(--color-primary);
 }
 
 /* Bagian Bawah Footer (Copyright dan Legal Links) */
@@ -94,8 +94,8 @@
   align-items: center;
   text-align: left;
   font-size: 0.85rem;
-  color: #adb5bd; /* DIUBAH: Teks abu-abu muda */
-  padding: 25px 0; /* Padding atas bawah */
+  color: var(--text-light);
+  padding: var(--space-md) 0;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -105,14 +105,14 @@
 }
 
 .legal-links a {
-  color: #adb5bd; /* DIUBAH: Link abu-abu muda */
+  color: var(--text-light);
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: var(--space-md);
   transition: color 0.3s ease;
 }
 
 .legal-links a:hover {
-  color: #007bff; /* Biru saat hover */
+  color: var(--color-primary);
 }
 
 
@@ -121,26 +121,26 @@
   .footer-top-section {
     /* Ubah grid jadi 2 kolom di tablet */
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: var(--space-lg);
   }
 }
 
 @media (max-width: 768px) {
   .footer {
-    padding-top: 40px; /* Kurangi padding di mobile */
+    padding-top: var(--space-xl);
   }
 
   .footer-top-section {
     /* Ubah grid jadi 1 kolom di mobile */
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: var(--space-lg);
   }
 
   .footer-bottom-section {
     /* Tumpuk copyright & legal links */
     flex-direction: column;
-    gap: 15px;
-    padding: 20px 0;
+    gap: var(--space-sm);
+    padding: var(--space-md) 0;
   }
 
   .legal-links {

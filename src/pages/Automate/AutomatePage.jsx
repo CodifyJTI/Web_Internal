@@ -18,8 +18,8 @@ function AutomatePage() {
             business processes and goals.
           </p>
           <div className="hero-buttons">
-            <a href="#" className="cta-button cta-button-primary">Learn More</a>
-            <a href="#" className="cta-button cta-button-secondary">Sign Up</a>
+            <a href="#" className="btn btn-primary">Learn More</a>
+            <a href="#" className="btn btn-secondary">Sign Up</a>
           </div>
         </div>
       </section>
@@ -201,7 +201,7 @@ function AutomatePage() {
           </div>
 
           <div className="automate-cta-buttons">
-            <a href="#" className="cta-button cta-button-primary">Learn More</a>
+            <a href="#" className="btn btn-primary">Learn More</a>
           </div>
         </div>
       </section>

@@ -1,27 +1,27 @@
 .challenges-section {
-  padding: 80px 40px;
+  padding: var(--space-xl) var(--space-lg);
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--bg-light);
 }
 
 .section-heading {
   font-size: 2.5rem;
-  margin-bottom: 50px;
-  color: #000000;
+  margin-bottom: 3.125rem; /* 50px */
+  color: var(--text-dark);
 }
 
 .challenges-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: var(--space-lg);
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .challenge-card {
-  background-color: #f0f4f8;
-  padding: 30px;
-  border-radius: 10px;
+  background-color: var(--bg-medium);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-lg);
   text-align: left;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -34,21 +34,20 @@
 .challenge-card h3 {
   font-size: 1.5rem;
   margin-top: 0;
-  color: #000000;
+  color: var(--text-dark);
 }
 
 .challenge-card p {
   font-size: 1rem;
-  color: #000000;
+  color: var(--text-dark);
 }
 
 .challenge-icon {
-  width: 50px; /* Atur ukuran ikon */
+  width: 50px;
   height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: var(--space-md);
 }
 
 .challenge-card {
-  /* ...kode yang sudah ada... */
-  text-align: center; /* Pusatkaan teks di kartu agar ikon rapi */
+  text-align: center;
 }

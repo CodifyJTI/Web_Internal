@@ -1,10 +1,9 @@
-/* === BAGIAN FAQ (Baru & Lebih Baik) === */
 .faq-section {
   width: 100%;
   box-sizing: border-box;
-  padding: 80px 20px;
-  background-color: #f8f9fa; /* Latar belakang abu-abu muda */
-  color: #1e293b; /* Set warna teks default */
+  padding: 5rem var(--space-md); /* 80px */
+  background-color: var(--bg-medium);
+  color: var(--text-dark);
 }
 
 .faq-container {
@@ -13,86 +12,77 @@
   text-align: center;
 }
 
-/* Judul */
 .faq-title {
   font-size: 36px;
   font-weight: 800;
-  color: #1e293b;
+  color: var(--text-dark);
 }
 
 .faq-subtitle {
   font-size: 18px;
-  color: #64748b;
-  margin-bottom: 40px;
+  color: var(--text-medium);
+  margin-bottom: var(--space-xl);
 }
 
-/* Daftar Accordion */
 .faq-list {
   text-align: left;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem; /* 60px */
 }
 
-/* === DESAIN ITEM FAQ BARU (Shadow, bukan border) === */
 .faq-item {
-  /* Hapus border, ganti pakai shadow */
-  border-radius: 12px; /* Radius lebih besar */
-  margin-bottom: 15px;
-  background: #fff; /* Latar belakang kartu putih */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Shadow lembut */
+  border-radius: 12px;
+  margin-bottom: var(--space-sm);
+  background: var(--bg-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease;
-  overflow: hidden; /* PENTING: untuk rounded corner di answer */
+  overflow: hidden;
 }
 
 .faq-item:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* Shadow lebih jelas saat hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .faq-question {
   width: 100%;
-  padding: 22px 25px; /* Padding lebih nyaman */
+  padding: 1.375rem 1.56rem; /* 22px 25px */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background: var(--bg-light);
   border: none;
   cursor: pointer;
   font-size: 17px;
   font-weight: 600;
-  color: #1e293b;
+  color: var(--text-dark);
   text-align: left;
 }
 
-/* === ANIMASI IKON BARU === */
 .faq-icon {
   font-size: 28px;
-  font-weight: 300; /* Bikin + lebih tipis */
-  color: #007bff; /* Ganti warna ikon jadi biru */
-  transition: transform 0.3s ease-in-out; /* Animasi putar */
+  font-weight: 300;
+  color: var(--color-primary);
+  transition: transform 0.3s ease-in-out;
 }
 
 .faq-icon.open {
-  transform: rotate(45deg); /* Putar 45 derajat (jadi 'x') */
+  transform: rotate(45deg);
 }
 
-/* === ANIMASI JAWABAN (SLIDE) BARU === */
 .faq-answer {
-  /* Sembunyikan jawaban secara default */
   max-height: 0;
   overflow: hidden;
-  padding: 0 25px; /* Padding kiri/kanan, 0 atas/bawah */
+  padding: 0 1.56rem; /* 25px */
   transition: max-height 0.4s ease-out, padding 0.4s ease-out;
 }
 
 .faq-answer p {
   margin: 0;
-  padding-bottom: 25px; /* Padding bawah di dalam <p> */
+  padding-bottom: 1.56rem; /* 25px */
   font-size: 15px;
-  color: #4b5563;
+  color: var(--text-medium);
   line-height: 1.6;
 }
 
-/* Tampilkan jawaban saat 'open' */
 .faq-answer.open {
-  max-height: 200px; /* Set ke tinggi maks (cukup besar) */
-  /* Padding akan dianimasikan dari 0 25px -> 0 25px */
+  max-height: 200px;
 }

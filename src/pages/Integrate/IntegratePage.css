@@ -1,13 +1,13 @@
 .integrate-page {
-  background-color: #ffffff;
+  background-color: var(--bg-light);
   overflow-x: hidden;
 }
 
 /* --- Hero Section --- */
 .integrate-hero {
-  padding: 120px 20px;
+  padding: 7.5rem var(--space-md); /* 120px */
   text-align: center;
-  background-color: #f4f7f6; /* Background abu-abu muda */
+  background-color: var(--bg-medium);
 }
 
 .integrate-hero-content {
@@ -18,26 +18,26 @@
 .integrate-hero span {
   font-size: 1rem;
   font-weight: 600;
-  color: #555;
+  color: var(--text-medium);
   text-transform: uppercase;
   letter-spacing: 2px;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: var(--space-sm);
 }
 
 .integrate-hero h1 {
   font-size: 4rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin: 0 0 24px 0;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+  margin: 0 0 var(--space-md) 0;
   line-height: 1.1;
 }
 
 .integrate-hero p {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--text-medium);
   max-width: 600px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto var(--space-xl) auto;
   line-height: 1.6;
 }
 
@@ -45,17 +45,17 @@
 .integrate-main-content {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 5rem var(--space-md); /* 80px */
 }
 
 .integrate-section {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem; /* 100px */
 }
 
 .layout-2col {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 3.75rem; /* 60px */
 }
 
 .layout-2col-reverse {
@@ -74,16 +74,16 @@
   width: 100%;
   height: auto;
   border-radius: 12px;
-  background-color: #eee;
+  background-color: var(--border-light);
 }
 
 /* Typography Content */
 .integrate-text-content h2,
 .integrate-text-content h3 {
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 24px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+  margin-bottom: var(--space-md);
   line-height: 1.2;
 }
 
@@ -93,18 +93,18 @@
 
 .integrate-text-content p {
   font-size: 1.05rem;
-  color: #555;
+  color: var(--text-medium);
   line-height: 1.7;
-  margin-bottom: 24px;
+  margin-bottom: var(--space-md);
 }
 
 .section-dash {
   display: block;
   font-size: 0.9rem;
-  font-weight: 700;
-  color: #555;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-medium);
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: var(--space-sm);
   letter-spacing: 1px;
 }
 
@@ -112,29 +112,29 @@
 .integrate-subgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 32px;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
 }
 
 .subgrid-item h4 {
   font-size: 1.2rem;
-  font-weight: 700;
-  margin: 16px 0 8px 0;
-  color: #1a1a1a;
+  font-weight: var(--font-weight-bold);
+  margin: var(--space-sm) 0 var(--space-xs) 0;
+  color: var(--text-dark);
 }
 
 .subgrid-item .subgrid-icon {
   font-size: 2rem;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: var(--space-sm);
 }
 
 /* Link Teks */
 .text-link {
   font-weight: 600;
-  color: #007bff;
+  color: var(--color-primary);
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: var(--space-md);
 }
 .text-link:hover {
   text-decoration: underline;
@@ -154,67 +154,67 @@
 
 .integrate-3col-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
-  gap: 32px;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 .integrate-grid-card {
   text-align: center; 
 }
 .integrate-card-image {
-  margin-bottom: 24px;
+  margin-bottom: var(--space-md);
 }
 .integrate-card-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  background-color: #f0f0f0; 
+  background-color: var(--bg-medium); 
   border-radius: 12px;
   display: block;
 }
 .integrate-grid-card h4 {
   font-size: 1.3rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 12px;
-  padding: 0 10px; 
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+  margin-bottom: var(--space-sm);
+  padding: 0 var(--space-xs); 
 }
 .integrate-grid-card p {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-medium);
   line-height: 1.6;
-  padding: 0 10px;
+  padding: 0 var(--space-xs);
 }
 .integrate-grid-links {
   text-align: center;
 }
 .integrate-grid-links .text-link {
-  margin: 0 10px;
+  margin: 0 var(--space-xs);
 }
 
 /* --- Testimonial Section --- */
 .integrate-testimonial-section {
-  background-color: #f9f9f9;
-  padding: 100px 20px;
+  background-color: var(--bg-medium);
+  padding: 6.25rem var(--space-md); /* 100px */
   text-align: center;
 }
-/* Style ini meminjam dari TestiSection.css (Anda bisa copy-paste jika terpisah) */
+
 .testi-container { max-width: 800px; margin: 0 auto; }
-.testi-stars { font-size: 1.5rem; letter-spacing: 4px; color: #1a1a1a; margin-bottom: 32px; }
-.testi-quote { font-size: 1.8rem; font-weight: 600; color: #1a1a1a; line-height: 1.4; margin: 0 0 40px 0; }
-.testi-author-block { display: flex; align-items: center; justify-content: center; gap: 16px; }
+.testi-stars { font-size: 1.5rem; letter-spacing: 4px; color: var(--text-dark); margin-bottom: var(--space-lg); }
+.testi-quote { font-size: 1.8rem; font-weight: 600; color: var(--text-dark); line-height: 1.4; margin: 0 0 var(--space-xl) 0; }
+.testi-author-block { display: flex; align-items: center; justify-content: center; gap: var(--space-sm); }
 .author-info { text-align: left; }
-.author-name { display: block; font-weight: 700; color: #1a1a1a; font-size: 1rem; }
-.author-title { display: block; font-size: 0.9rem; color: #666; }
-.author-divider { width: 1px; height: 40px; background-color: #ccc; margin: 0 16px; }
-.client-logo-text { font-size: 1.3rem; font-weight: 700; color: #1a1a1a; display: flex; align-items: center; gap: 4px; }
+.author-name { display: block; font-weight: var(--font-weight-bold); color: var(--text-dark); font-size: 1rem; }
+.author-title { display: block; font-size: 0.9rem; color: var(--text-medium); }
+.author-divider { width: 1px; height: 40px; background-color: var(--border-medium); margin: 0 var(--space-sm); }
+.client-logo-text { font-size: 1.3rem; font-weight: var(--font-weight-bold); color: var(--text-dark); display: flex; align-items: center; gap: 4px; }
 
 
 /* --- CTA Section --- */
 .integrate-cta-section {
-  padding: 80px 20px;
-  background-color: #fff;
-  border-top: 1px solid #eaeaea;
+  padding: 5rem var(--space-md); /* 80px */
+  background-color: var(--bg-light);
+  border-top: 1px solid var(--border-light);
 }
 
 .integrate-cta-container {
@@ -227,51 +227,20 @@
 
 .integrate-cta-text h2 {
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 8px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+  margin-bottom: var(--space-xs);
 }
 
 .integrate-cta-text p {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--text-medium);
   margin: 0;
 }
 
 .integrate-cta-buttons {
   display: flex;
-  gap: 16px;
-}
-
-/* --- Tombol dari SimplifyPage.css (Gunakan jika belum ada) --- */
-.cta-button {
-  display: inline-block;
-  padding: 14px 28px;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-.cta-button-primary {
-  background-color: #007bff;
-  color: #ffffff;
-  border-color: #007bff;
-}
-.cta-button-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-.cta-button-secondary {
-  background-color: #ffffff;
-  color: #1a1a1a;
-  border-color: #cccccc;
-}
-.cta-button-secondary:hover {
-  background-color: #f9f9f9;
-  border-color: #1a1a1a;
-  color: #1a1a1a;
+  gap: var(--space-sm);
 }
 
 /* Responsive */
@@ -279,10 +248,10 @@
   .layout-2col,
   .layout-2col-reverse {
     flex-direction: column;
-    gap: 40px;
+    gap: var(--space-xl);
   }
   .integrate-image-content {
-      order: -1; /* Gambar di atas teks di mobile */
+      order: -1;
   }
   .integrate-hero h1 {
       font-size: 3rem;
@@ -290,11 +259,11 @@
   .integrate-cta-container {
       flex-direction: column;
       align-items: flex-start;
-      gap: 32px;
+      gap: var(--space-lg);
   }
   .integrate-3col-grid {
-    grid-template-columns: 1fr; /* Tumpuk 1 kolom di mobile */
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
   }
   .integrate-subgrid {
     grid-template-columns: 1fr;

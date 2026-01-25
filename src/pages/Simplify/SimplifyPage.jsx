@@ -24,8 +24,8 @@ function SimplifyPage() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#" className="cta-button cta-button-primary">Learn More</a>
-            <a href="#" className="cta-button cta-button-secondary">Get Started</a>
+            <a href="#" className="btn btn-primary">Learn More</a>
+            <a href="#" className="btn btn-secondary">Get Started</a>
           </div>
         </div>
       </section>

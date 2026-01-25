@@ -1,38 +1,37 @@
 .solutions-section {
-  padding: 80px 40px;
+  padding: 5rem 2.5rem; /* 80px 40px */
   text-align: center;
-  background-color: #f0f4f8;
+  background-color: var(--bg-medium);
 }
 
 .main-heading {
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: black;
+  margin-bottom: var(--space-md);
+  color: var(--text-dark);
 }
 
 .sub-heading {
   font-size: 1.2rem;
   max-width: 800px;
-  margin: 0 auto 50px auto;
-  color: #555;
+  margin: 0 auto 3.125rem auto; /* 50px */
+  color: var(--text-medium);
 }
 
 .solution-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: var(--space-lg);
   max-width: 1200px;
   margin: 0 auto;
-  color: black;
+  color: var(--text-dark);
 }
 
 .solution-card {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-light);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-lg);
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease; 
   cursor: pointer;
 }
@@ -44,41 +43,29 @@
 
 .solution-card p {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-medium);
 }
 
 .discover-link {
   display: inline-block;
-  margin-top: 50px;
-  font-weight: bold;
-  color: #007bff;
+  margin-top: 3.125rem; /* 50px */
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
-/* Tambahkan gaya ini di Solutions.css */
 .solution-icon {
-  width: 250px; /* Atur ukuran ikon */
+  width: 250px;
   height: 250px;
-  margin-bottom: 15px;
-}
-
-.solution-card:hover {
-  transform: translateY(-5px); 
-}
-/* CSS BARU untuk menghilangkan style default link */
-.solution-card-link {
-  text-decoration: none; /* Hapus garis bawah */
-  color: inherit; /* Ambil warna dari .solution-grid */
-}
-
-.solution-icon {
-  width: 250px; 
-  height: 250px;
-  margin-bottom: 15px;
-  /* Tambahkan ini agar gambar tidak penyok jika ukurannya beda */
+  margin-bottom: var(--space-md);
   object-fit: contain; 
 }
 
 .solution-card:hover {
   transform: translateY(-5px); 
+}
+
+.solution-card-link {
+  text-decoration: none;
+  color: inherit;
 }

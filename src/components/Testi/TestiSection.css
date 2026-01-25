@@ -1,6 +1,6 @@
 .testi-section {
-  background-color: #f9f9f9; /* Latar abu-abu muda */
-  padding: 80px 20px;
+  background-color: var(--bg-medium);
+  padding: 5rem var(--space-md); /* 80px */
   text-align: center;
 }
 
@@ -12,29 +12,29 @@
 .testi-stars {
   font-size: 1.5rem;
   letter-spacing: 4px;
-  color: #1a1a1a;
-  margin-bottom: 32px;
+  color: var(--text-dark);
+  margin-bottom: var(--space-lg);
 }
 
 .testi-quote {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--text-dark);
   line-height: 1.4;
-  margin: 0 0 40px 0;
+  margin: 0 0 var(--space-xl) 0;
 }
 
 .testi-author-block {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: var(--space-sm);
 }
 
 .author-avatar-placeholder {
   width: 48px;
   height: 48px;
-  background-color: #e0e0e0;
+  background-color: var(--border-light);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -47,29 +47,29 @@
 
 .author-name {
   display: block;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
   font-size: 1rem;
 }
 
 .author-title {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-medium);
 }
 
 .author-divider {
   width: 1px;
   height: 40px;
-  background-color: #ccc;
-  margin: 0 16px;
+  background-color: var(--border-medium);
+  margin: 0 var(--space-sm);
 }
 
 .client-logo-text {
   font-size: 1.3rem;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: var(--space-xs);
 }

@@ -1,44 +1,44 @@
 .simplify-faq-section {
-  background-color: #f9f9f9; /* Latar abu-abu muda untuk seluruh section FAQ */
-  padding: 80px 20px;
+  background-color: var(--bg-medium);
+  padding: 5rem var(--space-md); /* 80px */
 }
 
 .faq-header {
   max-width: 800px;
-  margin: 0 auto 40px auto;
-  text-align: left; /* Judul rata kiri sesuai gambar */
+  margin: 0 auto var(--space-xl) auto;
+  text-align: left;
 }
 
 .faq-header h2 {
   font-size: 3rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 16px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+  margin-bottom: var(--space-sm);
 }
 
 .faq-header p {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--text-dark);
 }
 
 .faq-accordion {
   max-width: 800px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 3.75rem auto; /* 60px */
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--space-sm);
 }
 
 .faq-accordion-item {
-  background-color: #f9f9f9; /* Warna dasar item */
-  border: 1px solid #e0e0e0; /* Border tipis */
+  background-color: var(--bg-medium);
+  border: 1px solid var(--border-light);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
-/* Saat aktif, mungkin warnanya sedikit lebih gelap atau tetap sama */
+
 .faq-accordion-item.active {
-  background-color: #f0f0f0; 
+  background-color: var(--border-light); 
 }
 
 .accordion-toggle {
@@ -46,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
+  padding: var(--space-md);
   background: none;
   border: none;
   cursor: pointer;
@@ -55,37 +55,35 @@
 
 .accordion-toggle h3 {
   font-size: 1.1rem;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
   margin: 0;
 }
 
 .accordion-icon {
   font-size: 1.5rem;
-  font-weight: 400;
-  color: #1a1a1a;
+  font-weight: var(--font-weight-regular);
+  color: var(--text-dark);
 }
 
-/* Animasi buka tutup accordion */
 .accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
 .faq-accordion-item.active .accordion-content {
-  max-height: 300px; /* Sesuaikan jika teks sangat panjang */
+  max-height: 300px;
 }
 
 .accordion-body {
-  padding: 0 24px 24px 24px;
+  padding: 0 var(--space-md) var(--space-md) var(--space-md);
 }
 .accordion-body p {
   margin: 0;
-  color: #333;
+  color: var(--text-dark);
   line-height: 1.6;
 }
 
-/* Footer FAQ "Still have questions?" */
 .faq-footer {
   max-width: 800px;
   margin: 0 auto;
@@ -93,23 +91,23 @@
 }
 .faq-footer h3 {
   font-size: 2rem;
-  margin-bottom: 8px;
-  color: #1a1a1a;
+  margin-bottom: var(--space-xs);
+  color: var(--text-dark);
 }
 .faq-footer p {
-  margin-bottom: 24px;
-  color: #555;
+  margin-bottom: var(--space-md);
+  color: var(--text-medium);
 }
 .contact-pill-button {
-  padding: 10px 24px;
+  padding: var(--space-xs) var(--space-md);
   background-color: transparent;
-  border: 1px solid #333;
-  border-radius: 50px;
+  border: 1px solid var(--text-dark);
+  border-radius: var(--border-radius-pill);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .contact-pill-button:hover {
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: var(--text-dark);
+  color: var(--text-on-dark);
 }

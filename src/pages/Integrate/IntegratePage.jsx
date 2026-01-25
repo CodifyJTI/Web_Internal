@@ -19,10 +19,10 @@ function IntegratePage() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#" className="cta-button cta-button-primary">
+            <a href="#" className="btn btn-primary">
               Learn More
             </a>
-            <a href="#" className="cta-button cta-button-secondary">
+            <a href="#" className="btn btn-secondary">
               Contact Us
             </a>
           </div>
@@ -206,8 +206,8 @@ function IntegratePage() {
           </div>
 
           <div className="integrate-cta-buttons">
-            <a href="#" className="cta-button cta-button-primary">Get Started</a>
-            <a href="#" className="cta-button cta-button-secondary">Learn More</a>
+            <a href="#" className="btn btn-primary">Get Started</a>
+            <a href="#" className="btn btn-secondary">Learn More</a>
           </div>
         </div>
       </section>

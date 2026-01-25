@@ -15,8 +15,8 @@ const AboutHero = () => {
           processes for sustainable growth.
         </p>
         <div className="about-hero-buttons">
-          <a href="#learn-more" className="cta-button primary">Learn More</a>
-          <a href="#contact" className="cta-button secondary">Contact</a>
+          <a href="#learn-more" className="btn btn-primary">Learn More</a>
+          <a href="#contact" className="btn btn-secondary-on-dark">Contact</a>
         </div>
 
       </div>

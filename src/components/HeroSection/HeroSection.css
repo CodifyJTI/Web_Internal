@@ -1,101 +1,85 @@
-/* === HOMEPAGE HERO SECTION === */
 .hero-section {
   min-height: 500px;
-  padding: 100px 5rem;
+  padding: 6.25rem 5rem; /* 100px */
   display: flex;
   align-items: center;
-
-  /* Teks putih */
-  color: white;
-
-  /* Gradient + Background sama kayak About Us */
+  color: var(--text-on-dark);
   background: linear-gradient(
       rgba(248, 248, 248, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
     url("/public/backround.png") center/cover no-repeat;
-
-  border-radius: 20px;
+  border-radius: var(--border-radius-lg);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-
   position: relative;
 }
 
-/* Wrapper konten */
 .hero-content {
   max-width: 700px;
 }
 
-/* === TITLE === */
 .hero-content h1 {
   font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-sm);
   line-height: 1.2;
-
-  color: white !important;   /* Biar fix putih */
-
+  color: var(--text-on-dark) !important;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.55);
 }
 
-/* === PARAGRAPH === */
 .hero-content p {
   font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-
-  color: white !important; /* Dulu hitam → sekarang putih */
+  line-height: var(--line-height-base);
+  margin-bottom: var(--space-lg);
+  color: var(--text-on-dark) !important;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
 }
 
-/* === CHAT BOX === */
 .chat-box {
   display: flex;
-  gap: 0.5rem;
+  gap: var(--space-xs);
   background: rgba(0, 0, 255, 0.1);
-  padding: 0.5rem;
-  border-radius: 50px;
+  padding: var(--space-xs);
+  border-radius: var(--border-radius-pill);
   width: fit-content;
 }
 
 .chat-box input {
   border: none;
   outline: none;
-  padding: 0.7rem 1rem;
-  border-radius: 50px;
+  padding: 0.7rem var(--space-sm);
+  border-radius: var(--border-radius-pill);
   flex: 1;
   min-width: 250px;
   background: transparent;
-  color: white;
+  color: var(--text-on-dark);
   font-size: 1rem;
 }
 
-/* Placeholder putih + shadow */
 .chat-box input::placeholder {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .chat-box button {
-  background: #00a8ff;
-  color: white;
+  background: var(--color-special);
+  color: var(--text-on-dark);
   border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 600;
+  padding: 0.7rem var(--space-md);
+  border-radius: var(--border-radius-pill);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
   transition: 0.3s;
 }
 
 .chat-box button:hover {
-  background: #007acc;
+  background: var(--color-special-hover);
 }
 
-/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 80px 1.5rem;
+    padding: 5rem var(--space-md); /* 80px */
   }
 
   .hero-content h1 {
@@ -105,7 +89,7 @@
   .chat-box {
     width: 100%;
     flex-direction: column;
-    padding: 1rem;
+    padding: var(--space-sm);
   }
 
   .chat-box input,

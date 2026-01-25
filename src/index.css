@@ -1,43 +1,131 @@
-/* === index.css (BERSIH & BENAR) === */
-
 :root {
-  /* Atur default ke light mode sesuai desain Anda */
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #213547; /* Teks gelap */
-  background-color: #ffffff; /* Latar belakang putih */
+  /* Brand & Action Colors */
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+  --color-secondary: #3bbef4;
+  --color-secondary-hover: #27a9db;
+  --color-special: #00a8ff;
+  --color-special-hover: #007acc;
 
+  /* Text Colors */
+  --text-dark: #1e293b;
+  --text-medium: #64748b;
+  --text-light: #adb5bd;
+  --text-on-dark: #ffffff;
+  --text-on-primary: #ffffff;
+
+  /* Background Colors */
+  --bg-light: #ffffff;
+  --bg-medium: #f8f9fa;
+  --bg-dark: #1e293b;
+
+  /* Border & Separator Colors */
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-dark: #3e4c5f;
+
+  /* Spacing */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 1rem;     /* 16px */
+  --space-md: 1.5rem;   /* 24px */
+  --space-lg: 2rem;     /* 32px */
+  --space-xl: 4rem;     /* 64px */
+
+  /* Typography */
+  --font-family-base: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height-base: 1.5;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Effects & Layers */
+  --border-radius-sm: 8px;
+  --border-radius-lg: 20px;
+  --border-radius-pill: 50px;
+  --z-index-sticky: 999;
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* KUNCI PERBAIKAN:
-  Hapus 'display: flex' dan 'place-items: center' dari body.
-  Kita hanya perlu 'margin: 0' agar halaman penuh.
-*/
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Mencegah scroll horizontal */
+  overflow-x: hidden;
   box-sizing: border-box;
+  
+  /* Apply global styles from variables */
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-dark);
+  background-color: var(--bg-light);
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-/* Anda bisa hapus sisa CSS bawaan (a, h1, button) 
-  jika Anda mengaturnya di file komponen lain.
-*/
 a {
-  font-weight: 500;
-  color: #007bff; /* Ganti ke warna biru Anda */
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
   text-decoration: inherit;
+  transition: color 0.2s ease;
 }
 a:hover {
-  color: #0056b3;
+  color: var(--color-primary-hover);
+}
+
+/* ==========================================================================
+   Global Button Styles
+   ========================================================================== */
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--border-radius-sm);
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--text-on-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  border-color: var(--border-medium);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-medium);
+  border-color: var(--text-dark);
+  color: var(--text-dark);
+}
+
+.btn-secondary-on-dark {
+  background-color: transparent;
+  color: var(--text-on-dark);
+  border-color: var(--text-on-dark);
+}
+
+.btn-secondary-on-dark:hover {
+  background-color: var(--text-on-dark);
+  color: var(--text-dark);
 }
