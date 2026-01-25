@@ -11,7 +11,7 @@ import Milestones from '../../components/Milestones/Milestones.jsx';
 import FAQSection from '../../components/FAQ/FAQSection.jsx';
 
 // Styles
-import './AboutUsPage.css';
+
 
 function AboutUsPage() {
   return (
