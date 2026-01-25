@@ -1,6 +1,7 @@
 :root {
   /* Brand & Action Colors */
   --color-primary: #007bff;
+  --color-primary-rgb: 0, 123, 255; /* RGB values for --color-primary */
   --color-primary-hover: #0056b3;
   --color-secondary: #3bbef4;
   --color-secondary-hover: #27a9db;
