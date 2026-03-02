@@ -30,9 +30,9 @@ function TestiSection() {
           {/* Garis pemisah vertikal */}
           <div className="author-divider"></div>
 
-          {/* Logo Webflow (Ganti src dengan file logo asli Anda jika ada) */}
+          {/* Logo Codify */}
           <div className="client-logo-text">
-             <span style={{fontWeight: 900, fontSize: '1.2rem'}}>W</span> Webflow
+             <img src="/Logo_Codify.png" alt="Codify Logo" style={{ height: '30px' }} />
           </div>
         </div>
       </div>

@@ -150,7 +150,9 @@ function PortfolioPage() {
                   <span className="author-role">CEO, Tech Solutions</span>
                 </div>
               </div>
-              <div className="platform-logo">Webflow</div>
+              <div className="platform-logo">
+                <img src="/Logo_Codify.png" alt="Codify Logo" style={{ height: '30px' }} />
+              </div>
             </div>
           </div>
         </section>

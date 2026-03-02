@@ -8,7 +8,9 @@ function Header() {
       <div className="header-inner">
 
         <div className="header-logo">
-          <Link to="/">Logo</Link>
+          <Link to="/">
+            <img src="/Logo_Codify.png" alt="Codify Logo" style={{ height: '40px' }} />
+          </Link>
         </div>
 
         <nav className="header-nav">

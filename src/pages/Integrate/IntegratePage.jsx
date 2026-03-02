@@ -191,7 +191,7 @@ function IntegratePage() {
             <div className="author-divider"></div>
 
             <div className="client-logo-text">
-              <span style={{ fontWeight: 900, fontSize: '1.2rem' }}>W</span> Webflow
+              <img src="/Logo_Codify.png" alt="Codify Logo" style={{ height: '30px' }} />
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
@@ -8,7 +9,9 @@ function Footer() {
         
         {/* Kolom 1: Logo & Kontak */}
         <div className="contact-info-block">
-          <h4 className="footer-logo">Logo</h4>
+          <Link to="/">
+            <img src="/Logo_Codify.png" alt="Codify Logo" className="footer-logo" style={{ height: '50px' }} />
+          </Link>
           <p className="contact-subheading">We'd love to hear from you!</p>
           
           <p className="address-detail">
