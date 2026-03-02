@@ -79,4 +79,3 @@ Public routes do **not** require auth.
 - Bootstrap routing and page templates first.
 - Ensure Vite works with Markdown imports and SSR if desired.
 - Deploy static version early for easy previews.
-
