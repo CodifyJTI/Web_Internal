@@ -1,101 +1,109 @@
 .hero-section {
-  min-height: 500px;
-  padding: 6.25rem 5rem; /* 100px */
+  min-height: 90vh; /* Increased from 80vh to match large header scale */
+  margin: 1rem auto 3rem auto; /* Adjusted top margin */
+  max-width: 1400px; /* Matched with header max-width */
+  padding: 6rem 2rem; /* Increased padding */
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   color: var(--text-on-dark);
   background: linear-gradient(
-      rgba(248, 248, 248, 0.45),
-      rgba(0, 0, 0, 0.45)
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
     ),
-    url("/public/backround.png") center/cover no-repeat;
-  border-radius: var(--border-radius-lg);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    url("/backround.png") center/cover no-repeat;
+  border-radius: 60px; /* More pronounced curves for larger scale */
   position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 1000px; /* Wider content area */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-sm);
-  line-height: 1.2;
-  color: var(--text-on-dark) !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.55);
+  font-size: clamp(3rem, 6vw, 5rem); /* Increased scale for heading */
+  font-weight: 800;
+  margin-bottom: 2rem;
+  line-height: 1.05;
+  color: #ffffff !important;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  line-height: var(--line-height-base);
-  margin-bottom: var(--space-lg);
-  color: var(--text-on-dark) !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem); /* Increased scale for subtext */
+  line-height: 1.6;
+  margin-bottom: 4rem;
+  color: rgba(255, 255, 255, 0.95) !important;
+  max-width: 800px;
 }
 
 .chat-box {
   display: flex;
-  gap: var(--space-xs);
-  background: rgba(0, 0, 255, 0.1);
-  padding: var(--space-xs);
-  border-radius: var(--border-radius-pill);
-  width: fit-content;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem;
+  border-radius: 100px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .chat-box input {
   border: none;
   outline: none;
-  padding: 0.7rem var(--space-sm);
-  border-radius: var(--border-radius-pill);
+  padding: 0.8rem 1.5rem;
+  border-radius: 100px;
   flex: 1;
-  min-width: 250px;
   background: transparent;
-  color: var(--text-on-dark);
+  color: #ffffff;
   font-size: 1rem;
 }
 
 .chat-box input::placeholder {
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .chat-box button {
-  background: var(--color-special);
-  color: var(--text-on-dark);
+  background: #3bbef4;
+  color: #ffffff;
   border: none;
-  padding: 0.7rem var(--space-md);
-  border-radius: var(--border-radius-pill);
-  font-weight: var(--font-weight-bold);
+  padding: 0.8rem 2rem;
+  border-radius: 100px;
+  font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .chat-box button:hover {
-  background: var(--color-special-hover);
+  background: #27a9db;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 190, 244, 0.3);
 }
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 5rem var(--space-md); /* 80px */
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
+    margin: 1rem;
+    min-height: 60vh;
+    padding: 3rem 1.5rem;
+    border-radius: 24px;
   }
 
   .chat-box {
-    width: 100%;
     flex-direction: column;
-    padding: var(--space-sm);
+    border-radius: 20px;
+    padding: 0.8rem;
   }
 
   .chat-box input,
   .chat-box button {
-    min-width: unset;
     width: 100%;
-    box-sizing: border-box;
+    text-align: center;
   }
 }

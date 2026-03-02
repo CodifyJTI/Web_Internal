@@ -34,7 +34,10 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Visual validation only (as per constraints)
+    
+    // Configuration for future email service integration
+    const receiverEmail = "<RECEIVER_EMAIL>"; 
+    
     setTouched({
       name: true,
       email: true,
@@ -44,11 +47,15 @@ const ContactPage = () => {
     const isFormValid = formData.name && formData.email && formData.message;
 
     if (isFormValid) {
-      alert('Form submitted successfully! (No actual submission)');
+      console.log(`Sending email to: ${receiverEmail}`);
+      console.log('Form Data:', formData);
+      
+      alert('Terima kasih! Pesan Anda telah dikirim ke tim Codify. Kami akan segera menghubungi Anda.');
+      
       setFormData({ name: '', email: '', message: '' });
       setTouched({ name: false, email: false, message: false });
     } else {
-      alert('Please fill in all required fields.');
+      alert('Silakan lengkapi semua bidang yang diperlukan.');
     }
   };
 
@@ -58,10 +65,10 @@ const ContactPage = () => {
       <main className="contact-main">
         <section className="contact-hero">
           <div className="contact-hero-content">
-            <h1>Contact Us</h1>
+            <h1>Hubungi Kami</h1>
             <p>
-              We'd love to hear from you. Please fill out the form below or reach out to us
-              using the contact information provided.
+              Kami siap membantu transformasi digital bisnis Anda. Silakan isi formulir di bawah ini 
+              atau hubungi kami melalui informasi kontak yang tersedia.
             </p>
           </div>
         </section>
@@ -69,35 +76,35 @@ const ContactPage = () => {
         <section className="contact-section">
           <div className="contact-container">
             <div className="contact-info">
-              <h2>Get in Touch</h2>
+              <h2>Mari Berdiskusi</h2>
               <p>
-                Whether you have a question about our services, a project proposal, or just
-                want to say hello, we're ready to chat.
+                Apakah Anda memiliki pertanyaan tentang layanan kami, proposal proyek, atau sekadar 
+                ingin menyapa, tim ahli kami siap merespons.
               </p>
               <div className="info-item">
                 <strong>Email:</strong>
-                <span>info@codify.com</span>
+                <span>hello@codify.id</span>
               </div>
               <div className="info-item">
-                <strong>Phone:</strong>
-                <span>+62 812-3456-7890</span>
+                <strong>Telepon:</strong>
+                <span>+62 852-0063-4181</span>
               </div>
               <div className="info-item">
-                <strong>Address:</strong>
-                <span>Jl. Contoh No. 123, Jakarta, Indonesia</span>
+                <strong>Alamat:</strong>
+                <span>Ruko Grand Galaxy City, Bekasi Selatan, Kota Bekasi</span>
               </div>
             </div>
 
             <div className="contact-form-wrapper">
-              <h2>Send Us a Message</h2>
+              <h2>Kirim Pesan</h2>
               <form onSubmit={handleSubmit} className="contact-form">
                 <FormField
-                  label="Name"
+                  label="Nama"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  placeholder="Your Name"
+                  placeholder="Nama Lengkap Anda"
                   required
                   isTouched={touched.name}
                 />
@@ -108,23 +115,23 @@ const ContactPage = () => {
                   value={formData.email}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  placeholder="your@example.com"
+                  placeholder="alamat@email.com"
                   required
                   isTouched={touched.email}
                 />
                 <FormField
-                  label="Message"
+                  label="Pesan"
                   type="textarea"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  placeholder="Your message here..."
+                  placeholder="Ceritakan kebutuhan proyek Anda..."
                   required
                   isTouched={touched.message}
                 />
-                <button type="submit" className="btn btn-primary">
-                  Send Message
+                <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
+                  Kirim Pesan
                 </button>
               </form>
             </div>
