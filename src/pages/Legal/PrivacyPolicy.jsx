@@ -24,36 +24,26 @@ const PrivacyPolicy = () => {
           <h2>Informasi yang Kami Kumpulkan</h2>
           <p>
             Kami hanya mengumpulkan informasi yang Anda berikan secara sukarela melalui 
-            formulir kontak kami, seperti:
+            formulir kontak kami, seperti nama, alamat email, dan detail pesan Anda.
           </p>
-          <ul>
-            <li>Nama Lengkap</li>
-            <li>Alamat Email</li>
-            <li>Detail pesan Anda terkait kebutuhan proyek</li>
-          </ul>
 
           <h2>Penggunaan Informasi</h2>
           <p>
-            Data yang dikumpulkan digunakan secara eksklusif untuk:
+            Data yang dikumpulkan digunakan secara eksklusif untuk merespons pertanyaan Anda, 
+            mendiskusikan kebutuhan proyek, dan memberikan layanan konsultasi atau pengembangan 
+            sistem yang relevan.
           </p>
-          <ul>
-            <li>Merespons pertanyaan atau permintaan informasi Anda.</li>
-            <li>Mendiskusikan kebutuhan proyek spesifik.</li>
-            <li>Memberikan layanan konsultasi atau pengembangan sistem yang relevan dengan bisnis Anda.</li>
-          </ul>
 
           <h2>Berbagi Data</h2>
           <p>
-            Codify berkomitmen menjaga kepercayaan Anda. Kami <strong>tidak akan pernah</strong> menjual, 
-            menyewakan, atau menukar informasi pribadi Anda kepada pihak ketiga mana pun untuk tujuan pemasaran 
-            maupun komersial lainnya.
+            Codify tidak akan pernah menjual, menyewakan, atau menukar informasi pribadi Anda 
+            kepada pihak ketiga mana pun.
           </p>
 
           <h2>Keamanan</h2>
           <p>
-            Kami menerapkan standar keamanan teknis dan organisasional yang wajar untuk melindungi informasi 
-            Anda dari akses yang tidak sah. Namun, perlu diingat bahwa tidak ada metode transmisi data 
-            di internet yang 100% aman, meskipun kami berupaya sebaik mungkin melindunginya.
+            Kami menerapkan standar keamanan yang wajar untuk melindungi informasi Anda dari akses 
+            yang tidak sah, meskipun tidak ada transmisi data di internet yang 100% aman.
           </p>
 
           <h2>Hubungi Kami</h2>

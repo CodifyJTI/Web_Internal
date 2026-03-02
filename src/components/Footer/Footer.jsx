@@ -12,34 +12,21 @@ function Footer() {
           <Link to="/">
             <img src="/Logo_Codify.png" alt="Codify Logo" className="footer-logo" style={{ height: '50px' }} />
           </Link>
-          <p className="contact-subheading">We'd love to hear from you!</p>
-          
           <p className="address-detail">
-            **Alamat:** Ruko Grand Galaxy City, Jl. Boulevard Raya, Jaka Setia, Bekasi Selatan, Kota Bekasi
+            Ruko Grand Galaxy City, Jl. Boulevard Raya, Jaka Setia, Bekasi Selatan, Kota Bekasi.
           </p>
           <p className="contact-detail">
-            **Telepon:** +6285200634181
+            Telepon: +6285200634181
           </p>
-
-          <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook-f">F</i></a>
-            <a href="#"><i className="fab fa-instagram">I</i></a>
-            <a href="#"><i className="fab fa-twitter">X</i></a>
-            <a href="#"><i className="fab fa-linkedin-in">L</i></a>
-            <a href="#"><i className="fab fa-youtube">Y</i></a>
-          </div>
         </div>
 
         {/* Kolom 2: Our Services */}
         <div className="footer-links-block">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Digital Platform & Application Development</a></li>
-            <li><a href="#">Unified Data & Business Intelligence</a></li>
-            <li><a href="#">Revenue & Operations Automation</a></li>
-            {/* Tambahan dari Image 1 */}
-            <li><a href="#">Case Studies</a></li> 
-            <li><a href="#">Blog Posts</a></li>
+            <li><Link to="/services/simplify">Simplify</Link></li>
+            <li><Link to="/services/automate">Automate</Link></li>
+            <li><Link to="/services/integrate">Integrate</Link></li>
           </ul>
         </div>
         
@@ -47,12 +34,9 @@ function Footer() {
         <div className="footer-links-block">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">FAQ Section</a></li>
-            <li><a href="#">Support Center</a></li>
-            <li><a href="#">Careers Page</a></li>
-            <li><a href="#">Client Portal</a></li>
+            <li><Link to="/aboutUs">About Us</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+            <li><a href="#faq">FAQ Section</a></li>
           </ul>
         </div>
       </div>
@@ -61,8 +45,8 @@ function Footer() {
       <div className="footer-bottom-section">
         <p className="copyright-text">©2025 Softwins Agency All rights reserved.</p>
         <div className="legal-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-of-service">Terms of Service</Link>
             <a href="#">Cookies Settings</a>
         </div>
       </div>

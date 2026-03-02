@@ -1,71 +1,47 @@
 .footer {
-  width: 100%; /* Ditambahkan untuk konsistensi */
-  box-sizing: border-box; /* Ditambahkan untuk konsistensi */
-  
-  /* --- PERBAIKAN WARNA --- */
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  padding: var(--space-xl) var(--space-md) 0 var(--space-md);
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #1a1a1a; /* Uniform dark background */
+  color: #e5e7eb;
+  padding: 5rem 3rem 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .footer-top-section {
   display: grid;
-  /* 3 Kolom: Kontak lebih lebar, Link-link sama rata */
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: var(--space-xl);
-  max-width: 1200px;
-  margin: 0 auto var(--space-lg) auto;
-  padding-bottom: var(--space-lg);
-  /* Tambah border bawah untuk pemisah */
-  border-bottom: 1px solid var(--border-dark); 
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 4rem;
+  max-width: 1300px;
+  margin: 0 auto 3rem auto;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-logo {
-  font-size: 1.8rem;
-  font-weight: var(--font-weight-bold);
-  color: var(--text-on-dark);
   display: block;
-  margin-bottom: var(--space-md);
+  margin-bottom: 1.5rem;
 }
 
-.contact-subheading {
-  font-size: 0.9rem;
-  margin-bottom: var(--space-md);
-  color: var(--text-light);
+.address-detail {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  color: #9ca3af;
+  max-width: 350px;
 }
 
-.address-detail,
 .contact-detail {
-  font-size: 0.9rem;
-  line-height: var(--line-height-base);
-  margin-bottom: var(--space-sm);
-  color: var(--text-on-dark);
-}
-
-/* Social Icons */
-.social-icons {
-  margin-top: var(--space-lg);
-  display: flex;
-  gap: var(--space-sm);
-}
-
-.social-icons a {
-  color: var(--text-on-dark);
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: var(--color-primary);
+  font-size: 0.95rem;
+  color: #9ca3af;
 }
 
 /* Styling untuk Blok Tautan */
 .footer-links-block h4 {
   font-size: 1.1rem;
-  margin-bottom: var(--space-md);
-  color: var(--text-on-dark);
-  font-weight: var(--font-weight-bold);
+  margin-bottom: 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .footer-links-block ul {
@@ -74,17 +50,20 @@
   margin: 0;
 }
 
+.footer-links-block li {
+  margin-bottom: 0.8rem;
+}
+
 .footer-links-block a {
-  color: var(--text-light);
+  color: #9ca3af;
   text-decoration: none;
-  line-height: 2;
-  font-size: 0.9rem;
-  display: block;
+  font-size: 0.95rem;
   transition: color 0.3s ease;
+  display: inline-block;
 }
 
 .footer-links-block a:hover {
-  color: var(--color-primary);
+  color: #3bbef4;
 }
 
 /* Bagian Bawah Footer (Copyright dan Legal Links) */
@@ -92,11 +71,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: left;
   font-size: 0.85rem;
-  color: var(--text-light);
-  padding: var(--space-md) 0;
-  max-width: 1200px;
+  color: #6b7280;
+  padding: 2rem 0;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -104,51 +82,48 @@
   margin: 0;
 }
 
+.legal-links {
+  display: flex;
+  gap: 2rem;
+}
+
 .legal-links a {
-  color: var(--text-light);
+  color: #6b7280;
   text-decoration: none;
-  margin-left: var(--space-md);
   transition: color 0.3s ease;
 }
 
 .legal-links a:hover {
-  color: var(--color-primary);
+  color: #3bbef4;
 }
 
-
-/* --- PERBAIKAN RESPONSIVE --- */
+/* --- RESPONSIVE --- */
 @media (max-width: 992px) {
   .footer-top-section {
-    /* Ubah grid jadi 2 kolom di tablet */
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-lg);
+    gap: 3rem;
   }
 }
 
 @media (max-width: 768px) {
   .footer {
-    padding-top: var(--space-xl);
+    padding: 4rem 1.5rem 0;
   }
 
   .footer-top-section {
-    /* Ubah grid jadi 1 kolom di mobile */
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: 2.5rem;
   }
 
   .footer-bottom-section {
-    /* Tumpuk copyright & legal links */
     flex-direction: column;
-    gap: var(--space-sm);
-    padding: var(--space-md) 0;
+    gap: 1.5rem;
+    text-align: center;
   }
 
   .legal-links {
-    /* Reset margin agar rapi */
-    margin: 0;
-  }
-
-  .legal-links a:first-child {
-    margin-left: 0; /* Hapus margin kiri di link pertama */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
 }

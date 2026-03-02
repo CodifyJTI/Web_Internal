@@ -11,25 +11,37 @@ import IntegratePage from './pages/Integrate/IntegratePage.jsx';
 import AutomatePage from './pages/Automate/AutomatePage.jsx';
 import PortfolioPage from './pages/Porto/PortofolioPage.jsx';
 import ContactPage from './pages/Contact/ContactPage.jsx';
+import PrivacyPolicy from './pages/Legal/PrivacyPolicy.jsx';
+import TermsOfService from './pages/Legal/TermsOfService.jsx';
+
+// Components
+import ChatWidget from './components/ChatWidget/ChatWidget.jsx';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/aboutUs" element={<AboutUsPage />} />
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/aboutUs" element={<AboutUsPage />} />
 
-      {/* Services */}
-      <Route path="/services" element={<ServicesPage />} />
-      <Route path="/services/simplify" element={<SimplifyPage />} />
-      <Route path="/services/integrate" element={<IntegratePage />} />
-      <Route path="/services/automate" element={<AutomatePage />} />
+        {/* Services */}
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/simplify" element={<SimplifyPage />} />
+        <Route path="/services/integrate" element={<IntegratePage />} />
+        <Route path="/services/automate" element={<AutomatePage />} />
 
-      {/* Portfolio */}
-      <Route path="/portfolio" element={<PortfolioPage />} />
+        {/* Portfolio */}
+        <Route path="/portfolio" element={<PortfolioPage />} />
 
-      {/* Contact */}
-      <Route path="/contact" element={<ContactPage />} />
-    </Routes>
+        {/* Contact */}
+        <Route path="/contact" element={<ContactPage />} />
+
+        {/* Legal */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+      </Routes>
+      <ChatWidget />
+    </>
   );
 }
 
