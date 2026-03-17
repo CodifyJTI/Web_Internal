@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './ContactCTA.css';
 
 function ContactCTA() {
+  const { t } = useTranslation();
+  
   // State untuk mengelola input formulir
   const [formData, setFormData] = useState({
     name: '',
@@ -22,32 +25,28 @@ function ContactCTA() {
     e.preventDefault();
     if (formData.acceptedTerms && formData.name && formData.email) {
       console.log('Formulir berhasil dikirim:', formData);
-      // Di sini nanti kamu akan kirim data ke backend
-      alert('Pesanmu telah terkirim! Cek console untuk data formulir.');
+      alert(t('contactCTA.form.button') + '...');
     } else {
-      alert('Mohon isi semua kolom dan terima Syarat & Ketentuan.');
+      alert('Error');
     }
   };
 
   return (
     <section className="contact-cta-section">
-      {/* === PERBAIKAN DIMULAI DI SINI === */}
       <div className="contact-cta-container"> 
         
         <div className="cta-content">
-          <h2>Start Your Digital Transformation Today</h2>
-          {/* Mengganti <p className="subtitle"> menjadi <p> agar CSS-nya pas */}
+          <h2>{t('contactCTA.title')}</h2>
           <p> 
-            Unlock the potential of your business with our tailored solutions. Let's discuss your needs!
+            {t('contactCTA.subtitle')}
           </p>
-          {/* Link "Learn More" dihapus agar sesuai desain */}
         </div>
         
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder={t('contactCTA.form.name')}
             value={formData.name}
             onChange={handleChange}
             required
@@ -55,14 +54,14 @@ function ContactCTA() {
           <input
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder={t('contactCTA.form.email')}
             value={formData.email}
             onChange={handleChange}
             required
           />
           <textarea
             name="message"
-            placeholder="Message"
+            placeholder={t('contactCTA.form.message')}
             rows="4"
             value={formData.message}
             onChange={handleChange}
@@ -71,21 +70,19 @@ function ContactCTA() {
           <div className="terms-checkbox">
             <input
               type="checkbox"
-              id="acceptedTerms" // Tambahkan ID agar label-nya bisa diklik
+              id="acceptedTerms" 
               name="acceptedTerms"
               checked={formData.acceptedTerms}
               onChange={handleChange}
               required
             />
-            {/* 'htmlFor' harus sama dengan 'id' input */}
-            <label htmlFor="acceptedTerms">I accept the Terms</label> 
+            <label htmlFor="acceptedTerms">{t('contactCTA.form.terms')}</label> 
           </div>
           
-          <button type="submit" className="connect-button">Connect</button>
+          <button type="submit" className="connect-button">{t('contactCTA.form.button')}</button>
         </form>
 
       </div> 
-      {/* === PERBAIKAN SELESAI DI SINI === */}
     </section>
   );
 }

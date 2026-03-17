@@ -1,22 +1,21 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './AboutUsHero.css'; 
 
 const AboutHero = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about-hero" className="about-hero">
-      {/* Kontainer ini sekarang akan menengahkan konten secara otomatis */}
       <div className="about-hero-container">
         
-        {/* Konten Teks dan Tombol */}
-        <h1>Transforming Businesses Through Innovative Solutions</h1>
+        <h1>{t('aboutUs.hero.title')}</h1>
         <p>
-          At our core, we empower Indonesian businesses to embrace digital
-          transformation. Our mission is to simplify, integrate, and automate
-          processes for sustainable growth.
+          {t('aboutUs.hero.subtitle')}
         </p>
         <div className="about-hero-buttons">
-          <a href="#learn-more" className="btn btn-primary">Learn More</a>
-          <a href="#contact" className="btn btn-secondary-on-dark">Contact</a>
+          <a href="#learn-more" className="btn btn-primary">{t('common.learnMore')}</a>
+          <a href="#contact" className="btn btn-secondary-on-dark">{t('common.contact')}</a>
         </div>
 
       </div>

@@ -1,27 +1,27 @@
 // CorePillars.jsx
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./CorePillars.css";
 
 export default function SectionCorePillar() {
+  const { t } = useTranslation();
+
   return (
     <>
-      {/* Section Baru: Empowering Indonesian Businesses */}
       <section className="empowering-section">
         <div className="empowering-container">
-          {/* Kiri: Blok Teks */}
           <div className="empowering-text-content">
             <div className="empowering-icon-circle">
               <span className="empowering-icon-text">12<br />36</span>
             </div>
             <h2>
-              Empowering Indonesian Businesses Through Innovative Digital Transformation Solutions
+              {t('aboutUs.corePillars.empowering.title')}
             </h2>
             <p>
-              At our software agency, we leverage our deep expertise in data strategy and technical execution to drive digital transformation. Our unique approach combines custom development, seamless integration, and intelligent automation to simplify your business processes.
+              {t('aboutUs.corePillars.empowering.desc')}
             </p>
           </div>
 
-          {/* Kanan: Gambar Placeholder */}
           <div className="empowering-image-wrapper">
             <img
               src="/tes.png"
@@ -32,52 +32,40 @@ export default function SectionCorePillar() {
         </div>
       </section>
 
-      {/* Section Lama: Harnessing Data Insights for Exceptional Software Solutions */}
       <section className="core-pillars-section">
         <div className="core-pillars-container">
-          {/* Kiri: Blok Teks */}
           <div className="core-pillars-text">
             <h2>
-              Harnessing Data Insights for Exceptional Software Solutions
+              {t('aboutUs.corePillars.harnessing.title')}
             </h2>
             <p>
-              Our agency uniquely blends data strategy with technical execution to drive digital transformation.
-              This powerful combination enables us to create tailored solutions that meet the specific needs of Indonesian
-              businesses.
+              {t('aboutUs.corePillars.harnessing.desc')}
             </p>
-            {/* Daftar Pilar Inti */}
             <div className="pillars-list">
-              {/* Item Pilar 1: Strategi Data */}
               <div className="pillar-item">
-                <img src="/tes.png" alt="Strategi Data" width={50} height={50} /> {/* Tambahkan width & height */}
+                <img src="/tes.png" alt={t('aboutUs.corePillars.harnessing.items.1.title')} width={50} height={50} />
                 <div>
-                  <h3>Strategi Data</h3>
+                  <h3>{t('aboutUs.corePillars.harnessing.items.1.title')}</h3>
                   <p>
-                    Mengubah data mentah menjadi wawasan yang dapat ditindaklanjuti
-                    untuk pengambilan keputusan yang terinformasi.
+                    {t('aboutUs.corePillars.harnessing.items.1.desc')}
                   </p>
                 </div>
               </div>
 
-              {/* Item Pilar 2: Eksekusi Teknis */}
               <div className="pillar-item">
-                <img src="/tes.png" alt="Eksekusi Teknis" width={50} height={50} /> {/* Tambahkan width & height */}
+                <img src="/tes.png" alt={t('aboutUs.corePillars.harnessing.items.2.title')} width={50} height={50} />
                 <div>
-                  <h3>Eksekusi Teknis</h3>
+                  <h3>{t('aboutUs.corePillars.harnessing.items.2.title')}</h3>
                   <p>
-                    Menghadirkan solusi perangkat lunak yang tangguh dan terintegrasi
-                    secara mulus dengan sistem yang ada.
+                    {t('aboutUs.corePillars.harnessing.items.2.desc')}
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Kanan: Blok Gambar Placeholder */}
           <div className="core-pillars-image">
             <div className="image-placeholder">
-              {/* Jika Anda ingin menggunakan gambar nyata di sini, ganti SVG dengan img tag */}
-              {/* <img src="/placeholder-corepillar.png" alt="Core Pillar Illustration" className="actual-image-inside-placeholder" /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"

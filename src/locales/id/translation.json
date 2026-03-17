@@ -1,0 +1,376 @@
+{
+  "nav": {
+    "about": "Tentang Kami",
+    "services": "Layanan",
+    "portfolio": "Portofolio",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "title": "Kami Menyederhanakan, Mengintegrasikan, dan Mengotomatiskan Operasi Anda.",
+    "subtitle": "Kami adalah tim Ahli Data dan Perangkat Lunak Senior yang berdedikasi untuk menyelesaikan masalah operasional paling menantang melalui solusi teknologi kustom."
+  },
+  "solutions": {
+    "mainHeading": "Anda berada di tempat yang tepat. Di Codify, Kami Memberdayakan Bisnis Anda Melalui Inovasi",
+    "subHeading": "Layanan kami dirancang untuk meningkatkan bisnis Anda dengan menyederhanakan proses, mengintegrasikan sistem, dan mengotomatiskan tugas. Temukan bagaimana kami dapat membantu Anda mencapai transformasi digital.",
+    "items": {
+      "simplify": {
+        "title": "Sederhanakan",
+        "desc": "Kami membangun sistem intuitif untuk menggantikan alur kerja Anda yang kompleks"
+      },
+      "integrate": {
+        "title": "Integrasikan",
+        "desc": "Kami menghubungkan semua aplikasi dan sumber data Anda ke dalam ekosistem yang mulus"
+      },
+      "automate": {
+        "title": "Otomatiskan",
+        "desc": "Kami menerapkan otomatisasi cerdas untuk menangani tugas repetitif Anda 24/7"
+      }
+    }
+  },
+  "expertise": {
+    "heading": "Keahlian kami yang terbukti",
+    "philosophy": "Filosofi kami dibangun di atas eksekusi. Dengan rekam jejak kolektif mencakup ratusan proyek yang berhasil diselesaikan, keahlian kami terbukti di lapangan. Kami telah bermitra dengan bisnis di seluruh Indonesia untuk membangun infrastruktur digital kritis yang mereka butuhkan untuk beroperasi, tumbuh, dan memimpin di industri mereka masing-masing.",
+    "items": {
+      "1": {
+        "title": "Pengembangan Platform Digital & Aplikasi",
+        "desc": "Kami telah merancang dan meluncurkan ratusan aset digital dari situs web perusahaan dan platform e-commerce hingga aplikasi web internal yang kompleks dan aplikasi seluler. Keunggulan kami memastikan kami membangun platform yang tidak hanya menarik secara visual dan ramah pengguna tetapi juga aman, terukur, dan disesuaikan dengan kebutuhan operasional spesifik Anda."
+      },
+      "2": {
+        "title": "Data Terpadu & Intelijen Bisnis",
+        "desc": "Banyak bisnis berjuang dengan data yang tersebar di spreadsheet, portal, dan perangkat lunak internal. Kami mengkhususkan diri dalam mengurai kompleksitas ini. Kami memiliki sejarah terbukti dalam mengintegrasikan sumber data yang berbeda dan menyalurkannya ke satu sumber kebenaran, seringkali dasbor otomatis yang dibangun khusus yang memberikan wawasan real-time untuk keputusan yang lebih cerdas."
+      },
+      "3": {
+        "title": "Otomatisasi Pendapatan & Operasi",
+        "desc": "Kami memiliki pengalaman luas dalam mengotomatiskan proses bisnis kritis, dengan fokus pada penjualan dan perolehan pendapatan. Baik menyebarkan Agen AI cerdas untuk menangani pertanyaan atau menerapkan skrip sederhana untuk mengotomatiskan pelaporan, fokus kami selalu pada hasil: meningkatkan efisiensi, mengurangi kesalahan manual, dan menskalakan operasi Anda dengan mudah."
+      }
+    }
+  },
+  "challenges": {
+    "heading": "Apakah Bisnis Anda Menghadapi Tantangan Ini?",
+    "items": {
+      "1": {
+        "title": "Data Tersebar",
+        "desc": "Data di berbagai spreadsheet dan sistem"
+      },
+      "2": {
+        "title": "Pekerjaan Manual",
+        "desc": "Membuang waktu berjam-jam untuk tugas berulang?"
+      },
+      "3": {
+        "title": "Proses Tidak Efisien",
+        "desc": "Sistem lama memperlambat pertumbuhan Anda?"
+      },
+      "4": {
+        "title": "Kurang Wawasan",
+        "desc": "Kesulitan mendapatkan wawasan yang jelas dan dapat ditindaklanjuti dari data Anda?"
+      }
+    }
+  },
+  "faq": {
+    "heading": "FAQ",
+    "subheading": "Temukan jawaban cepat untuk pertanyaan umum tentang layanan kami.",
+    "items": {
+      "1": {
+        "q": "Layanan apa yang Anda tawarkan?",
+        "a": "Kami menawarkan berbagai layanan termasuk pengembangan perangkat lunak khusus, strategi data, eksekusi teknis, integrasi tanpa batas, dan otomatisasi cerdas untuk menyederhanakan proses bisnis Anda."
+      },
+      "2": {
+        "q": "Bagaimana proses Anda bekerja?",
+        "a": "Proses kami dimulai dengan analisis mendalam terhadap kebutuhan bisnis Anda, diikuti oleh strategi data, pengembangan, integrasi, dan dukungan berkelanjutan untuk memastikan pertumbuhan."
+      },
+      "3": {
+        "q": "Dapatkah Anda memberikan studi kasus?",
+        "a": "Ya, kami memiliki portofolio proyek yang sukses dan studi kasus dari berbagai industri. Silakan hubungi kami, dan kami akan dengan senang hati membagikannya dengan Anda."
+      },
+      "4": {
+        "q": "Industri apa yang Anda layani?",
+        "a": "Kami melayani berbagai industri, termasuk keuangan, perawatan kesehatan, ritel, dan teknologi. Solusi khusus kami dirancang untuk memenuhi kebutuhan spesifik bisnis Indonesia."
+      },
+      "5": {
+        "q": "Bagaimana saya bisa menghubungi Anda?",
+        "a": "Anda dapat menghubungi kami dengan mengisi formulir di halaman kontak kami, dan tim kami akan segera membalasnya."
+      }
+    }
+  },
+  "aboutUs": {
+    "hero": {
+      "title": "Mengubah Bisnis Melalui Solusi Inovatif",
+      "subtitle": "Pada intinya, kami memberdayakan bisnis Indonesia untuk merangkul transformasi digital. Misi kami adalah menyederhanakan, mengintegrasikan, dan mengotomatiskan proses untuk pertumbuhan yang berkelanjutan."
+    },
+    "corePillars": {
+      "empowering": {
+        "title": "Memberdayakan Bisnis Indonesia Melalui Solusi Transformasi Digital Inovatif",
+        "desc": "Di agensi perangkat lunak kami, kami memanfaatkan keahlian mendalam kami dalam strategi data dan eksekusi teknis untuk mendorong transformasi digital. Pendekatan unik kami menggabungkan pengembangan khusus, integrasi tanpa batas, dan otomatisasi cerdas untuk menyederhanakan proses bisnis Anda."
+      },
+      "harnessing": {
+        "title": "Memanfaatkan Wawasan Data untuk Solusi Perangkat Lunak Luar Biasa",
+        "desc": "Agensi kami secara unik memadukan strategi data dengan eksekusi teknis untuk mendorong transformasi digital. Kombinasi kuat ini memungkinkan kami menciptakan solusi yang disesuaikan untuk memenuhi kebutuhan spesifik bisnis Indonesia.",
+        "items": {
+          "1": {
+            "title": "Strategi Data",
+            "desc": "Mengubah data mentah menjadi wawasan yang dapat ditindaklanjuti untuk pengambilan keputusan yang terinformasi."
+          },
+          "2": {
+            "title": "Eksekusi Teknis",
+            "desc": "Menghadirkan solusi perangkat lunak yang tangguh dan terintegrasi secara mulus dengan sistem yang ada."
+          }
+        }
+      }
+    },
+    "milestones": {
+      "heading": "Perjalanan Kami: Tonggak Penting",
+      "items": {
+        "1": {
+          "title": "Tahun Pendirian",
+          "desc": "Didirikan pada tahun 2022, agensi kami dimulai dengan visi untuk mengubah bisnis melalui teknologi. Kami mulai dengan tim kecil yang terdiri dari para profesional yang berdedikasi."
+        },
+        "2": {
+          "title": "Akuisisi Klien Besar Pertama",
+          "desc": "Pada tahun 2023, kami meluncurkan proyek besar pertama kami, memamerkan kemampuan kami dalam pengembangan perangkat lunak khusus. Proyek ini meletakkan dasar untuk kesuksesan di masa depan."
+        },
+        "3": {
+          "title": "Ekspansi Pengembangan Produk",
+          "desc": "Kami memperluas layanan kami untuk mencakup pengembangan produk siklus penuh, membantu startup dan perusahaan membangun dan menskalakan produk digital mereka dari awal."
+        }
+      },
+      "future": {
+        "title": "Visi Kami untuk Masa Depan",
+        "desc": "Kami membayangkan masa depan di mana teknologi terintegrasi mulus dengan proses bisnis. Misi kami adalah memimpin transformasi ini dengan solusi inovatif.",
+        "button": "Lihat Peta Jalan Kami"
+      }
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "subtitle": "Layanan Kami: Solusi End-to-End untuk Bisnis Anda",
+      "title": "Solusi Teknologi yang Dirancang untuk Pertumbuhan Bisnis",
+      "desc": "Kami membantu bisnis Indonesia menavigasi perjalanan transformasi digital mereka. Layanan kami terstruktur sebagai jalur yang jelas dari menyederhanakan proses kompleks hingga mengintegrasikan data yang tersebar dan mengotomatisasi untuk efisiensi tertinggi.",
+      "sectionTitle": "Temukan Layanan Inti Kami: Sederhanakan, Integrasikan, dan Otomatiskan untuk Kesuksesan"
+    },
+    "items": {
+      "simplify": {
+        "subtitle": "Sederhanakan",
+        "title": "Pengembangan Perangkat Lunak Kustom",
+        "desc": "Setiap bisnis memiliki tantangan unik yang tidak dapat diselesaikan oleh perangkat lunak siap pakai. Kami mengganti alur kerja Anda yang kompleks, manual, atau usang dengan sistem intuitif yang dibangun khusus, dirancang khusus untuk cara Anda bekerja.",
+        "sub": {
+          "1": { "title": "Pengembangan Aplikasi Web & Mobile", "desc": "Kami mengembangkan perangkat lunak yang selaras sempurna dengan tujuan bisnis dan kebutuhan pengguna Anda." },
+          "2": { "title": "Sistem Manajemen Konten (CMS)", "desc": "Kami membuat solusi CMS yang disesuaikan untuk memenuhi tujuan bisnis Anda dan meningkatkan pengalaman pengguna." },
+          "3": { "title": "Server & Basis Data Backend", "desc": "Kami membuat server dan basis data backend yang terintegrasi secara mulus dengan tujuan bisnis dan persyaratan pengguna Anda." },
+          "4": { "title": "Dasbor Bisnis Interaktif", "desc": "Tim terampil kami menghadirkan dasbor bisnis interaktif kelas atas yang dapat diskalakan yang tumbuh bersama organisasi Anda." }
+        }
+      },
+      "integrate": {
+        "subtitle": "Integrasikan",
+        "title": "Sistem Terpadu & Integrasi Data",
+        "desc": "Data yang terperangkap dalam sistem yang tidak terhubung adalah penghalang bagi pertumbuhan. Kami berspesialisasi dalam meruntuhkan silo ini. Kami merancang dan membangun API yang kuat dan jalur data otomatis...",
+        "sub": {
+          "1": { "title": "Pengembangan & Manajemen API", "desc": "Hubungkan sistem yang berbeda untuk pengalaman data yang terpadu..." },
+          "2": { "title": "Jalur Data Otomatis (ETL)", "desc": "Ubah data menjadi wawasan yang dapat ditindaklanjuti..." },
+          "3": { "title": "Pergudangan Data Terpusat", "desc": "Ubah data menjadi wawasan yang dapat ditindaklanjuti..." },
+          "4": { "title": "Integrasi Perangkat Lunak Pihak Ketiga", "desc": "Ubah data menjadi wawasan yang dapat ditindaklanjuti..." }
+        }
+      },
+      "automate": {
+        "subtitle": "Otomatiskan",
+        "title": "Otomatisasi Proses Cerdas",
+        "desc": "Layanan Otomatisasi kami memanfaatkan teknologi AI canggih untuk merampingkan operasi Anda dan meningkatkan efisiensi. ...kami menerapkan otomatisasi yang bekerja 24/7, mengurangi kesalahan...",
+        "sub": {
+          "1": { "title": "Pengembangan Agen AI & Chatbot", "desc": "Hubungkan sistem untuk pengalaman data yang terpadu." },
+          "2": { "title": "Otomatisasi Proses Robotik (RPA)", "desc": "Ubah data menjadi wawasan yang dapat ditindaklanjuti..." },
+          "3": { "title": "Pelaporan & Peringatan Otomatis", "desc": "Ubah data menjadi wawasan yang dapat ditindaklanjuti..." },
+          "4": { "title": "Web Scraping & Ekstraksi Data", "desc": "Ubah data menjadi wawasan yang dapat ditindaklanjuti..." }
+        }
+      }
+    }
+  },
+  "simplifyPage": {
+    "hero": {
+      "badge": "Sederhanakan",
+      "title": "Solusi Pengembangan Kustom",
+      "desc": "Ubah ide Anda menjadi kenyataan dengan solusi perangkat lunak yang disesuaikan yang dirancang untuk kebutuhan bisnis unik Anda."
+    },
+    "section1": {
+      "title": "Merampingkan Operasi Anda dengan Solusi Perangkat Lunak Khusus untuk Efisiensi Maksimal",
+      "desc": "Dalam lingkungan bisnis yang serba cepat saat ini, menyederhanakan proses sangat penting untuk kesuksesan. Layanan pengembangan perangkat lunak kustom kami memberdayakan Anda untuk menghilangkan inefisiensi dan meningkatkan produktivitas, memungkinkan Anda untuk fokus pada hal yang benar-benar penting."
+    },
+    "section2": {
+      "badge": "Kesuksesan",
+      "title": "Mengubah Ide menjadi Solusi Kustom",
+      "desc": "Tim kami berhasil memberikan solusi perangkat lunak kustom yang merampingkan operasi untuk klien lokal. Proyek ini mencontohkan komitmen kami untuk menyederhanakan tantangan kompleks melalui pengembangan yang disesuaikan.",
+      "sub1Title": "Ikhtisar Proyek",
+      "sub1Desc": "Solusi perangkat lunak komprehensif yang disesuaikan untuk peningkatan efisiensi operasional.",
+      "sub2Title": "Umpan Balik Klien",
+      "sub2Desc": "Solusi ini melampaui harapan kami dan mengubah alur kerja kami."
+    },
+    "section3": {
+      "title": "Ubah Ide Anda Menjadi Kenyataan dengan Solusi Pengembangan Kustom Kami",
+      "desc": "Tim kami menggabungkan wawasan data yang mendalam dengan keterampilan teknis yang kuat untuk menciptakan solusi perangkat lunak yang disesuaikan. Kami fokus pada pemahaman tantangan unik Anda untuk memberikan hasil yang luar biasa.",
+      "list1": "Metodologi Agile untuk pengembangan dan penerapan cepat.",
+      "list2": "Desain yang berpusat pada pengguna untuk meningkatkan pengalaman pengguna.",
+      "list3": "Integrasi berkelanjutan untuk pembaruan dan peningkatan yang lancar."
+    },
+    "section4": {
+      "title": "Buka Kunci Efisiensi: Ubah Bisnis Anda dengan Menyederhanakan Proses Kompleks",
+      "desc": "Menyederhanakan proses Anda mengarah pada peningkatan efisiensi dan produktivitas yang signifikan. Dengan mengurangi kompleksitas, Anda dapat menghemat biaya dan fokus pada apa yang benar-benar penting — mengembangkan bisnis Anda."
+    }
+  },
+  "integratePage": {
+    "hero": {
+      "badge": "Integrasikan",
+      "title": "Integrasi Data Tanpa Batas",
+      "desc": "Buka kekuatan data Anda dengan sistem mulus dan solusi integrasi data kami."
+    },
+    "section1": {
+      "title": "Integrasi Sistem Mulus untuk Bisnis Anda",
+      "desc": "Agensi kami mengkhususkan diri dalam membuat API kustom dan solusi middleware. Kami memastikan sistem Anda berkomunikasi secara efektif untuk peningkatan efisiensi operasional.",
+      "sub1Title": "API Kustom",
+      "sub1Desc": "API yang disesuaikan untuk memenuhi kebutuhan bisnis unik Anda dan meningkatkan fungsionalitas.",
+      "sub2Title": "Solusi Middleware",
+      "sub2Desc": "Middleware tangguh yang menghubungkan sistem berbeda untuk pengalaman digital terpadu."
+    },
+    "section2": {
+      "title": "Buka Integrasi Data Mulus untuk Peningkatan Kinerja Bisnis",
+      "desc": "Strategi integrasi data kami merampingkan operasi Anda dengan mengoptimalkan pergudangan data dan proses ETL. Rasakan sinkronisasi data real-time yang memberdayakan pengambilan keputusan Anda dan mendorong pertumbuhan."
+    },
+    "section3": {
+      "badge": "Kisah Sukses",
+      "title": "Integrasi Data Mulus untuk Kesuksesan Bisnis",
+      "desc": "Temukan bagaimana kami mengubah proses manajemen data klien melalui integrasi yang efektif. Solusi kami yang disesuaikan merampingkan operasi dan meningkatkan aksesibilitas data, mendorong pertumbuhan bisnis yang signifikan."
+    },
+    "section4": {
+      "badge": "Integrasikan",
+      "title": "Buka Kekuatan Integrasi Data",
+      "desc": "Sistem dan integrasi data yang efektif meningkatkan kemampuan bisnis Anda untuk mengakses dan memanfaatkan data secara mulus. Ini mengarah pada keputusan yang lebih cerdas dan operasi yang efisien.",
+      "grid1Title": "Aksesibilitas Data yang Ditingkatkan untuk Bisnis Anda",
+      "grid1Desc": "Akses data penting dengan mudah di berbagai platform dan sistem.",
+      "grid2Title": "Pengambilan Keputusan yang Ditingkatkan dengan Wawasan Real-Time",
+      "grid2Desc": "Buat keputusan yang tepat dengan cepat dengan informasi terkini.",
+      "grid3Title": "Efisiensi Operasional Melalui Proses yang Dirampingkan",
+      "grid3Desc": "Optimalkan alur kerja dan kurangi biaya operasional secara efektif."
+    },
+    "cta": {
+      "title": "Buka Solusi Integrasi Tanpa Batas",
+      "desc": "Temukan bagaimana integrasi dapat mengubah bisnis Anda."
+    }
+  },
+  "automatePage": {
+    "hero": {
+      "badge": "Otomatiskan",
+      "title": "Berdayakan Bisnis Anda",
+      "desc": "Buka efisiensi melalui otomatisasi yang digerakkan oleh AI yang disesuaikan dengan proses dan tujuan bisnis unik Anda."
+    },
+    "section1": {
+      "title": "Ubah Bisnis Anda dengan Solusi Otomatisasi Proses Cerdas",
+      "desc": "Buka efisiensi dan produktivitas dengan mengotomatiskan tugas-tugas rutin. Solusi khusus kami merampingkan operasi, memungkinkan tim Anda untuk fokus pada hal yang benar-benar penting.",
+      "sub1Title": "Otomatisasi Tugas",
+      "sub1Desc": "Otomatiskan entri data, pembuatan laporan, dan tindak lanjut pelanggan dengan mudah.",
+      "sub2Title": "Integrasi AI",
+      "sub2Desc": "Manfaatkan AI untuk pengambilan keputusan yang lebih cerdas dan alur kerja yang dioptimalkan di seluruh organisasi Anda."
+    },
+    "section2": {
+      "badge": "Kisah Sukses",
+      "title": "Mengubah Bisnis: Kisah Sukses dalam Otomatisasi",
+      "desc": "Temukan bagaimana kami membantu bisnis lokal merampingkan operasi melalui otomatisasi. Solusi khusus kami mengarah pada peningkatan efisiensi dan penghematan biaya yang signifikan.",
+      "sub1Title": "Tantangan",
+      "sub1Desc": "Mengidentifikasi kemacetan dalam alur kerja yang menghambat produktivitas dan pertumbuhan.",
+      "sub2Title": "Solusi",
+      "sub2Desc": "Menerapkan sistem otomatis yang merampingkan proses dan meningkatkan efisiensi."
+    },
+    "section3": {
+      "title": "Buka Kekuatan Otomatisasi untuk Kesuksesan Bisnis Anda",
+      "desc": "Rangkul otomatisasi untuk meningkatkan efisiensi operasional Anda dan mendorong pertumbuhan. Rasakan peningkatan signifikan dalam produktivitas, akurasi, dan penghematan biaya.",
+      "list1Title": "Dorong",
+      "list1Desc": "Tingkatkan produktivitas dengan proses dan alur kerja yang disederhanakan.",
+      "list2Title": "Tingkatkan",
+      "list2Desc": "Capai akurasi yang lebih tinggi melalui tugas otomatis."
+    },
+    "section4": {
+      "badge": "Otomatiskan",
+      "title": "Sederhanakan Proses Anda dengan Otomatisasi",
+      "desc": "Proses otomatisasi kami mengubah operasi bisnis Anda, meningkatkan efisiensi dan mengurangi upaya manual. Dari konsultasi hingga implementasi, kami memastikan transisi yang mulus ke solusi otomatis.",
+      "grid1Title": "Memahami Perjalanan Otomatisasi",
+      "grid1Desc": "Kami memandu Anda melalui setiap langkah proses.",
+      "grid2Title": "Konsultasi Awal: Mengidentifikasi Kebutuhan Anda",
+      "grid2Desc": "Kami mulai dengan memahami tantangan bisnis unik Anda.",
+      "grid3Title": "Implementasi: Mewujudkan Visi Anda",
+      "grid3Desc": "Tim kami mengeksekusi strategi otomatisasi yang disesuaikan untuk Anda."
+    },
+    "cta": {
+      "title": "Ubah Bisnis Anda Hari Ini",
+      "desc": "Siap merampingkan proses Anda? Hubungi kami untuk konsultasi tentang solusi otomatisasi."
+    }
+  },
+  "portfolioPage": {
+    "hero": {
+      "tag": "Portofolio",
+      "title": "Proyek Sukses Kami",
+      "desc": "Jelajahi studi kasus anonim kami yang memamerkan keunggulan.",
+      "viewAll": "Lihat semua",
+      "viewProject": "Lihat proyek >"
+    },
+    "projects": {
+      "1": {
+        "title": "Solusi E-commerce",
+        "desc": "Merombak toko online, meningkatkan penjualan sebesar 40% dalam enam bulan.",
+        "tag1": "Pertumbuhan Penjualan E-commerce",
+        "tag2": "Pengalaman Pengguna"
+      },
+      "2": {
+        "title": "Integrasi Data",
+        "desc": "Merampingkan proses data untuk perusahaan logistik besar, meningkatkan efisiensi.",
+        "tag1": "Strategi Data",
+        "tag2": "Peningkatan Proses Logistik"
+      }
+    },
+    "industries": {
+      "title": "Jelajahi Portofolio Beragam Kami di Berbagai Industri",
+      "desc": "Portofolio kami memamerkan berbagai industri, mulai dari perawatan kesehatan hingga keuangan. Kami memberikan solusi yang disesuaikan untuk memenuhi tantangan unik setiap sektor.",
+      "items": {
+        "1": {
+          "title": "Mengubah Perawatan Kesehatan dengan Solusi Berbasis Data",
+          "desc": "Solusi perawatan kesehatan kami meningkatkan perawatan pasien melalui proses yang disederhanakan dan integrasi data."
+        },
+        "2": {
+          "title": "Memberdayakan Keuangan dengan Otomatisasi Lanjutan",
+          "desc": "Kami membantu lembaga keuangan mengoptimalkan operasi dan meningkatkan pengalaman pelanggan melalui otomatisasi."
+        },
+        "3": {
+          "title": "Solusi Ritel Inovatif yang Mendorong Keterlibatan",
+          "desc": "Solusi ritel kami memanfaatkan wawasan data untuk meningkatkan penjualan dan loyalitas pelanggan."
+        }
+      }
+    },
+    "caseStudy": {
+      "tag": "Studi Kasus",
+      "title": "Mengubah Bisnis Melalui Solusi Perangkat Lunak Inovatif",
+      "intro": "Temukan bagaimana kami membantu perusahaan terkemuka Indonesia merampingkan operasi mereka. Solusi kami yang disesuaikan mendorong efisiensi dan pertumbuhan.",
+      "challengeTitle": "Tantangan",
+      "challengeDesc": "Dihadapkan pada sistem yang sudah usang, klien berjuang dengan silo data dan ketidakefisienan.",
+      "solutionTitle": "Solusi Kami",
+      "solutionDesc": "Kami menerapkan platform terintegrasi yang mengotomatiskan proses dan meningkatkan aksesibilitas data."
+    }
+  },
+  "contactCTA": {
+    "title": "Mulai Transformasi Digital Anda Hari Ini",
+    "subtitle": "Buka potensi bisnis Anda dengan solusi khusus kami. Mari diskusikan kebutuhan Anda!",
+    "form": {
+      "name": "Nama",
+      "email": "Email",
+      "message": "Pesan",
+      "terms": "Saya menerima Syarat & Ketentuan",
+      "button": "Hubungkan"
+    }
+  },
+  "footer": {
+    "servicesTitle": "Layanan Kami",
+    "quickLinksTitle": "Tautan Cepat",
+    "address": "Ruko Grand Galaxy City, Jl. Boulevard Raya, Jaka Setia, Bekasi Selatan, Kota Bekasi.",
+    "rights": "©2025 Softwins Agency Semua hak dilindungi undang-undang."
+  },
+  "common": {
+    "learnMore": "Pelajari Lebih Lanjut",
+    "contact": "Kontak",
+    "getStarted": "Mulai Sekarang",
+    "signUp": "Daftar"
+  }
+}

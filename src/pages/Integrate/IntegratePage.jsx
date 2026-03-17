@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './IntegratePage.css';
 
 function IntegratePage() {
+  const { t } = useTranslation();
+
   return (
     <div className="integrate-page">
       <Header />
@@ -11,19 +14,18 @@ function IntegratePage() {
       {/* Hero Section */}
       <section className="integrate-hero">
         <div className="integrate-hero-content">
-          <span>Integrate</span>
-          <h1>Seamless Data Integration</h1>
+          <span>{t('integratePage.hero.badge')}</span>
+          <h1>{t('integratePage.hero.title')}</h1>
           <p>
-            Unlock the power of your data with our seamless system and data
-            integration solutions.
+            {t('integratePage.hero.desc')}
           </p>
 
           <div className="hero-buttons">
             <a href="#" className="btn btn-primary">
-              Learn More
+              {t('common.learnMore')}
             </a>
             <a href="#" className="btn btn-secondary">
-              Contact Us
+              {t('common.contact')}
             </a>
           </div>
         </div>
@@ -34,29 +36,25 @@ function IntegratePage() {
         {/* Section 1 */}
         <section className="integrate-section layout-2col">
           <div className="integrate-text-content">
-            <h2>Seamless System Integration for Your Business</h2>
+            <h2>{t('integratePage.section1.title')}</h2>
             <p>
-              Our agency specializes in creating custom APIs and middleware
-              solutions. We ensure your systems communicate effectively for
-              enhanced operational efficiency.
+              {t('integratePage.section1.desc')}
             </p>
 
             <div className="integrate-subgrid">
               <div className="subgrid-item">
                 <span className="subgrid-icon">🔗</span>
-                <h4>Custom APIs</h4>
+                <h4>{t('integratePage.section1.sub1Title')}</h4>
                 <p>
-                  Tailored APIs that meet your unique business requirements and
-                  enhance functionality.
+                  {t('integratePage.section1.sub1Desc')}
                 </p>
               </div>
 
               <div className="subgrid-item">
                 <span className="subgrid-icon">⚙️</span>
-                <h4>Middleware Solutions</h4>
+                <h4>{t('integratePage.section1.sub2Title')}</h4>
                 <p>
-                  Robust middleware that connects disparate systems for a unified
-                  digital experience.
+                  {t('integratePage.section1.sub2Desc')}
                 </p>
               </div>
             </div>
@@ -73,12 +71,9 @@ function IntegratePage() {
         {/* Section 2 */}
         <section className="integrate-section layout-2col layout-2col-reverse">
           <div className="integrate-text-content">
-            <h2>Unlock Seamless Data Integration for Enhanced Business Performance</h2>
+            <h2>{t('integratePage.section2.title')}</h2>
             <p>
-              Our data integration strategies streamline your operations by
-              optimizing data warehousing and ETL processes. Experience real-time
-              data synchronization that empowers your decision-making and drives
-              growth.
+              {t('integratePage.section2.desc')}
             </p>
           </div>
 
@@ -93,15 +88,12 @@ function IntegratePage() {
         {/* Section 3 */}
         <section className="integrate-section layout-2col">
           <div className="integrate-text-content">
-            <span className="section-dash">Success Stories</span>
-            <h3>Seamless Data Integration for Business Success</h3>
+            <span className="section-dash">{t('integratePage.section3.badge')}</span>
+            <h3>{t('integratePage.section3.title')}</h3>
             <p>
-              Discover how we transformed a client's data management process
-              through effective integration. Our tailored solution streamlined
-              operations and enhanced data accessibility, driving significant
-              business growth.
+              {t('integratePage.section3.desc')}
             </p>
-            <a href="#" className="text-link">Learn More</a>
+            <a href="#" className="text-link">{t('common.learnMore')}</a>
           </div>
 
           <div className="integrate-image-content">
@@ -122,12 +114,10 @@ function IntegratePage() {
               margin: '0 auto 60px auto'
             }}
           >
-            <span className="section-dash">Integrate</span>
-            <h2>Unlock the Power of Data Integration</h2>
+            <span className="section-dash">{t('integratePage.section4.badge')}</span>
+            <h2>{t('integratePage.section4.title')}</h2>
             <p>
-              Effective system and data integration enhances your business's
-              ability to access and utilize data seamlessly. This leads to
-              smarter decisions and streamlined operations.
+              {t('integratePage.section4.desc')}
             </p>
           </div>
 
@@ -139,8 +129,8 @@ function IntegratePage() {
                   alt="Data Accessibility"
                 />
               </div>
-              <h4>Enhanced Data Accessibility for Your Business</h4>
-              <p>Easily access critical data across platforms and systems.</p>
+              <h4>{t('integratePage.section4.grid1Title')}</h4>
+              <p>{t('integratePage.section4.grid1Desc')}</p>
             </div>
 
             <div className="integrate-grid-card">
@@ -150,8 +140,8 @@ function IntegratePage() {
                   alt="Decision Making"
                 />
               </div>
-              <h4>Improved Decision-Making with Real-Time Insights</h4>
-              <p>Make informed decisions quickly with up-to-date information.</p>
+              <h4>{t('integratePage.section4.grid2Title')}</h4>
+              <p>{t('integratePage.section4.grid2Desc')}</p>
             </div>
 
             <div className="integrate-grid-card">
@@ -161,14 +151,14 @@ function IntegratePage() {
                   alt="Operational Efficiency"
                 />
               </div>
-              <h4>Operational Efficiency Through Streamlined Processes</h4>
-              <p>Optimize workflows and reduce operational costs effectively.</p>
+              <h4>{t('integratePage.section4.grid3Title')}</h4>
+              <p>{t('integratePage.section4.grid3Desc')}</p>
             </div>
           </div>
 
           <div className="integrate-grid-links">
-            <a href="#" className="text-link">Learn More</a>
-            <a href="#" className="text-link">Contact</a>
+            <a href="#" className="text-link">{t('common.learnMore')}</a>
+            <a href="#" className="text-link">{t('common.contact')}</a>
           </div>
         </section>
       </main>
@@ -177,13 +167,13 @@ function IntegratePage() {
       <section className="integrate-cta-section">
         <div className="integrate-cta-container">
           <div className="integrate-cta-text">
-            <h2>Unlock Seamless Integration Solutions</h2>
-            <p>Discover how integration can transform your business</p>
+            <h2>{t('integratePage.cta.title')}</h2>
+            <p>{t('integratePage.cta.desc')}</p>
           </div>
 
           <div className="integrate-cta-buttons">
-            <a href="#" className="btn btn-primary">Get Started</a>
-            <a href="#" className="btn btn-secondary">Learn More</a>
+            <a href="#" className="btn btn-primary">{t('common.getStarted')}</a>
+            <a href="#" className="btn btn-secondary">{t('common.learnMore')}</a>
           </div>
         </div>
       </section>

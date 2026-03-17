@@ -1,15 +1,39 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import SolutionCard from './SolutionCard';
 import './Solution.css';
-import solutionsData from '../../data/content/solutions.json';
 
 function SolutionsSection() {
-  const { mainHeading, subHeading, solutions } = solutionsData;
+  const { t } = useTranslation();
+
+  const solutions = [
+    {
+      id: 1,
+      title: t('solutions.items.simplify.title'),
+      description: t('solutions.items.simplify.desc'),
+      icon: "/simplify.png",
+      link: "/services/simplify"
+    },
+    {
+      id: 2,
+      title: t('solutions.items.integrate.title'),
+      description: t('solutions.items.integrate.desc'),
+      icon: "/integrate.png",
+      link: "/services/integrate"
+    },
+    {
+      id: 3,
+      title: t('solutions.items.automate.title'),
+      description: t('solutions.items.automate.desc'),
+      icon: "/automate.png",
+      link: "/services/automate"
+    }
+  ];
 
   return (
     <section className="solutions-section">
-      <h2 className="main-heading">{mainHeading}</h2>
-      <p className="sub-heading">{subHeading}</p>
+      <h2 className="main-heading">{t('solutions.mainHeading')}</h2>
+      <p className="sub-heading">{t('solutions.subHeading')}</p>
       <div className="solution-grid">
         {solutions.map(solution => (
           <SolutionCard

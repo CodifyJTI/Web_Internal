@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Footer.css';
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="footer-top-section">
@@ -19,7 +22,7 @@ function Footer() {
             />
           </Link>
           <p className="address-detail">
-            Ruko Grand Galaxy City, Jl. Boulevard Raya, Jaka Setia, Bekasi Selatan, Kota Bekasi.
+            {t('footer.address')}
           </p>
           <p className="contact-detail">
             Telepon: +6285200634181
@@ -45,7 +48,7 @@ function Footer() {
 
         {/* Kolom 2: Our Services */}
         <div className="footer-links-block">
-          <h4>Our Services</h4>
+          <h4>{t('footer.servicesTitle')}</h4>
           <ul>
             <li><Link to="/services/simplify">Simplify</Link></li>
             <li><Link to="/services/automate">Automate</Link></li>
@@ -55,10 +58,10 @@ function Footer() {
         
         {/* Kolom 3: Quick Links */}
         <div className="footer-links-block">
-          <h4>Quick Links</h4>
+          <h4>{t('footer.quickLinksTitle')}</h4>
           <ul>
-            <li><Link to="/aboutUs">About Us</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/aboutUs">{t('nav.about')}</Link></li>
+            <li><Link to="/contact">{t('nav.contact')}</Link></li>
             <li><a href="#faq">FAQ Section</a></li>
           </ul>
         </div>
@@ -66,7 +69,7 @@ function Footer() {
 
       {/* Bagian Bawah Footer (Copyright dan Legal Links) */}
       <div className="footer-bottom-section">
-        <p className="copyright-text">©2025 Softwins Agency All rights reserved.</p>
+        <p className="copyright-text">{t('footer.rights')}</p>
         <div className="legal-links">
             <Link to="/privacy-policy">Privacy Policy</Link>
             <Link to="/terms-of-service">Terms of Service</Link>

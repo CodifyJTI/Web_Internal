@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './AutomatePage.css';
 
 function AutomatePage() {
+  const { t } = useTranslation();
+
   return (
     <div className="automate-page">
       <Header />
@@ -11,15 +14,14 @@ function AutomatePage() {
       {/* Hero Section */}
       <section className="automate-hero">
         <div className="automate-hero-content">
-          <span>Automate</span>
-          <h1>Empower Your Business</h1>
+          <span>{t('automatePage.hero.badge')}</span>
+          <h1>{t('automatePage.hero.title')}</h1>
           <p>
-            Unlock efficiency through AI-driven automation tailored to your unique
-            business processes and goals.
+            {t('automatePage.hero.desc')}
           </p>
           <div className="hero-buttons">
-            <a href="#" className="btn btn-primary">Learn More</a>
-            <a href="#" className="btn btn-secondary">Sign Up</a>
+            <a href="#" className="btn btn-primary">{t('common.learnMore')}</a>
+            <a href="#" className="btn btn-secondary">{t('common.signUp')}</a>
           </div>
         </div>
       </section>
@@ -29,23 +31,22 @@ function AutomatePage() {
         {/* Section 1: Intelligent Process Automation */}
         <section className="automate-section layout-2col">
           <div className="automate-text-content">
-            <h2>Transform Your Business with Intelligent Process Automation Solutions</h2>
+            <h2>{t('automatePage.section1.title')}</h2>
             <p>
-              Unlock efficiency and productivity by automating routine tasks. Our tailored
-              solutions streamline operations, allowing your team to focus on what truly matters.
+              {t('automatePage.section1.desc')}
             </p>
 
             <div className="automate-subgrid">
               <div className="subgrid-item">
                 <span className="subgrid-icon">🤖</span>
-                <h4>Task Automation</h4>
-                <p>Automate data entry, report generation, and customer follow-ups effortlessly.</p>
+                <h4>{t('automatePage.section1.sub1Title')}</h4>
+                <p>{t('automatePage.section1.sub1Desc')}</p>
               </div>
 
               <div className="subgrid-item">
                 <span className="subgrid-icon">🧠</span>
-                <h4>AI Integration</h4>
-                <p>Leverage AI for smarter decision-making and optimized workflows across your organization.</p>
+                <h4>{t('automatePage.section1.sub2Title')}</h4>
+                <p>{t('automatePage.section1.sub2Desc')}</p>
               </div>
             </div>
           </div>
@@ -58,23 +59,22 @@ function AutomatePage() {
         {/* Section 2: Success Story */}
         <section className="automate-section layout-2col layout-2col-reverse">
           <div className="automate-text-content">
-            <span className="section-dash">Success Story</span>
-            <h3>Transforming Businesses: A Success Story in Automation</h3>
+            <span className="section-dash">{t('automatePage.section2.badge')}</span>
+            <h3>{t('automatePage.section2.title')}</h3>
             <p>
-              Discover how we helped a local business streamline operations through automation.
-              Our tailored solutions led to increased efficiency and significant cost savings.
+              {t('automatePage.section2.desc')}
             </p>
 
             <div className="automate-subgrid">
               <div className="subgrid-item">
-                <h4>The Challenge</h4>
-                <p>Identifying bottlenecks in the workflow that hindered productivity and growth.</p>
+                <h4>{t('automatePage.section2.sub1Title')}</h4>
+                <p>{t('automatePage.section2.sub1Desc')}</p>
               </div>
 
               <div className="subgrid-item">
-                <h4>The Solution</h4>
+                <h4>{t('automatePage.section2.sub2Title')}</h4>
                 <p>
-                  Implementing an automated system that streamlined processes and improved efficiency.
+                  {t('automatePage.section2.sub2Desc')}
                 </p>
               </div>
             </div>
@@ -88,26 +88,25 @@ function AutomatePage() {
         {/* Section 3: Unlock Power of Automation */}
         <section className="automate-section layout-2col">
           <div className="automate-text-content">
-            <h3>Unlock the Power of Automation for Your Business Success</h3>
+            <h3>{t('automatePage.section3.title')}</h3>
             <p>
-              Embrace automation to enhance your operational efficiency and drive growth. Experience
-              significant improvements in productivity, accuracy, and cost savings.
+              {t('automatePage.section3.desc')}
             </p>
 
             <ul className="icon-list">
               <li>
                 <span className="icon-list-icon">🚀</span>
                 <div>
-                  <strong>Boost</strong>
-                  <p style={{ margin: 0 }}>Increase productivity with streamlined processes and workflows.</p>
+                  <strong>{t('automatePage.section3.list1Title')}</strong>
+                  <p style={{ margin: 0 }}>{t('automatePage.section3.list1Desc')}</p>
                 </div>
               </li>
 
               <li>
                 <span className="icon-list-icon">🎯</span>
                 <div>
-                  <strong>Enhance</strong>
-                  <p style={{ margin: 0 }}>Achieve higher accuracy through automated tasks.</p>
+                  <strong>{t('automatePage.section3.list2Title')}</strong>
+                  <p style={{ margin: 0 }}>{t('automatePage.section3.list2Desc')}</p>
                 </div>
               </li>
             </ul>
@@ -123,12 +122,10 @@ function AutomatePage() {
 
           <div className="automate-text-content"
             style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px' }}>
-            <span className="section-dash">Automate</span>
-            <h2>Streamline Your Processes with Automation</h2>
+            <span className="section-dash">{t('automatePage.section4.badge')}</span>
+            <h2>{t('automatePage.section4.title')}</h2>
             <p>
-              Our automation process transforms your business operations, enhancing efficiency and
-              reducing manual effort. From consultation to implementation, we ensure a seamless
-              transition to automated solutions.
+              {t('automatePage.section4.desc')}
             </p>
           </div>
 
@@ -137,30 +134,30 @@ function AutomatePage() {
               <div className="automate-card-icon">
                 <span>☍</span>
               </div>
-              <h4>Understanding the Automation Journey</h4>
-              <p>We guide you through every step of the process.</p>
+              <h4>{t('automatePage.section4.grid1Title')}</h4>
+              <p>{t('automatePage.section4.grid1Desc')}</p>
             </div>
 
             <div className="automate-grid-card">
               <div className="automate-card-icon">
                 <span>☖</span>
               </div>
-              <h4>Initial Consultation: Identifying Your Needs</h4>
-              <p>We start by understanding your unique business challenges.</p>
+              <h4>{t('automatePage.section4.grid2Title')}</h4>
+              <p>{t('automatePage.section4.grid2Desc')}</p>
             </div>
 
             <div className="automate-grid-card">
               <div className="automate-card-icon">
                 <span>☍</span>
               </div>
-              <h4>Implementation: Bringing Your Vision to Life</h4>
-              <p>Our team executes the automation strategy tailored for you.</p>
+              <h4>{t('automatePage.section4.grid3Title')}</h4>
+              <p>{t('automatePage.section4.grid3Desc')}</p>
             </div>
           </div>
 
           <div className="automate-grid-links">
-            <a href="#" className="text-link">Learn More</a>
-            <a href="#" className="text-link">Sign Up</a>
+            <a href="#" className="text-link">{t('common.learnMore')}</a>
+            <a href="#" className="text-link">{t('common.signUp')}</a>
           </div>
         </section>
       </main>
@@ -169,15 +166,14 @@ function AutomatePage() {
       <section className="automate-cta-section">
         <div className="automate-cta-container">
           <div className="automate-cta-text">
-            <h2>Transform Your Business Today</h2>
+            <h2>{t('automatePage.cta.title')}</h2>
             <p>
-              Ready to streamline your processes? Contact us for a consultation on automation
-              solutions.
+              {t('automatePage.cta.desc')}
             </p>
           </div>
 
           <div className="automate-cta-buttons">
-            <a href="#" className="btn btn-primary">Learn More</a>
+            <a href="#" className="btn btn-primary">{t('common.learnMore')}</a>
           </div>
         </div>
       </section>

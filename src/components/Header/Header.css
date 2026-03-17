@@ -38,7 +38,45 @@
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+}
+
+/* New Premium Language Switcher Design */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  padding: 4px;
+  border-radius: 50px;
+  border: 1px solid #e2e8f0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.lang-switcher button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #64748b;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none !important;
+}
+
+.lang-switcher button.active {
+  background: #ffffff;
+  color: #3bbef4;
+  box-shadow: 0 2px 8px rgba(59, 190, 244, 0.2);
+}
+
+.lang-switcher button:hover:not(.active) {
+  color: #1e293b;
+}
+
+.lang-switcher span {
+  display: none; /* Removed the pipe separator */
 }
 
 .header-logo img {
