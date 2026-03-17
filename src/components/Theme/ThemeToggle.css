@@ -1,0 +1,22 @@
+.theme-toggle {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-dark);
+  transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+  background: var(--bg-medium);
+  border-color: var(--color-primary);
+}
+
+[data-theme='dark'] .theme-toggle {
+  border-color: #475569;
+}

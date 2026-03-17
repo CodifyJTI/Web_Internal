@@ -173,30 +173,6 @@ function IntegratePage() {
         </section>
       </main>
 
-      {/* Testimonial */}
-      <section className="integrate-testimonial-section">
-        <div className="testi-container">
-          <div className="testi-stars">★★★★★</div>
-
-          <blockquote className="testi-quote">
-            "The seamless integration exceeded our expectations!"
-          </blockquote>
-
-          <div className="testi-author-block">
-            <div className="author-info">
-              <span className="author-name">Alice Johnson</span>
-              <span className="author-title">CTO, Tech Solutions</span>
-            </div>
-
-            <div className="author-divider"></div>
-
-            <div className="client-logo-text">
-              <img src="/Logo_Codify.png" alt="Codify Logo" style={{ height: '30px' }} />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="integrate-cta-section">
         <div className="integrate-cta-container">

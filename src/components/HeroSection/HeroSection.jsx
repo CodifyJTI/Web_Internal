@@ -1,24 +1,13 @@
 import React from "react";
 import "./HeroSection.css";
+import heroData from "../../data/content/hero.json";
 
 function HeroSection() {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>We Simplify, Integrate, and Automate Your Operations.</h1>
-        <p>
-          We are a team of Senior Data and Software Experts dedicated to solving
-          your most challenging operational problems through custom technology
-          solutions.
-        </p>
-
-        <div className="chat-box">
-          <input
-            type="text"
-            placeholder="Let's talk with us"
-          />
-          <button>Send Chat</button>
-        </div>
+        <h1>{heroData.title}</h1>
+        <p>{heroData.subtitle}</p>
       </div>
     </section>
   );

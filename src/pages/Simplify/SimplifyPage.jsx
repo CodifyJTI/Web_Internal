@@ -3,7 +3,6 @@ import React from 'react';
 // --- PATH IMPOR SUDAH DIBENERIN ---
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
-import TestiSection from '../../components/Testi/TestiSection.jsx';
 import SimplifyFAQ from '../../components/FAQ/SimplifyFAQ.jsx';
 
 import './SimplifyPage.css';
@@ -137,7 +136,6 @@ function SimplifyPage() {
       </main>
 
       {/* Bagian Bawah */}
-      <TestiSection />
       <SimplifyFAQ />
 
       <Footer />

@@ -51,6 +51,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+[data-theme='dark'] {
+  --bg-light: #0f172a;
+  --bg-medium: #1e293b;
+  --text-dark: #f1f5f9;
+  --text-medium: #94a3b8;
+  --border-light: #1e293b;
+  --header-bg: rgba(15, 23, 42, 0.95);
+}
+
 body, html {
   margin: 0;
   padding: 0;

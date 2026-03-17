@@ -165,30 +165,6 @@ function AutomatePage() {
         </section>
       </main>
 
-      {/* Testimonial */}
-      <section className="automate-testimonial-section">
-        <div className="testi-container">
-          <div className="testi-stars">★★★★★</div>
-          <blockquote className="testi-quote">
-            "The automation solutions provided by this agency transformed our operations and
-            significantly increased our efficiency."
-          </blockquote>
-
-          <div className="testi-author-block">
-            <div className="author-info">
-              <span className="author-name">Rina Harune</span>
-              <span className="author-title">CEO, Tech Indo</span>
-            </div>
-
-            <div className="author-divider"></div>
-
-            <div className="client-logo-text">
-              <img src="/Logo_Codify.png" alt="Codify Logo" style={{ height: '30px' }} />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="automate-cta-section">
         <div className="automate-cta-container">

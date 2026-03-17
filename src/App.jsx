@@ -13,9 +13,7 @@ import PortfolioPage from './pages/Porto/PortofolioPage.jsx';
 import ContactPage from './pages/Contact/ContactPage.jsx';
 import PrivacyPolicy from './pages/Legal/PrivacyPolicy.jsx';
 import TermsOfService from './pages/Legal/TermsOfService.jsx';
-
-// Components
-import ChatWidget from './components/ChatWidget/ChatWidget.jsx';
+import NotFoundPage from './pages/NotFound/NotFoundPage.jsx';
 
 function App() {
   return (
@@ -39,8 +37,10 @@ function App() {
         {/* Legal */}
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
+
+        {/* Fallback */}
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      <ChatWidget />
     </>
   );
 }

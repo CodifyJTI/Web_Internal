@@ -7,8 +7,8 @@ import Footer from '../../components/Footer/Footer.jsx';
 import ServicesPageHero from '../../components/ServicesHero/ServicesPageHero.jsx';
 import ServicesDetails from '../../components/ServicesDetails/ServicesDetails.jsx';
 import FAQSection from '../../components/FAQ/FAQSection.jsx';
-import TestiSection from '../../components/Testi/TestiSection.jsx';
 import ContactCTA from '../../components/Contact/ContactCTA.jsx';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs.jsx';
 
 // Services data
 const servicesData = [
@@ -75,6 +75,9 @@ function ServicesPage() {
       <ServicesPageHero />
 
       <main className="services-content-wrapper">
+        <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 3rem' }}>
+          <Breadcrumbs />
+        </div>
         <div className="service-details-container">
           {servicesData.map(service => (
             <ServicesDetails
@@ -90,7 +93,6 @@ function ServicesPage() {
         </div>
       </main>
 
-      <TestiSection />
       <FAQSection />
       <ContactCTA />
       <Footer />

@@ -10,6 +10,7 @@ const ContactPage = () => {
     email: '',
     message: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [touched, setTouched] = useState({
     name: false,
     email: false,
@@ -32,11 +33,11 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Configuration for future email service integration
-    const receiverEmail = "<RECEIVER_EMAIL>"; 
+    // Ganti dengan ID Formspree Anda (buat di formspree.io)
+    const formspreeEndpoint = "https://formspree.io/f/mqaevepy"; 
     
     setTouched({
       name: true,
@@ -47,13 +48,26 @@ const ContactPage = () => {
     const isFormValid = formData.name && formData.email && formData.message;
 
     if (isFormValid) {
-      console.log(`Sending email to: ${receiverEmail}`);
-      console.log('Form Data:', formData);
-      
-      alert('Terima kasih! Pesan Anda telah dikirim ke tim Codify. Kami akan segera menghubungi Anda.');
-      
-      setFormData({ name: '', email: '', message: '' });
-      setTouched({ name: false, email: false, message: false });
+      setIsSubmitting(true);
+      try {
+        const response = await fetch(formspreeEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          alert('Terima kasih! Pesan Anda telah dikirim ke tim Codify. Kami akan segera menghubungi Anda.');
+          setFormData({ name: '', email: '', message: '' });
+          setTouched({ name: false, email: false, message: false });
+        } else {
+          alert('Maaf, terjadi kesalahan saat mengirim pesan. Silakan coba lagi nanti.');
+        }
+      } catch (error) {
+        alert('Terjadi kesalahan koneksi. Silakan periksa jaringan Anda.');
+      } finally {
+        setIsSubmitting(false);
+      }
     } else {
       alert('Silakan lengkapi semua bidang yang diperlukan.');
     }
@@ -130,8 +144,13 @@ const ContactPage = () => {
                   required
                   isTouched={touched.message}
                 />
-                <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
-                  Kirim Pesan
+                <button 
+                  type="submit" 
+                  className="btn btn-primary" 
+                  style={{ width: '100%' }}
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
                 </button>
               </form>
             </div>

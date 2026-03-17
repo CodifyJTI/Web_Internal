@@ -8,7 +8,7 @@ function SolutionCard({ title, description, icon, link }) {
     // Bungkus seluruh kartu dengan <Link>
     <Link to={link} className="solution-card-link">
       <div className="solution-card">
-        <img src={icon} alt={title} className="solution-icon" />
+        <img src={icon} alt={title} className="solution-icon" loading="lazy" />
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
