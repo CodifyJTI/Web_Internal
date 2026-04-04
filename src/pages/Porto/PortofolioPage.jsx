@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Import Komponen Global
@@ -9,136 +9,167 @@ import ContactCTA from '../../components/Contact/ContactCTA.jsx';
 // Import CSS Khusus Halaman Ini
 import './PortofolioPage.css';
 
+// Dummy Data Terstruktur
+const portfolioData = {
+  'Codify Simplify': {
+    categories: [
+      'Web Development',
+      'App Development',
+      'ERP System Development',
+      'Analytics Dashboard Development',
+      'AI Model & Chatbot Development',
+      'Custom Development'
+    ],
+    projects: {
+      'Web Development': [
+        { id: 1, title: 'E-commerce Modern 2024', desc: 'Platform e-commerce skalabel dengan performa tinggi dan UX yang dioptimalkan.', embed: '/tes.png' },
+        { id: 2, title: 'Corporate Portal XP', desc: 'Portal internal perusahaan untuk kolaborasi tim dan manajemen aset digital.', embed: '/tes.png' },
+        { id: 3, title: 'SaaS Landing Page', desc: 'Desain landing page modern untuk startup teknologi dengan konversi tinggi.', embed: '/tes.png' }
+      ],
+      'App Development': [
+        { id: 4, title: 'Fitness Tracker Pro', desc: 'Aplikasi mobile untuk memantau aktivitas kesehatan secara real-time.', embed: '/tes.png' },
+        { id: 5, title: 'Fintech Wallet', desc: 'Solusi pembayaran digital aman dengan integrasi multi-gateway.', embed: '/tes.png' }
+      ],
+      'ERP System Development': [
+        { id: 6, title: 'Supply Chain Manager', desc: 'Sistem ERP untuk mengelola inventaris dan logistik secara efisien.', embed: '/tes.png' }
+      ],
+      'Analytics Dashboard Development': [
+        { id: 7, title: 'Sales Analytics Suite', desc: 'Visualisasi data penjualan kompleks untuk pengambilan keputusan cepat.', embed: '/tes.png' }
+      ],
+      'AI Model & Chatbot Development': [
+        { id: 8, title: 'Customer Support AI', desc: 'Chatbot cerdas berbasis GPT untuk layanan pelanggan 24/7.', embed: '/tes.png' }
+      ],
+      'Custom Development': [
+        { id: 9, title: 'Custom IoT Dashboard', desc: 'Panel kontrol khusus untuk monitoring perangkat IoT industri.', embed: '/tes.png' }
+      ]
+    }
+  },
+  'Codify Integrate': {
+    categories: [
+      'Data Cleaning & Integration Services',
+      'Custom API Development'
+    ],
+    projects: {
+      'Data Cleaning & Integration Services': [
+        { id: 10, title: 'Legacy Data Migrator', desc: 'Integrasi data dari sistem lama ke arsitektur cloud modern.', embed: '/tes.png' }
+      ],
+      'Custom API Development': [
+        { id: 11, title: 'External Services API', desc: 'Pengembangan API kustom untuk menghubungkan berbagai platform pihak ketiga.', embed: '/tes.png' }
+      ]
+    }
+  },
+  'Codify Automate': {
+    categories: [
+      'Automation Workflow Services'
+    ],
+    projects: {
+      'Automation Workflow Services': [
+        { id: 12, title: 'Auto-Billing System', desc: 'Otomatisasi proses penagihan dan pengiriman invoice ke pelanggan.', embed: '/tes.png' },
+        { id: 13, title: 'Marketing Workflow Bot', desc: 'Otomatisasi kampanye email dan posting media sosial.', embed: '/tes.png' }
+      ]
+    }
+  }
+};
+
 function PortfolioPage() {
   const { t } = useTranslation();
+  
+  const mainTabs = Object.keys(portfolioData);
+  const [activeMainTab, setActiveMainTab] = useState(mainTabs[0]);
+  const [activeSubTab, setActiveSubTab] = useState(portfolioData[mainTabs[0]].categories[0]);
+  
+  const carouselRef = useRef(null);
+
+  // Reset Sub Tab when Main Tab changes
+  useEffect(() => {
+    setActiveSubTab(portfolioData[activeMainTab].categories[0]);
+  }, [activeMainTab]);
+
+  // Handle Main Tab Change
+  const handleMainTabChange = (tab) => {
+    setActiveMainTab(tab);
+  };
+
+  // Current Projects to Display
+  const currentProjects = portfolioData[activeMainTab].projects[activeSubTab] || [];
 
   return (
-    <>
+    <div className="portfolio-page">
       <Header />
 
       <main>
-        {/* === SECTION 1: HERO & PROJECTS === */}
-        <section className="portfolio-hero-section">
-          <div className="portfolio-container">
-            <div className="portfolio-header">
-              <h4 className="section-tag">{t('portfolioPage.hero.tag')}</h4>
-              <h1>{t('portfolioPage.hero.title')}</h1>
-              <p>{t('portfolioPage.hero.desc')}</p>
-            </div>
-
-            {/* Grid Project (2 Kolom) */}
-            <div className="projects-grid">
-              {/* Card 1 */}
-              <div className="project-card">
-                <div className="project-image-wrapper">
-                  <img src="/tes.png" alt="E-commerce Project" />
-                </div>
-                <div className="project-content">
-                  <h3>{t('portfolioPage.projects.1.title')}</h3>
-                  <p>{t('portfolioPage.projects.1.desc')}</p>
-                  <div className="project-tags">
-                    <span>{t('portfolioPage.projects.1.tag1')}</span>
-                    <span>{t('portfolioPage.projects.1.tag2')}</span>
-                  </div>
-                  <a href="#" className="read-more-link">{t('portfolioPage.hero.viewProject')}</a>
-                </div>
-              </div>
-
-              {/* Card 2 */}
-              <div className="project-card">
-                <div className="project-image-wrapper">
-                  <img src="/tes.png" alt="Data Integration Project" />
-                </div>
-                <div className="project-content">
-                  <h3>{t('portfolioPage.projects.2.title')}</h3>
-                  <p>{t('portfolioPage.projects.2.desc')}</p>
-                  <div className="project-tags">
-                    <span>{t('portfolioPage.projects.2.tag1')}</span>
-                    <span>{t('portfolioPage.projects.2.tag2')}</span>
-                  </div>
-                  <a href="#" className="read-more-link">{t('portfolioPage.hero.viewProject')}</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="view-all-wrapper">
-              <button className="view-all-btn">{t('portfolioPage.hero.viewAll')}</button>
-            </div>
+        <section className="portfolio-hero">
+          <div className="container">
+            <h1>Portfolio</h1>
+            <p className="hero-subtitle">Eksplorasi karya terbaik kami dalam mendigitalisasi dan mengoptimalkan bisnis.</p>
           </div>
         </section>
 
-        {/* === SECTION 2: DIVERSE INDUSTRIES === */}
-        <section className="industries-section">
-          <div className="portfolio-container">
-            <div className="industries-header">
-              <h2>{t('portfolioPage.industries.title')}</h2>
-              <p>
-                {t('portfolioPage.industries.desc')}
-              </p>
-            </div>
+        <section className="portfolio-tabs-section">
+          <div className="container">
+            {/* Level 1: Main Tabs */}
+            <nav className="main-tabs-nav">
+              {mainTabs.map((tab) => (
+                <button
+                  key={tab}
+                  className={`tab-item main-tab ${activeMainTab === tab ? 'active' : ''}`}
+                  onClick={() => handleMainTabChange(tab)}
+                >
+                  {tab}
+                </button>
+              ))}
+            </nav>
 
-            <div className="industries-grid">
-              {/* Industry 1 */}
-              <div className="industry-card">
-                <img src="/tes.png" alt="Healthcare" className="industry-icon" />
-                <h3>{t('portfolioPage.industries.items.1.title')}</h3>
-                <p>{t('portfolioPage.industries.items.1.desc')}</p>
-                <a href="#" className="learn-more-link">{t('common.learnMore')} &gt;</a>
-              </div>
-
-              {/* Industry 2 */}
-              <div className="industry-card">
-                <img src="/tes.png" alt="Finance" className="industry-icon" />
-                <h3>{t('portfolioPage.industries.items.2.title')}</h3>
-                <p>{t('portfolioPage.industries.items.2.desc')}</p>
-                <a href="#" className="learn-more-link">{t('common.learnMore')} &gt;</a>
-              </div>
-
-              {/* Industry 3 */}
-              <div className="industry-card">
-                <img src="/tes.png" alt="Retail" className="industry-icon" />
-                <h3>{t('portfolioPage.industries.items.3.title')}</h3>
-                <p>{t('portfolioPage.industries.items.3.desc')}</p>
-                <a href="#" className="learn-more-link">{t('common.learnMore')} &gt;</a>
-              </div>
-            </div>
+            {/* Level 2: Sub Tabs */}
+            <nav className="sub-tabs-nav">
+              {portfolioData[activeMainTab].categories.map((subTab) => (
+                <button
+                  key={subTab}
+                  className={`tab-item sub-tab ${activeSubTab === subTab ? 'active' : ''}`}
+                  onClick={() => setActiveSubTab(subTab)}
+                >
+                  {subTab}
+                </button>
+              ))}
+            </nav>
           </div>
         </section>
 
-        {/* === SECTION 3: CASE STUDY HIGHLIGHT === */}
-        <section className="case-study-section">
-          <div className="portfolio-container case-study-layout">
-            {/* Kiri: Teks */}
-            <div className="case-study-text">
-              <h4 className="section-tag">{t('portfolioPage.caseStudy.tag')}</h4>
-              <h2>{t('portfolioPage.caseStudy.title')}</h2>
-              <p className="case-study-intro">
-                {t('portfolioPage.caseStudy.intro')}
-              </p>
-
-              <div className="case-details">
-                <div className="detail-box">
-                  <h4>{t('portfolioPage.caseStudy.challengeTitle')}</h4>
-                  <p>{t('portfolioPage.caseStudy.challengeDesc')}</p>
+        <section className="portfolio-display-section">
+          <div className="container">
+            <div className="carousel-container" ref={carouselRef}>
+              {currentProjects.length > 0 ? (
+                <div className="projects-carousel">
+                  {currentProjects.map((project) => (
+                    <div key={project.id} className="project-card-v2">
+                      <div className="project-info">
+                        <h3>{project.title}</h3>
+                        <p>{project.desc}</p>
+                      </div>
+                      <div className="project-embed-container">
+                        <img 
+                          src={project.embed} 
+                          alt={project.title} 
+                          loading="lazy" 
+                          className="project-thumbnail"
+                        />
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                <div className="detail-box">
-                  <h4>{t('portfolioPage.caseStudy.solutionTitle')}</h4>
-                  <p>{t('portfolioPage.caseStudy.solutionDesc')}</p>
+              ) : (
+                <div className="no-projects">
+                  <p>Belum ada proyek di kategori ini.</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Kanan: Gambar */}
-            <div className="case-study-image">
-              <img src="/tes.png" alt="Case Study Illustration" />
+              )}
             </div>
           </div>
         </section>
       </main>
+
       <ContactCTA />
-      
       <Footer />
-    </>
+    </div>
   );
 }
 
