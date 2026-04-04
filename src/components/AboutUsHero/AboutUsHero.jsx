@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './AboutUsHero.css'; 
 
 const AboutHero = () => {
@@ -11,8 +12,8 @@ const AboutHero = () => {
           At our core, we empower Indonesian businesses to embrace digital transformation. Our mission is to simplify, integrate, and automate processes for sustainable growth.
         </p>
         <div className="about-hero-buttons">
-          <a href="#learn-more" className="btn btn-primary">Learn More</a>
-          <a href="#contact" className="btn btn-secondary-on-dark">Contact</a>
+          <Link to="/portfolio" className="btn btn-primary">Learn More</Link>
+          <Link to="/contact" className="btn btn-secondary-on-dark">Contact</Link>
         </div>
 
       </div>

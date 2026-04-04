@@ -1,17 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Expertise.css';
 
-function ExpertiseCard({ title, description }) {
+const ExpertiseCard = ({ title, description }) => {
   return (
     <div className="expertise-card">
-      <div className="expertise-image-placeholder">
-      </div> 
-      
       <h3>{title}</h3>
       <p>{description}</p>
-      <a href="#" className="learn-more-link">Learn More &gt;</a> 
+      <Link to="/portfolio" className="learn-more-link">Learn More &gt;</Link>
     </div>
   );
-}
+};
 
 export default ExpertiseCard;

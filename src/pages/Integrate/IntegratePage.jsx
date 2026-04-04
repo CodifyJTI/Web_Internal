@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './IntegratePage.css';
@@ -17,8 +18,8 @@ function IntegratePage() {
             Unlock the power of your data with our seamless system and data integration solutions.
           </p>
           <div className="hero-buttons">
-            <a href="#" className="btn btn-primary">Learn More</a>
-            <a href="#" className="btn btn-secondary">Contact</a>
+            <Link to="/portfolio" className="btn btn-primary">Learn More</Link>
+            <Link to="/contact" className="btn btn-secondary">Contact</Link>
           </div>
         </div>
       </section>
@@ -76,7 +77,7 @@ function IntegratePage() {
               Discover how we transformed a client's data management process through effective integration. Our tailored solution streamlined operations and enhanced data accessibility, driving significant business growth.
             </p>
 
-            <a href="#" className="text-link">Learn More</a>
+            <Link to="/portfolio" className="text-link">Learn More</Link>
           </div>
 
           <div className="integrate-image-content">
@@ -123,8 +124,8 @@ function IntegratePage() {
           </div>
 
           <div className="integrate-grid-links">
-            <a href="#" className="text-link">Learn More</a>
-            <a href="#" className="text-link">Contact</a>
+            <Link to="/portfolio" className="text-link">Learn More</Link>
+            <Link to="/contact" className="text-link">Contact</Link>
           </div>
         </section>
       </main>
@@ -138,8 +139,8 @@ function IntegratePage() {
           </div>
 
           <div className="integrate-cta-buttons">
-            <a href="#" className="btn btn-primary">Get Started</a>
-            <a href="#" className="btn btn-secondary">Learn More</a>
+            <Link to="/contact" className="btn btn-primary">Get Started</Link>
+            <Link to="/portfolio" className="btn btn-secondary">Learn More</Link>
           </div>
         </div>
       </section>

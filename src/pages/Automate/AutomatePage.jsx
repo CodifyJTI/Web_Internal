@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './AutomatePage.css';
@@ -17,8 +18,7 @@ function AutomatePage() {
             Unlock efficiency through AI-driven automation tailored to your unique business processes and goals.
           </p>
           <div className="hero-buttons">
-            <a href="#" className="btn btn-primary">Learn More</a>
-            <a href="#" className="btn btn-secondary">Sign Up</a>
+            <Link to="/portfolio" className="btn btn-primary">Learn More</Link>
           </div>
         </div>
       </section>
@@ -153,8 +153,7 @@ function AutomatePage() {
           </div>
 
           <div className="automate-grid-links">
-            <a href="#" className="text-link">Learn More</a>
-            <a href="#" className="text-link">Sign Up</a>
+            <Link to="/portfolio" className="text-link">Learn More</Link>
           </div>
         </section>
       </main>
@@ -170,7 +169,7 @@ function AutomatePage() {
           </div>
 
           <div className="automate-cta-buttons">
-            <a href="#" className="btn btn-primary">Learn More</a>
+            <Link to="/portfolio" className="btn btn-primary">Learn More</Link>
           </div>
         </div>
       </section>

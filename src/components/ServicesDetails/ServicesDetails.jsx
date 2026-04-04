@@ -2,34 +2,38 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ServicesDetails.css';
 
-function ServicesDetail({ id, subtitle, title, image, description, subServices }) {
+const ServicesDetails = ({ id, subtitle, title, image, description, subServices }) => {
   return (
-    <section id={id} className="service-detail-section">
-      <div className="service-detail-content"> 
-        <span className="service-subtitle">{subtitle}</span>
-        <h2 className="service-title">{title}</h2>
-        <p className="service-description">{description}</p>
+    <section id={id} className="services-details-section">
+      <div className="services-details-container">
+        <div className="services-details-content">
+          <div className="services-details-text">
+            <span className="subtitle-badge">{subtitle}</span>
+            <h2>{title}</h2>
+            <p className="main-description">{description}</p>
+          </div>
+          <div className="services-details-image">
+            <img src={image} alt={title} loading="lazy" />
+          </div>
+        </div>
 
         <div className="sub-services-grid">
-          {subServices.map((service, index) => (
+          {subServices.map((sub, index) => (
             <div key={index} className="sub-service-card">
-              <h3>{service.title}</h3>
-              <p>{service.desc}</p>
+              <h3>{sub.title}</h3>
+              <p>{sub.desc}</p>
             </div>
           ))}
         </div>
-        
-        <Link to={`/services/${id}`} className="learn-more-link">
-          Learn More about {subtitle}
-        </Link>
 
-      </div>
-
-      <div className="service-detail-image">
-        <img src={image} alt={`${subtitle} service illustration`} />
+        <div className="services-details-cta">
+          <Link to="/portfolio" className="btn btn-primary">
+            Learn More about {subtitle}
+          </Link>
+        </div>
       </div>
     </section>
   );
-}
+};
 
-export default ServicesDetail;
+export default ServicesDetails;

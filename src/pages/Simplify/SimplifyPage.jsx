@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './SimplifyPage.css';
@@ -17,8 +18,7 @@ function SimplifyPage() {
             Transform your ideas into reality with tailored software solutions designed for your unique business needs.
           </p>
           <div className="hero-buttons">
-            <a href="#" className="btn btn-primary">Learn More</a>
-            <a href="#" className="btn btn-secondary">Get Started</a>
+            <Link to="/portfolio" className="btn btn-primary">Learn More</Link>
           </div>
         </div>
       </section>
@@ -61,8 +61,8 @@ function SimplifyPage() {
             </div>
 
             <div className="simplify-links">
-              <a href="#" className="text-link">Learn More</a>
-              <a href="#" className="text-link">Contact</a>
+              <Link to="/portfolio" className="text-link">Learn More</Link>
+              <Link to="/contact" className="text-link">Contact</Link>
             </div>
           </div>
 
