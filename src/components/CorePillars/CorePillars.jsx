@@ -1,11 +1,8 @@
 // CorePillars.jsx
 import React from "react";
-import { useTranslation } from "react-i18next";
 import "./CorePillars.css";
 
 export default function SectionCorePillar() {
-  const { t } = useTranslation();
-
   return (
     <>
       <section className="empowering-section">
@@ -15,10 +12,10 @@ export default function SectionCorePillar() {
               <span className="empowering-icon-text">12<br />36</span>
             </div>
             <h2>
-              {t('aboutUs.corePillars.empowering.title')}
+              Empowering Indonesian Businesses Through Innovative Digital Transformation Solutions
             </h2>
             <p>
-              {t('aboutUs.corePillars.empowering.desc')}
+              At our software agency, we leverage our deep expertise in data strategy and technical execution to drive digital transformation. Our unique approach combines custom development, seamless integration, and intelligent automation to simplify your business processes.
             </p>
           </div>
 
@@ -36,28 +33,28 @@ export default function SectionCorePillar() {
         <div className="core-pillars-container">
           <div className="core-pillars-text">
             <h2>
-              {t('aboutUs.corePillars.harnessing.title')}
+              Harnessing Data Insights for Exceptional Software Solutions
             </h2>
             <p>
-              {t('aboutUs.corePillars.harnessing.desc')}
+              Our agency uniquely blends data strategy with technical execution to drive digital transformation. This powerful combination enables us to create tailored solutions that meet the specific needs of Indonesian businesses.
             </p>
             <div className="pillars-list">
               <div className="pillar-item">
-                <img src="/tes.png" alt={t('aboutUs.corePillars.harnessing.items.1.title')} width={50} height={50} />
+                <img src="/tes.png" alt="Data Strategy" width={50} height={50} />
                 <div>
-                  <h3>{t('aboutUs.corePillars.harnessing.items.1.title')}</h3>
+                  <h3>Data Strategy</h3>
                   <p>
-                    {t('aboutUs.corePillars.harnessing.items.1.desc')}
+                    Transforming raw data into actionable insights for informed decision making.
                   </p>
                 </div>
               </div>
 
               <div className="pillar-item">
-                <img src="/tes.png" alt={t('aboutUs.corePillars.harnessing.items.2.title')} width={50} height={50} />
+                <img src="/tes.png" alt="Technical Execution" width={50} height={50} />
                 <div>
-                  <h3>{t('aboutUs.corePillars.harnessing.items.2.title')}</h3>
+                  <h3>Technical Execution</h3>
                   <p>
-                    {t('aboutUs.corePillars.harnessing.items.2.desc')}
+                    Delivering robust software solutions that integrate seamlessly with existing systems.
                   </p>
                 </div>
               </div>

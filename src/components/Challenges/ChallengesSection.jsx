@@ -1,41 +1,38 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import ChallengeCard from './ChallengeCard';
 import './Challenges.css';
 
 function ChallengesSection() {
-  const { t } = useTranslation();
-  
   const challenges = [
     {
       id: 1,
-      title: t('challenges.items.1.title'),
-      description: t('challenges.items.1.desc'),
+      title: "Scattered Data",
+      description: "Data across multiple spreadsheets and systems",
       icon: "/scattereddata.png"
     },
     {
       id: 2,
-      title: t('challenges.items.2.title'),
-      description: t('challenges.items.2.desc'),
+      title: "Manual Work",
+      description: "From wasting hours on repetitive tasks?",
       icon: "/manualwork.png"
     },
     {
       id: 3,
-      title: t('challenges.items.3.title'),
-      description: t('challenges.items.3.desc'),
+      title: "Inefficient Processes",
+      description: "Legacy systems slowing down your growth?",
       icon: "/inefficientprocesses.png"
     },
     {
       id: 4,
-      title: t('challenges.items.4.title'),
-      description: t('challenges.items.4.desc'),
+      title: "Lack of insights",
+      description: "Struggling to get clear, actionable insights from your data?",
       icon: "/lackinsights.png"
     }
   ];
 
   return (
     <section className="challenges-section">
-      <h2 className="section-heading">{t('challenges.heading')}</h2>
+      <h2 className="section-heading">Is Your Business Facing These Challenges?</h2>
       <div className="challenges-grid">
         {challenges.map(challenge => (
           <ChallengeCard

@@ -1,16 +1,9 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-
-// --- PATH IMPOR SUDAH DIBENERIN ---
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
-import SimplifyFAQ from '../../components/FAQ/SimplifyFAQ.jsx';
-
 import './SimplifyPage.css';
 
 function SimplifyPage() {
-  const { t } = useTranslation();
-
   return (
     <div className="simplify-page">
       <Header />
@@ -18,118 +11,108 @@ function SimplifyPage() {
       {/* Hero Section */}
       <section className="simplify-hero">
         <div className="simplify-hero-content">
-          <span>{t('simplifyPage.hero.badge')}</span>
-          <h1>{t('simplifyPage.hero.title')}</h1>
+          <span>Simplify</span>
+          <h1>Custom Development Solutions</h1>
           <p>
-            {t('simplifyPage.hero.desc')}
+            Transform your ideas into reality with tailored software solutions designed for your unique business needs.
           </p>
-
           <div className="hero-buttons">
-            <a href="#" className="btn btn-primary">{t('common.learnMore')}</a>
-            <a href="#" className="btn btn-secondary">{t('common.getStarted')}</a>
+            <a href="#" className="btn btn-primary">Learn More</a>
+            <a href="#" className="btn btn-secondary">Get Started</a>
           </div>
         </div>
       </section>
 
       <main className="simplify-main-content">
 
-        {/* Section 1 */}
+        {/* Section 1: Streamline Operations */}
         <section className="simplify-section layout-2col">
           <div className="simplify-text-content">
-            <h2>
-              {t('simplifyPage.section1.title')}
-            </h2>
+            <h2>Streamline Your Operations with Tailored Software Solutions for Maximum Efficiency</h2>
             <p>
-              {t('simplifyPage.section1.desc')}
+              In today's fast-paced business environment, simplifying processes is crucial for success. Our custom software development services empower you to eliminate inefficiencies and enhance productivity, allowing you to focus on what truly matters.
             </p>
           </div>
 
           <div className="simplify-image-content">
-            <img src="/tes.png" alt="Streamline Operations" />
+            <img src="https://via.placeholder.com/500x400" alt="Streamline Operations" />
           </div>
         </section>
 
-        {/* Section 2 */}
+        {/* Section 2: Success Story */}
         <section className="simplify-section layout-2col layout-2col-reverse">
           <div className="simplify-text-content">
-            <span className="section-dash">{t('simplifyPage.section2.badge')}</span>
-            <h3>{t('simplifyPage.section2.title')}</h3>
+            <span className="section-dash">Success</span>
+            <h3>Transforming Ideas into Custom Solutions</h3>
             <p>
-              {t('simplifyPage.section2.desc')}
+              Our team successfully delivered a custom software solution that streamlined operations for a local client. This project exemplifies our commitment to simplifying complex challenges through tailored development.
             </p>
 
-            <div className="success-subgrid">
+            <div className="simplify-subgrid">
               <div className="subgrid-item">
-                <span className="subgrid-icon">📄</span>
-                <h4>{t('simplifyPage.section2.sub1Title')}</h4>
-                <p>{t('simplifyPage.section2.sub1Desc')}</p>
+                <h4>Project Overview</h4>
+                <p>A comprehensive software solution tailored for enhanced operational efficiency.</p>
               </div>
 
               <div className="subgrid-item">
-                <span className="subgrid-icon">💬</span>
-                <h4>{t('simplifyPage.section2.sub2Title')}</h4>
-                <p>{t('simplifyPage.section2.sub2Desc')}</p>
+                <h4>Client Feedback</h4>
+                <p>The solution exceeded our expectations and transformed our workflow.</p>
               </div>
             </div>
 
-            <a href="#" className="text-link">{t('common.learnMore')}</a>
-            <a href="#" className="text-link">{t('common.contact')}</a>
+            <div className="simplify-links">
+              <a href="#" className="text-link">Learn More</a>
+              <a href="#" className="text-link">Contact</a>
+            </div>
           </div>
 
           <div className="simplify-image-content">
-            <img src="/gambar1.png" alt="Transforming Ideas" />
+            <img src="https://via.placeholder.com/500x400" alt="Success Story" />
           </div>
         </section>
 
-        {/* Section 3 */}
+        {/* Section 3: Ideas into Reality */}
         <section className="simplify-section layout-2col">
           <div className="simplify-text-content">
-            <h3>{t('simplifyPage.section3.title')}</h3>
+            <h3>Transform Your Ideas into Reality with Our Custom Development Solutions</h3>
             <p>
-              {t('simplifyPage.section3.desc')}
+              Our team combines deep data insights with robust technical skills to create tailored software solutions. We focus on understanding your unique challenges to deliver exceptional results.
             </p>
 
             <ul className="icon-list">
               <li>
                 <span className="icon-list-icon">✓</span>
-                <p>{t('simplifyPage.section3.list1')}</p>
+                <p>Agile methodologies for rapid development and deployment.</p>
               </li>
+
               <li>
                 <span className="icon-list-icon">✓</span>
-                <p>{t('simplifyPage.section3.list2')}</p>
+                <p>User-centered design to enhance user experience.</p>
               </li>
+
               <li>
                 <span className="icon-list-icon">✓</span>
-                <p>{t('simplifyPage.section3.list3')}</p>
+                <p>Continuous integration for seamless updates and improvements.</p>
               </li>
             </ul>
           </div>
 
           <div className="simplify-image-content">
-            <img src="/gambar2.png" alt="Transform Your Ideas" />
+            <img src="https://via.placeholder.com/500x400" alt="Ideas into Reality" />
           </div>
         </section>
 
-        {/* Section 4 */}
-        <section className="simplify-section layout-2col layout-2col-reverse">
-          <div className="simplify-text-content">
-            <h3>
-              {t('simplifyPage.section4.title')}
-            </h3>
+        {/* Section 4: 3 Column Grid (Optional/Placeholder) */}
+        <section className="simplify-section simplify-grid-section">
+          <div className="simplify-text-content"
+            style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+            <h2>Unlock Efficiency: Transform Your Business by Simplifying Complex Processes</h2>
             <p>
-              {t('simplifyPage.section4.desc')}
+              Simplifying your processes leads to significant improvements in efficiency and productivity. By reducing complexity, you can save costs and focus on what truly matters — growing your business.
             </p>
           </div>
-
-          <div className="simplify-image-content">
-            <img src="/gambar3.png" alt="Unlock Efficiency" />
-          </div>
         </section>
-
       </main>
-
-      {/* Bagian Bawah */}
-      <SimplifyFAQ />
 
       <Footer />
     </div>

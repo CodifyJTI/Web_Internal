@@ -1,25 +1,22 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import './Milestones.css';
 
 function Milestones() {
-  const { t } = useTranslation();
-
   const milestonesData = [
     {
       year: '2022',
-      title: t('aboutUs.milestones.items.1.title'),
-      description: t('aboutUs.milestones.items.1.desc'),
+      title: 'Founding Year',
+      description: 'Founded in 2022, our agency began with a vision to transform businesses through technology. We started with a small team of dedicated professionals.',
     },
     {
       year: '2023',
-      title: t('aboutUs.milestones.items.2.title'),
-      description: t('aboutUs.milestones.items.2.desc'),
+      title: 'First Major Client Acquisition',
+      description: 'In 2023, we launched our first major project, showcasing our capabilities in custom software development. This project set the foundation for future successes.',
     },
     {
       year: '2024',
-      title: t('aboutUs.milestones.items.3.title'),
-      description: t('aboutUs.milestones.items.3.desc'),
+      title: 'Product Development Expansion',
+      description: 'We expanded our services to include full-cycle product development, helping startups and enterprises build and scale their digital products from scratch.',
     },
   ];
 
@@ -27,7 +24,7 @@ function Milestones() {
     <section className="milestones-section">
       <div className="milestones-container">
         
-        <h2 className="section-title">{t('aboutUs.milestones.heading')}</h2>
+        <h2 className="section-title">Our Journey: Key Milestones</h2>
         <div className="timeline-wrapper">
           {milestonesData.map((item, index) => (
             
@@ -46,12 +43,12 @@ function Milestones() {
         </div>
 
         <div className="future-vision-card">
-          <h3>{t('aboutUs.milestones.future.title')}</h3>
+          <h3>Our Vision for the Future</h3>
           <p>
-            {t('aboutUs.milestones.future.desc')}
+            We envision a future where technology seamlessly integrates with business processes. Our mission is to lead this transformation with innovative solutions.
           </p>
           <div className="future-cta">
-            <button className="cta-button">{t('aboutUs.milestones.future.button')}</button>
+            <button className="cta-button">See Our Roadmap</button>
           </div>
         </div>
 

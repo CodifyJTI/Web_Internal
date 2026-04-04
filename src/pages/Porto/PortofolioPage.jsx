@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
 
 // Import Komponen Global
 import Header from '../../components/Header/Header.jsx';
@@ -9,7 +8,7 @@ import ContactCTA from '../../components/Contact/ContactCTA.jsx';
 // Import CSS Khusus Halaman Ini
 import './PortofolioPage.css';
 
-// Dummy Data Terstruktur
+// Dummy Data Terstruktur - Fully English
 const portfolioData = {
   'Codify Simplify': {
     categories: [
@@ -22,25 +21,25 @@ const portfolioData = {
     ],
     projects: {
       'Web Development': [
-        { id: 1, title: 'E-commerce Modern 2024', desc: 'Platform e-commerce skalabel dengan performa tinggi dan UX yang dioptimalkan.', embed: '/tes.png' },
-        { id: 2, title: 'Corporate Portal XP', desc: 'Portal internal perusahaan untuk kolaborasi tim dan manajemen aset digital.', embed: '/tes.png' },
-        { id: 3, title: 'SaaS Landing Page', desc: 'Desain landing page modern untuk startup teknologi dengan konversi tinggi.', embed: '/tes.png' }
+        { id: 1, title: 'Modern E-commerce 2024', desc: 'Scalable e-commerce platform with high performance and optimized UX.', embed: '/tes.png' },
+        { id: 2, title: 'Corporate Portal XP', desc: 'Internal corporate portal for team collaboration and digital asset management.', embed: '/tes.png' },
+        { id: 3, title: 'SaaS Landing Page', desc: 'Modern landing page design for tech startups with high conversion rates.', embed: '/tes.png' }
       ],
       'App Development': [
-        { id: 4, title: 'Fitness Tracker Pro', desc: 'Aplikasi mobile untuk memantau aktivitas kesehatan secara real-time.', embed: '/tes.png' },
-        { id: 5, title: 'Fintech Wallet', desc: 'Solusi pembayaran digital aman dengan integrasi multi-gateway.', embed: '/tes.png' }
+        { id: 4, title: 'Fitness Tracker Pro', desc: 'Mobile application for monitoring health activities in real-time.', embed: '/tes.png' },
+        { id: 5, title: 'Fintech Wallet', desc: 'Secure digital payment solution with multi-gateway integration.', embed: '/tes.png' }
       ],
       'ERP System Development': [
-        { id: 6, title: 'Supply Chain Manager', desc: 'Sistem ERP untuk mengelola inventaris dan logistik secara efisien.', embed: '/tes.png' }
+        { id: 6, title: 'Supply Chain Manager', desc: 'ERP system to manage inventory and logistics efficiently.', embed: '/tes.png' }
       ],
       'Analytics Dashboard Development': [
-        { id: 7, title: 'Sales Analytics Suite', desc: 'Visualisasi data penjualan kompleks untuk pengambilan keputusan cepat.', embed: '/tes.png' }
+        { id: 7, title: 'Sales Analytics Suite', desc: 'Visualization of complex sales data for quick decision making.', embed: '/tes.png' }
       ],
       'AI Model & Chatbot Development': [
-        { id: 8, title: 'Customer Support AI', desc: 'Chatbot cerdas berbasis GPT untuk layanan pelanggan 24/7.', embed: '/tes.png' }
+        { id: 8, title: 'Customer Support AI', desc: 'Intelligent GPT-based chatbot for 24/7 customer service.', embed: '/tes.png' }
       ],
       'Custom Development': [
-        { id: 9, title: 'Custom IoT Dashboard', desc: 'Panel kontrol khusus untuk monitoring perangkat IoT industri.', embed: '/tes.png' }
+        { id: 9, title: 'Custom IoT Dashboard', desc: 'Custom control panel for monitoring industrial IoT devices.', embed: '/tes.png' }
       ]
     }
   },
@@ -51,10 +50,10 @@ const portfolioData = {
     ],
     projects: {
       'Data Cleaning & Integration Services': [
-        { id: 10, title: 'Legacy Data Migrator', desc: 'Integrasi data dari sistem lama ke arsitektur cloud modern.', embed: '/tes.png' }
+        { id: 10, title: 'Legacy Data Migrator', desc: 'Integrating data from legacy systems to modern cloud architecture.', embed: '/tes.png' }
       ],
       'Custom API Development': [
-        { id: 11, title: 'External Services API', desc: 'Pengembangan API kustom untuk menghubungkan berbagai platform pihak ketiga.', embed: '/tes.png' }
+        { id: 11, title: 'External Services API', desc: 'Custom API development to connect various third-party platforms.', embed: '/tes.png' }
       ]
     }
   },
@@ -64,16 +63,14 @@ const portfolioData = {
     ],
     projects: {
       'Automation Workflow Services': [
-        { id: 12, title: 'Auto-Billing System', desc: 'Otomatisasi proses penagihan dan pengiriman invoice ke pelanggan.', embed: '/tes.png' },
-        { id: 13, title: 'Marketing Workflow Bot', desc: 'Otomatisasi kampanye email dan posting media sosial.', embed: '/tes.png' }
+        { id: 12, title: 'Auto-Billing System', desc: 'Automating billing processes and sending invoices to customers.', embed: '/tes.png' },
+        { id: 13, title: 'Marketing Workflow Bot', desc: 'Automating email campaigns and social media posting.', embed: '/tes.png' }
       ]
     }
   }
 };
 
 function PortfolioPage() {
-  const { t } = useTranslation();
-  
   const mainTabs = Object.keys(portfolioData);
   const [activeMainTab, setActiveMainTab] = useState(mainTabs[0]);
   const [activeSubTab, setActiveSubTab] = useState(portfolioData[mainTabs[0]].categories[0]);
@@ -101,7 +98,7 @@ function PortfolioPage() {
         <section className="portfolio-hero">
           <div className="container">
             <h1>Portfolio</h1>
-            <p className="hero-subtitle">Eksplorasi karya terbaik kami dalam mendigitalisasi dan mengoptimalkan bisnis.</p>
+            <p className="hero-subtitle">Explore our best work in digitalizing and optimizing businesses.</p>
           </div>
         </section>
 
@@ -159,7 +156,7 @@ function PortfolioPage() {
                 </div>
               ) : (
                 <div className="no-projects">
-                  <p>Belum ada proyek di kategori ini.</p>
+                  <p>No projects in this category yet.</p>
                 </div>
               )}
             </div>

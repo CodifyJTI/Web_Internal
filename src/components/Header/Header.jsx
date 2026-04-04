@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import './Header.css';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,33 +26,18 @@ function Header() {
         <div className="header-actions">
           <nav className="header-nav">
             <NavLink to="/aboutUs" className={({ isActive }) => (isActive ? 'active' : '')}>
-              {t('nav.about')}
+              About Us
             </NavLink>
             <NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : '')}>
-              {t('nav.services')}
+              Services
             </NavLink>
             <NavLink to="/portfolio" className={({ isActive }) => (isActive ? 'active' : '')}>
-              {t('nav.portfolio')}
+              Portfolio
             </NavLink>
             <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
-              {t('nav.contact')}
+              Contact
             </NavLink>
           </nav>
-
-          <div className="lang-switcher">
-            <button 
-              className={i18n.language.startsWith('id') ? 'active' : ''} 
-              onClick={() => changeLanguage('id')}
-            >
-              ID
-            </button>
-            <button 
-              className={i18n.language.startsWith('en') ? 'active' : ''} 
-              onClick={() => changeLanguage('en')}
-            >
-              EN
-            </button>
-          </div>
         </div>
 
       </div>

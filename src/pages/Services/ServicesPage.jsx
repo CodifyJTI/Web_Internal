@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import './ServicesPage.css';
 
 // Import components
@@ -12,47 +11,44 @@ import ContactCTA from '../../components/Contact/ContactCTA.jsx';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs.jsx';
 
 function ServicesPage() {
-  const { t } = useTranslation();
-
-  // Memindahkan data ke dalam agar bisa menggunakan t() secara dinamis
   const servicesData = [
     {
       id: 'simplify',
-      subtitle: t('servicesPage.items.simplify.subtitle'),
-      title: t('servicesPage.items.simplify.title'),
+      subtitle: 'Simplify',
+      title: 'Custom Software Development',
       image: '/simplify.png',
-      description: t('servicesPage.items.simplify.desc'),
+      description: "Every business has unique challenges that off-the-shelf software can't solve. We replace your complex, manual, or outdated workflows with intuitive, custom-built systems designed specifically for how you work.",
       subServices: [
-        { title: t('servicesPage.items.simplify.sub.1.title'), desc: t('servicesPage.items.simplify.sub.1.desc') },
-        { title: t('servicesPage.items.simplify.sub.2.title'), desc: t('servicesPage.items.simplify.sub.2.desc') },
-        { title: t('servicesPage.items.simplify.sub.3.title'), desc: t('servicesPage.items.simplify.sub.3.desc') },
-        { title: t('servicesPage.items.simplify.sub.4.title'), desc: t('servicesPage.items.simplify.sub.4.desc') }
+        { title: 'Web & Mobile Application Development', desc: 'We develop software that aligns perfectly with your business objectives and user needs.' },
+        { title: 'Content Management Systems (CMS)', desc: 'We create CMS solutions tailored to meet your business goals and enhance user experience.' },
+        { title: 'Backend Servers & Databases', desc: 'We create backend servers and databases that seamlessly integrate with your business goals and user requirements.' },
+        { title: 'Interactive Business Dashboards', desc: 'Our skilled team delivers top-notch, scalable interactive business dashboards that grow alongside your organization.' }
       ]
     },
     {
       id: 'integrate',
-      subtitle: t('servicesPage.items.integrate.subtitle'),
-      title: t('servicesPage.items.integrate.title'),
+      subtitle: 'Integrate',
+      title: 'Unified System & Data Integration',
       image: '/integrate.png',
-      description: t('servicesPage.items.integrate.desc'),
+      description: 'Data trapped in disconnected systems is a barrier to growth. We specialize in breaking down these silos. We design and build robust APIs and automated data pipelines...',
       subServices: [
-        { title: t('servicesPage.items.integrate.sub.1.title'), desc: t('servicesPage.items.integrate.sub.1.desc') },
-        { title: t('servicesPage.items.integrate.sub.2.title'), desc: t('servicesPage.items.integrate.sub.2.desc') },
-        { title: t('servicesPage.items.integrate.sub.3.title'), desc: t('servicesPage.items.integrate.sub.3.desc') },
-        { title: t('servicesPage.items.integrate.sub.4.title'), desc: t('servicesPage.items.integrate.sub.4.desc') }
+        { title: 'API Development & Management', desc: 'Connect disparate systems for a unified data experience...' },
+        { title: 'Automated Data Pipelines (ETL)', desc: 'Transform data into actionable insights...' },
+        { title: 'Centralized Data Warehousing', desc: 'Transform data to actionable insights...' },
+        { title: 'Third-Party Software Integration', desc: 'Transform data into actionable insights...' }
       ]
     },
     {
       id: 'automate',
-      subtitle: t('servicesPage.items.automate.subtitle'),
-      title: t('servicesPage.items.automate.title'),
+      subtitle: 'Automate',
+      title: 'Intelligent Process Automation',
       image: '/automate.png',
-      description: t('servicesPage.items.automate.desc'),
+      description: 'Our Automate service leverages advanced AI technologies to streamline your operations and enhance efficiency. ...we implement automation that works 24/7, reducing errors...',
       subServices: [
-        { title: t('servicesPage.items.automate.sub.1.title'), desc: t('servicesPage.items.automate.sub.1.desc') },
-        { title: t('servicesPage.items.automate.sub.2.title'), desc: t('servicesPage.items.automate.sub.2.desc') },
-        { title: t('servicesPage.items.automate.sub.3.title'), desc: t('servicesPage.items.automate.sub.3.desc') },
-        { title: t('servicesPage.items.automate.sub.4.title'), desc: t('servicesPage.items.automate.sub.4.desc') }
+        { title: 'AI Agent & Chatbot Development', desc: 'Connect systems for a unified data experience.' },
+        { title: 'Robotic Process Automation (RPA)', desc: 'Transform data into actionable insights...' },
+        { title: 'Automated Reporting & Alerts', desc: 'Transform data into actionable insights...' },
+        { title: 'Web Scraping & Data Extraction', desc: 'Transform data into actionable insights...' }
       ]
     }
   ];

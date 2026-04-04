@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import './ContactCTA.css';
 
 function ContactCTA() {
-  const { t } = useTranslation();
-  
   // State untuk mengelola input formulir
   const [formData, setFormData] = useState({
     name: '',
@@ -25,7 +22,7 @@ function ContactCTA() {
     e.preventDefault();
     if (formData.acceptedTerms && formData.name && formData.email) {
       console.log('Formulir berhasil dikirim:', formData);
-      alert(t('contactCTA.form.button') + '...');
+      alert('Connect...');
     } else {
       alert('Error');
     }
@@ -36,9 +33,9 @@ function ContactCTA() {
       <div className="contact-cta-container"> 
         
         <div className="cta-content">
-          <h2>{t('contactCTA.title')}</h2>
+          <h2>Start Your Digital Transformation Today</h2>
           <p> 
-            {t('contactCTA.subtitle')}
+            Unlock the potential of your business with our tailored solutions. Let's discuss your needs!
           </p>
         </div>
         
@@ -46,7 +43,7 @@ function ContactCTA() {
           <input
             type="text"
             name="name"
-            placeholder={t('contactCTA.form.name')}
+            placeholder="Name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -54,14 +51,14 @@ function ContactCTA() {
           <input
             type="email"
             name="email"
-            placeholder={t('contactCTA.form.email')}
+            placeholder="Email"
             value={formData.email}
             onChange={handleChange}
             required
           />
           <textarea
             name="message"
-            placeholder={t('contactCTA.form.message')}
+            placeholder="Message"
             rows="4"
             value={formData.message}
             onChange={handleChange}
@@ -76,10 +73,10 @@ function ContactCTA() {
               onChange={handleChange}
               required
             />
-            <label htmlFor="acceptedTerms">{t('contactCTA.form.terms')}</label> 
+            <label htmlFor="acceptedTerms">I accept the Terms</label> 
           </div>
           
-          <button type="submit" className="connect-button">{t('contactCTA.form.button')}</button>
+          <button type="submit" className="connect-button">Connect</button>
         </form>
 
       </div> 
