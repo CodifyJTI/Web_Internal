@@ -14,9 +14,14 @@ function NotFoundPage() {
         <p>
           Sepertinya Anda tersesat. Halaman yang Anda cari mungkin telah dipindahkan atau tidak pernah ada.
         </p>
-        <Link to="/" className="btn-back-home">
-          Kembali ke Beranda
-        </Link>
+        <div className="not-found-actions">
+          <Link to="/" className="btn-back-home">
+            Back to Homepage
+          </Link>
+          <Link to="/portfolio" className="btn-back-portfolio">
+            Back to Portfolio
+          </Link>
+        </div>
       </main>
       <Footer />
     </div>

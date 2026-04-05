@@ -34,16 +34,38 @@
   margin-bottom: 2rem;
 }
 
-.btn-back-home {
+.not-found-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-back-home, .btn-back-portfolio {
   padding: 12px 30px;
-  background-color: #3bbef4;
-  color: white;
   text-decoration: none;
   border-radius: 30px;
   font-weight: 600;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+}
+
+.btn-back-home {
+  background-color: #3bbef4;
+  color: white;
 }
 
 .btn-back-home:hover {
   background-color: #2da8db;
+  transform: translateY(-2px);
+}
+
+.btn-back-portfolio {
+  background-color: transparent;
+  color: #3bbef4;
+  border: 2px solid #3bbef4;
+}
+
+.btn-back-portfolio:hover {
+  background-color: rgba(59, 190, 244, 0.1);
+  transform: translateY(-2px);
 }

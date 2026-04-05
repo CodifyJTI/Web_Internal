@@ -1,0 +1,126 @@
+.project-detail-page {
+  background-color: var(--bg-light);
+  min-height: 100vh;
+}
+
+.detail-header {
+  padding: var(--space-xl) 0 var(--space-md);
+}
+
+.btn-back {
+  display: inline-block;
+  margin-bottom: var(--space-md);
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: transform 0.2s ease;
+}
+
+.btn-back:hover {
+  transform: translateX(-5px);
+}
+
+.project-category {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-xs);
+}
+
+.detail-header h1 {
+  font-size: 3.5rem;
+  color: var(--text-dark);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.project-media-container {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: var(--bg-medium);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--space-xl);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.media-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.image-media {
+  transition: transform 0.5s ease;
+}
+
+.image-media:hover {
+  transform: scale(1.02);
+}
+
+.project-content {
+  max-width: 800px;
+  margin: 0 auto var(--space-xl);
+  line-height: 1.8;
+}
+
+.description-section h2 {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: var(--space-md);
+  position: relative;
+  padding-bottom: var(--space-xs);
+}
+
+.description-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-secondary);
+  border-radius: 2px;
+}
+
+.description-section p {
+  font-size: 1.1rem;
+  color: var(--text-medium);
+  margin-bottom: var(--space-md);
+}
+
+.full-desc {
+  color: var(--text-medium);
+  opacity: 0.9;
+}
+
+.error-container {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.error-container h1 {
+  font-size: 3rem;
+  color: var(--text-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detail-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .description-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .project-media-container {
+    border-radius: 0;
+    margin-left: calc(-1 * var(--space-md));
+    margin-right: calc(-1 * var(--space-md));
+    width: calc(100% + 2 * var(--space-md));
+  }
+}
