@@ -27,10 +27,16 @@
 
 .services-list {
   display: grid; 
-  grid-template-columns: repeat(3, 1fr); 
-  gap: var(--space-lg); 
+  grid-template-columns: 1fr; 
+  gap: 2rem; 
   max-width: 1200px;
   margin: 2.5rem auto 0 auto;
+}
+
+@media (min-width: 768px) {
+  .services-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .expertise-card {
