@@ -80,20 +80,23 @@ function PortfolioPage() {
               {currentProjects.length > 0 ? (
                 <div className="projects-carousel">
                   {currentProjects.map((project) => (
-                    <Link to={`/portfolio/${project.slug}`} key={project.id} className="project-card-v2">
+                    <div key={project.id} className="project-card-v2">
                       <div className="project-info">
                         <h3>{project.title}</h3>
                         <p>{project.desc}</p>
                       </div>
                       <div className="project-embed-container">
-                        <img 
-                          src={project.embed} 
-                          alt={project.title} 
+                        <iframe 
+                          src={project.liveUrl} 
+                          title={project.title} 
                           loading="lazy" 
-                          className="project-thumbnail"
-                        />
+                          className="project-iframe"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
                       </div>
-                    </Link>
+                    </div>
                   ))}
                 </div>
               ) : (

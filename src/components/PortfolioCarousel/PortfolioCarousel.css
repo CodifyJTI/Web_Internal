@@ -1,0 +1,128 @@
+.portfolio-carousel-section {
+  padding: 5rem 0;
+  background-color: var(--bg-light);
+  overflow: hidden;
+}
+
+.portfolio-carousel-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: var(--space-xs);
+  color: var(--text-dark);
+}
+
+.section-subheading {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--text-medium);
+  margin-bottom: var(--space-xl);
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: var(--space-lg);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-medium) var(--bg-medium);
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-track {
+  background: var(--bg-medium);
+  border-radius: 10px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 10px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+.portfolio-horizontal-carousel {
+  display: flex;
+  gap: var(--space-lg);
+  padding: var(--space-sm) 0;
+}
+
+.portfolio-card {
+  min-width: 800px;
+  max-width: 900px;
+  flex: 0 0 auto;
+  background-color: #fff;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  padding: var(--space-lg);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xs);
+  color: var(--text-dark);
+}
+
+.card-header p {
+  color: var(--text-medium);
+  font-size: 1rem;
+}
+
+.card-body {
+  padding: var(--space-md);
+  background-color: var(--bg-medium);
+}
+
+.project-iframe {
+  width: 100%;
+  border: none;
+  background-color: #fff;
+}
+
+/* Utility classes to support user-requested Tailwind style classNames */
+.w-full {
+  width: 100%;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+@media (max-width: 992px) {
+  .portfolio-card {
+    min-width: 85vw;
+  }
+  
+  .project-iframe {
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2rem;
+  }
+  
+  .portfolio-card {
+    min-width: 90vw;
+  }
+}
