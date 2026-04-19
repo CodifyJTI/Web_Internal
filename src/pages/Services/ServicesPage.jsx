@@ -3,6 +3,7 @@ import './ServicesPage.css';
 
 // Import components
 import Header from '../../components/Header/Header.jsx';
+import SEO from '../../components/SEO/SEO.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import ServicesPageHero from '../../components/ServicesHero/ServicesPageHero.jsx';
 import ServicesDetails from '../../components/ServicesDetails/ServicesDetails.jsx';

@@ -1,90 +1,12 @@
-.homepage-container {
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-light); 
-}
+/* === HomePage.css === */
 
-main {
-    flex-grow: 1; 
-}
+/* 
+  File ini sekarang bersih dari gaya yang bertabrakan dengan komponen lain.
+  Gaya untuk bagian-bagian spesifik (Hero, Solution, Expertise, dll.) 
+  sudah dikelola di folder komponen masing-masing.
+*/
 
-.homepage-container {
-    min-height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-light);
-    
-    padding: 0; 
-    margin: 0;
+.homepage {
+  width: 100%;
+  overflow-x: hidden;
 }
-
-.expertise-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.expertise-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.expertise-card:hover {
-    transform: translateY(-5px);
-}
-
-.expertise-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.expertise-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.8rem;
-    color: var(--primary-color);
-}
-
-.expertise-card p {
-    font-size: 1rem;
-    color: var(--text-color);
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-}
-
-.expertise-card a {
-    display: inline-block;
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.expertise-card a:hover {
-    background-color: var(--primary-color);
-}
-
-.expertise-card.portfolio {
-    border-bottom: 5px solid #007bff; 
-}
-
-.expertise-card.case-studies {
-    border-bottom: 5px solid #28a745; 
-}
-
-.expertise-card.blog {
-    border-bottom: 5px solid #fd7e14; 
-}
-
