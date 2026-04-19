@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import Header from '../../components/Header/Header.jsx';
+import SEO from '../../components/SEO/SEO.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import ContactCTA from '../../components/Contact/ContactCTA.jsx';
 import AboutUsHero from '../../components/AboutUsHero/AboutUsHero.jsx';
@@ -16,6 +17,11 @@ import FAQSection from '../../components/FAQ/FAQSection.jsx';
 function AboutUsPage() {
   return (
     <> 
+      <SEO 
+        title="About Us - Our Mission & Vision" 
+        description="Learn about Codify's story, our core pillars, and the team driving digital transformation."
+        path="/about"
+      />
       <Header />
       <main>
         <AboutUsHero />

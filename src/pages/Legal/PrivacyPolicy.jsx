@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from '../../components/Header/Header.jsx';
+import SEO from '../../components/SEO/SEO.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './LegalPages.css';
 
@@ -10,6 +11,11 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="legal-page">
+      <SEO 
+        title="Privacy Policy" 
+        description="Read how Codify protects your privacy and handles your personal information."
+        path="/privacy-policy"
+      />
       <Header />
       <main className="legal-container">
         <article className="legal-article">

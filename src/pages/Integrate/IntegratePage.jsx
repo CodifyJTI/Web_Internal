@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header.jsx';
+import SEO from '../../components/SEO/SEO.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './IntegratePage.css';
 
 function IntegratePage() {
   return (
     <div className="integrate-page">
+      <SEO 
+        title="Integrate - Unified System & Data Integration" 
+        description="Break down data silos and connect your business systems with Codify's robust integration and API solutions."
+        path="/services/integrate"
+      />
       <Header />
 
       {/* Hero Section */}

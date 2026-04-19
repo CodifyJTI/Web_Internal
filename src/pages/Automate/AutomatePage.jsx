@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header.jsx';
+import SEO from '../../components/SEO/SEO.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './AutomatePage.css';
 
 function AutomatePage() {
   return (
     <div className="automate-page">
+      <SEO 
+        title="Automate - Intelligent Process Automation" 
+        description="Leverage AI and automation to streamline your business operations and reduce manual effort with Codify's Automate service."
+        path="/services/automate"
+      />
       <Header />
 
       {/* Hero Section */}

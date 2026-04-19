@@ -18,13 +18,29 @@ function ContactCTA() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.acceptedTerms && formData.name && formData.email) {
-      console.log('Formulir berhasil dikirim:', formData);
-      alert('Connect...');
+      const formspreeEndpoint = "https://formspree.io/f/mqaevepy"; 
+      
+      try {
+        const response = await fetch(formspreeEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          alert('Terima kasih! Pesan Anda telah dikirim.');
+          setFormData({ name: '', email: '', message: '', acceptedTerms: false });
+        } else {
+          alert('Maaf, terjadi kesalahan saat mengirim pesan.');
+        }
+      } catch (error) {
+        alert('Terjadi kesalahan koneksi.');
+      }
     } else {
-      alert('Error');
+      alert('Mohon lengkapi formulir dan setujui syarat.');
     }
   };
 

@@ -55,6 +55,11 @@ function ServicesPage() {
 
   return (
     <div className="services-page">
+      <SEO 
+        title="Our Services - Comprehensive Digital Solutions" 
+        description="Explore Codify's core services: Simplify, Integrate, and Automate to transform your business operations."
+        path="/services"
+      />
       <Header />
       <ServicesPageHero />
 

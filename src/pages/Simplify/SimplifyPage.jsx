@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header/Header.jsx';
+import SEO from '../../components/SEO/SEO.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import './SimplifyPage.css';
 
 function SimplifyPage() {
   return (
     <div className="simplify-page">
+      <SEO 
+        title="Simplify - Custom Software Development" 
+        description="Replace complex manual workflows with intuitive, custom-built software tailored to your unique business needs."
+        path="/services/simplify"
+      />
       <Header />
 
       {/* Hero Section */}
