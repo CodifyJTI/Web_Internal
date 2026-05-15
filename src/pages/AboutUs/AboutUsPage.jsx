@@ -1,6 +1,6 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-// Components
 import Header from '../../components/Header/Header.jsx';
 import SEO from '../../components/SEO/SEO.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
@@ -11,15 +11,14 @@ import TeamSection from '../../components/Team/TeamSection.jsx';
 import Milestones from '../../components/Milestones/Milestones.jsx';
 import FAQSection from '../../components/FAQ/FAQSection.jsx';
 
-// Styles
-
-
 function AboutUsPage() {
+  const { t } = useTranslation();
+
   return (
-    <> 
-      <SEO 
-        title="About Us - Our Mission & Vision" 
-        description="Learn about Codify's story, our core pillars, and the team driving digital transformation."
+    <>
+      <SEO
+        title={t('about.heroTitle')}
+        description={t('about.heroSubtitle')}
         path="/about"
       />
       <Header />

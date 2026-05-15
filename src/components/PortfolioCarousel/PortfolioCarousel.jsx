@@ -1,7 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './PortfolioCarousel.css';
 
 function PortfolioCarousel() {
+  const { t } = useTranslation();
+
   const projects = [
     {
       id: 15,
@@ -20,9 +23,9 @@ function PortfolioCarousel() {
   return (
     <section className="portfolio-carousel-section">
       <div className="container">
-        <h2 className="section-heading">Featured Portfolio</h2>
-        <p className="section-subheading">Explore some of our live project deployments.</p>
-        
+        <h2 className="section-heading">{t('portfolio.featuredHeading')}</h2>
+        <p className="section-subheading">{t('portfolio.featuredSubheading')}</p>
+
         <div className="carousel-wrapper">
           <div className="portfolio-horizontal-carousel">
             {projects.map((project) => (
@@ -32,10 +35,10 @@ function PortfolioCarousel() {
                   <p>{project.desc}</p>
                 </div>
                 <div className="card-body">
-                  <iframe 
-                    src={project.liveUrl} 
-                    title={project.title} 
-                    loading="lazy" 
+                  <iframe
+                    src={project.liveUrl}
+                    title={project.title}
+                    loading="lazy"
                     className="w-full h-[500px] rounded-xl project-iframe"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

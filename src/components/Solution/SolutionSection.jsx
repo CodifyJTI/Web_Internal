@@ -1,27 +1,30 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import SolutionCard from './SolutionCard';
 import './Solution.css';
 
 function SolutionsSection() {
+  const { t } = useTranslation();
+
   const solutions = [
     {
       id: 1,
-      title: "Simplify",
-      description: "We build intuitive systems to replace your complex workflows",
+      title: t('solutions.simplify.title'),
+      description: t('solutions.simplify.description'),
       icon: "/simplify.png",
       link: "/services/simplify"
     },
     {
       id: 2,
-      title: "Integrate",
-      description: "We connect all your applications and data sources into a seamless ecosystem",
+      title: t('solutions.integrate.title'),
+      description: t('solutions.integrate.description'),
       icon: "/integrate.png",
       link: "/services/integrate"
     },
     {
       id: 3,
-      title: "Automate",
-      description: "We deploy intelligent automation to handle your repetitive task 24/7",
+      title: t('solutions.automate.title'),
+      description: t('solutions.automate.description'),
       icon: "/automate.png",
       link: "/services/automate"
     }
@@ -29,8 +32,8 @@ function SolutionsSection() {
 
   return (
     <section className="solutions-section">
-      <h2 className="main-heading">Well, you're in the right spot. Here at Codify, We Empower Your Business Through Innovation</h2>
-      <p className="sub-heading">Our services are designed to elevate your business by simplifying processes, integrating systems, and automating tasks. Discover how we can help you achieve digital transformation.</p>
+      <h2 className="main-heading">{t('solutions.heading')}</h2>
+      <p className="sub-heading">{t('solutions.subheading')}</p>
       <div className="solution-grid">
         {solutions.map(solution => (
           <SolutionCard
@@ -41,7 +44,7 @@ function SolutionsSection() {
             link={solution.link}
           />
         ))}
-      </div>      
+      </div>
     </section>
   );
 }

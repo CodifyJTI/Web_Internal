@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './ContactCTA.css';
 
 function ContactCTA() {
-  // State untuk mengelola input formulir
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,8 +22,8 @@ function ContactCTA() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.acceptedTerms && formData.name && formData.email) {
-      const formspreeEndpoint = "https://formspree.io/f/mqaevepy"; 
-      
+      const formspreeEndpoint = "https://formspree.io/f/mqaevepy";
+
       try {
         const response = await fetch(formspreeEndpoint, {
           method: 'POST',
@@ -31,71 +32,81 @@ function ContactCTA() {
         });
 
         if (response.ok) {
-          alert('Terima kasih! Pesan Anda telah dikirim.');
+          alert(t('contactCTA.alerts.success'));
           setFormData({ name: '', email: '', message: '', acceptedTerms: false });
         } else {
-          alert('Maaf, terjadi kesalahan saat mengirim pesan.');
+          alert(t('contactCTA.alerts.error'));
         }
       } catch (error) {
-        alert('Terjadi kesalahan koneksi.');
+        alert(t('contactCTA.alerts.connectionError'));
       }
     } else {
-      alert('Mohon lengkapi formulir dan setujui syarat.');
+      alert(t('contactCTA.alerts.incomplete'));
     }
   };
 
   return (
     <section className="contact-cta-section">
-      <div className="contact-cta-container"> 
-        
+      <div className="contact-cta-container">
+
         <div className="cta-content">
-          <h2>Start Your Digital Transformation Today</h2>
-          <p> 
-            Unlock the potential of your business with our tailored solutions. Let's discuss your needs!
-          </p>
+          <h2>{t('contactCTA.title')}</h2>
+          <p>{t('contactCTA.description')}</p>
         </div>
-        
+
         <form className="contact-form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Message"
-            rows="4"
-            value={formData.message}
-            onChange={handleChange}
-          ></textarea>
-          
+          <div className="input-with-icon">
+            <i className="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name="name"
+              placeholder={t('contactCTA.namePlaceholder')}
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="input-with-icon">
+            <i className="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              name="email"
+              placeholder={t('contactCTA.emailPlaceholder')}
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="input-with-icon textarea-icon">
+            <i className="fa-solid fa-message"></i>
+            <textarea
+              name="message"
+              placeholder={t('contactCTA.messagePlaceholder')}
+              rows="4"
+              value={formData.message}
+              onChange={handleChange}
+            ></textarea>
+          </div>
+
           <div className="terms-checkbox">
             <input
               type="checkbox"
-              id="acceptedTerms" 
+              id="acceptedTerms"
               name="acceptedTerms"
               checked={formData.acceptedTerms}
               onChange={handleChange}
               required
             />
-            <label htmlFor="acceptedTerms">I accept the Terms</label> 
+            <label htmlFor="acceptedTerms">{t('contactCTA.acceptTerms')}</label>
           </div>
-          
-          <button type="submit" className="connect-button">Connect</button>
+
+          <button type="submit" className="connect-button">
+            <i className="fa-solid fa-paper-plane" style={{ marginRight: '8px' }}></i>
+            {t('contactCTA.connectButton')}
+          </button>
         </form>
 
-      </div> 
+      </div>
     </section>
   );
 }

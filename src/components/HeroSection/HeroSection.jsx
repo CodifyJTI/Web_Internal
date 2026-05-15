@@ -1,12 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./HeroSection.css";
 
 function HeroSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>We Simplify, Integrate, and Automate Your Operations.</h1>
-        <p>We are a team of Senior Data and Software Experts dedicated to solving your most challenging operational problems through custom technology solutions.</p>
+        <h1>{t('hero.title')}</h1>
+        <p>{t('hero.subtitle')}</p>
       </div>
     </section>
   );

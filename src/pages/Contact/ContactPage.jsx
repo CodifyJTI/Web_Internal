@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import FormField from '../../components/FormField/FormField.jsx';
 import './ContactPage.css';
 
 const ContactPage = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,10 +37,9 @@ const ContactPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Ganti dengan ID Formspree Anda (buat di formspree.io)
-    const formspreeEndpoint = "https://formspree.io/f/mqaevepy"; 
-    
+
+    const formspreeEndpoint = "https://formspree.io/f/mqaevepy";
+
     setTouched({
       name: true,
       email: true,
@@ -57,19 +58,19 @@ const ContactPage = () => {
         });
 
         if (response.ok) {
-          alert('Terima kasih! Pesan Anda telah dikirim ke tim Codify. Kami akan segera menghubungi Anda.');
+          alert(t('contactPage.alerts.success'));
           setFormData({ name: '', email: '', message: '' });
           setTouched({ name: false, email: false, message: false });
         } else {
-          alert('Maaf, terjadi kesalahan saat mengirim pesan. Silakan coba lagi nanti.');
+          alert(t('contactPage.alerts.error'));
         }
       } catch (error) {
-        alert('Terjadi kesalahan koneksi. Silakan periksa jaringan Anda.');
+        alert(t('contactPage.alerts.connectionError'));
       } finally {
         setIsSubmitting(false);
       }
     } else {
-      alert('Silakan lengkapi semua bidang yang diperlukan.');
+      alert(t('contactPage.alerts.incomplete'));
     }
   };
 
@@ -79,78 +80,72 @@ const ContactPage = () => {
       <main className="contact-main">
         <section className="contact-hero">
           <div className="contact-hero-content">
-            <h1>Hubungi Kami</h1>
-            <p>
-              Kami siap membantu transformasi digital bisnis Anda. Silakan isi formulir di bawah ini 
-              atau hubungi kami melalui informasi kontak yang tersedia.
-            </p>
+            <h1>{t('contactPage.heroTitle')}</h1>
+            <p>{t('contactPage.heroDescription')}</p>
           </div>
         </section>
 
         <section className="contact-section">
           <div className="contact-container">
             <div className="contact-info">
-              <h2>Mari Berdiskusi</h2>
-              <p>
-                Apakah Anda memiliki pertanyaan tentang layanan kami, proposal proyek, atau sekadar 
-                ingin menyapa, tim ahli kami siap merespons.
-              </p>
+              <h2>{t('contactPage.discussTitle')}</h2>
+              <p>{t('contactPage.discussDescription')}</p>
               <div className="info-item">
-                <strong>Email:</strong>
+                <strong>{t('contactPage.emailLabel')}</strong>
                 <span>hello@codify.id</span>
               </div>
               <div className="info-item">
-                <strong>Telepon:</strong>
+                <strong>{t('contactPage.phoneLabel')}</strong>
                 <span>+62 852-0063-4181</span>
               </div>
               <div className="info-item">
-                <strong>Alamat:</strong>
+                <strong>{t('contactPage.addressLabel')}</strong>
                 <span>Ruko Grand Galaxy City, Bekasi Selatan, Kota Bekasi</span>
               </div>
             </div>
 
             <div className="contact-form-wrapper">
-              <h2>Kirim Pesan</h2>
+              <h2>{t('contactPage.sendMessageTitle')}</h2>
               <form onSubmit={handleSubmit} className="contact-form">
                 <FormField
-                  label="Nama"
+                  label={t('contactPage.nameLabel')}
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  placeholder="Nama Lengkap Anda"
+                  placeholder={t('contactPage.namePlaceholder')}
                   required
                   isTouched={touched.name}
                 />
                 <FormField
-                  label="Email"
+                  label={t('contactPage.emailFieldLabel')}
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  placeholder="alamat@email.com"
+                  placeholder={t('contactPage.emailPlaceholder')}
                   required
                   isTouched={touched.email}
                 />
                 <FormField
-                  label="Pesan"
+                  label={t('contactPage.messageLabel')}
                   type="textarea"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  placeholder="Ceritakan kebutuhan proyek Anda..."
+                  placeholder={t('contactPage.messagePlaceholder')}
                   required
                   isTouched={touched.message}
                 />
-                <button 
-                  type="submit" 
-                  className="btn btn-primary" 
+                <button
+                  type="submit"
+                  className="btn btn-primary"
                   style={{ width: '100%' }}
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
+                  {isSubmitting ? t('contactPage.submitting') : t('contactPage.submitButton')}
                 </button>
               </form>
             </div>

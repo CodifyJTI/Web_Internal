@@ -1,14 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './ServicesPageHero.css';
 
 function ServicesPageHero() {
+  const { t } = useTranslation();
+
   return (
     <section className="services-hero">
       <div className="hero-content">
-        <span className="hero-subtitle">Our Services: End-to-End Solutions for Your Business</span>
-        <h1>Technology Solutions Designed for Business Growth</h1> 
-        <p>We help Indonesian businesses navigate their digital transformation journey. Our services are structured as a clear pathway from simplifying complex processes to integrating scattered data and automating for ultimate efficiency.</p>
-        <h2 className="section-title">Discover Our Core Services: Simplify, Integrate, and Automate for Success</h2>
+        <span className="hero-subtitle">{t('servicesHero.subtitle')}</span>
+        <h1>{t('servicesHero.title')}</h1>
+        <p>{t('servicesHero.description')}</p>
+        <h2 className="section-title">{t('servicesHero.tagline')}</h2>
       </div>
     </section>
   );

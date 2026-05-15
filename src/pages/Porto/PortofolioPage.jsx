@@ -1,35 +1,31 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-// Import Komponen Global
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import ContactCTA from '../../components/Contact/ContactCTA.jsx';
 
-// Import Data
 import portfolioData from '../../data/portfolioData.js';
 
-// Import CSS Khusus Halaman Ini
 import './PortofolioPage.css';
 
 function PortfolioPage() {
+  const { t } = useTranslation();
   const mainTabs = Object.keys(portfolioData);
   const [activeMainTab, setActiveMainTab] = useState(mainTabs[0]);
   const [activeSubTab, setActiveSubTab] = useState(portfolioData[mainTabs[0]].categories[0]);
-  
+
   const carouselRef = useRef(null);
 
-  // Reset Sub Tab when Main Tab changes
   useEffect(() => {
     setActiveSubTab(portfolioData[activeMainTab].categories[0]);
   }, [activeMainTab]);
 
-  // Handle Main Tab Change
   const handleMainTabChange = (tab) => {
     setActiveMainTab(tab);
   };
 
-  // Current Projects to Display
   const currentProjects = portfolioData[activeMainTab].projects[activeSubTab] || [];
 
   return (
@@ -39,14 +35,13 @@ function PortfolioPage() {
       <main>
         <section className="portfolio-hero">
           <div className="container">
-            <h1>Portfolio</h1>
-            <p className="hero-subtitle">Explore our best work in digitalizing and optimizing businesses.</p>
+            <h1>{t('portfolio.heading')}</h1>
+            <p className="hero-subtitle">{t('portfolio.heroSubtitle')}</p>
           </div>
         </section>
 
         <section className="portfolio-tabs-section">
           <div className="container">
-            {/* Level 1: Main Tabs */}
             <nav className="main-tabs-nav">
               {mainTabs.map((tab) => (
                 <button
@@ -59,7 +54,6 @@ function PortfolioPage() {
               ))}
             </nav>
 
-            {/* Level 2: Sub Tabs */}
             <nav className="sub-tabs-nav">
               {portfolioData[activeMainTab].categories.map((subTab) => (
                 <button
@@ -86,10 +80,10 @@ function PortfolioPage() {
                         <p>{project.desc}</p>
                       </div>
                       <div className="project-embed-container">
-                        <iframe 
-                          src={project.liveUrl} 
-                          title={project.title} 
-                          loading="lazy" 
+                        <iframe
+                          src={project.liveUrl}
+                          title={project.title}
+                          loading="lazy"
                           className="project-iframe"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -101,7 +95,7 @@ function PortfolioPage() {
                 </div>
               ) : (
                 <div className="no-projects">
-                  <p>No projects in this category yet.</p>
+                  <p>{t('portfolio.noProjects')}</p>
                 </div>
               )}
             </div>

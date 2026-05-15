@@ -1,31 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Header from '../../components/Header/Header';
 import SEO from '../../components/SEO/SEO';
 import Footer from '../../components/Footer/Footer';
 import './NotFoundPage.css';
 
 function NotFoundPage() {
+  const { t } = useTranslation();
+
   return (
     <div className="not-found-page">
-      <SEO 
-        title="404 - Page Not Found" 
-        description="The page you are looking for might have been moved or doesn't exist."
+      <SEO
+        title={t('notFound.seoTitle')}
+        description={t('notFound.seoDescription')}
         path="/404"
       />
       <Header />
       <main className="not-found-content">
-        <h1>404</h1>
-        <h2>Oops! Halaman Tidak Ditemukan</h2>
-        <p>
-          Sepertinya Anda tersesat. Halaman yang Anda cari mungkin telah dipindahkan atau tidak pernah ada.
-        </p>
+        <h1>{t('notFound.title')}</h1>
+        <h2>{t('notFound.heading')}</h2>
+        <p>{t('notFound.description')}</p>
         <div className="not-found-actions">
           <Link to="/" className="btn-back-home">
-            Back to Homepage
+            <i className="fa-solid fa-house" style={{ marginRight: '8px' }}></i>
+            {t('notFound.backHome')}
           </Link>
           <Link to="/portfolio" className="btn-back-portfolio">
-            Back to Portfolio
+            <i className="fa-solid fa-briefcase" style={{ marginRight: '8px' }}></i>
+            {t('notFound.backPortfolio')}
           </Link>
         </div>
       </main>

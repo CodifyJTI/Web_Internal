@@ -60,6 +60,10 @@
   height: 20px;
 }
 
+.social-media-icons i {
+  font-size: 1.25rem;
+}
+
 /* Styling untuk Blok Tautan */
 .footer-links-block h4 {
   font-size: 1.1rem;

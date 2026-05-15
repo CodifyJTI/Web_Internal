@@ -1,7 +1,7 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './ServicesPage.css';
 
-// Import components
 import Header from '../../components/Header/Header.jsx';
 import SEO from '../../components/SEO/SEO.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
@@ -12,53 +12,55 @@ import ContactCTA from '../../components/Contact/ContactCTA.jsx';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs.jsx';
 
 function ServicesPage() {
+  const { t } = useTranslation();
+
   const servicesData = [
     {
       id: 'simplify',
-      subtitle: 'Simplify',
-      title: 'Custom Software Development',
+      subtitle: t('servicesPage.simplify.subtitle'),
+      title: t('servicesPage.simplify.title'),
       image: '/simplify.png',
-      description: "Every business has unique challenges that off-the-shelf software can't solve. We replace your complex, manual, or outdated workflows with intuitive, custom-built systems designed specifically for how you work.",
+      description: t('servicesPage.simplify.description'),
       subServices: [
-        { title: 'Web & Mobile Application Development', desc: 'We develop software that aligns perfectly with your business objectives and user needs.' },
-        { title: 'Content Management Systems (CMS)', desc: 'We create CMS solutions tailored to meet your business goals and enhance user experience.' },
-        { title: 'Backend Servers & Databases', desc: 'We create backend servers and databases that seamlessly integrate with your business goals and user requirements.' },
-        { title: 'Interactive Business Dashboards', desc: 'Our skilled team delivers top-notch, scalable interactive business dashboards that grow alongside your organization.' }
+        { title: t('servicesPage.simplify.s1.title'), desc: t('servicesPage.simplify.s1.desc') },
+        { title: t('servicesPage.simplify.s2.title'), desc: t('servicesPage.simplify.s2.desc') },
+        { title: t('servicesPage.simplify.s3.title'), desc: t('servicesPage.simplify.s3.desc') },
+        { title: t('servicesPage.simplify.s4.title'), desc: t('servicesPage.simplify.s4.desc') }
       ]
     },
     {
       id: 'integrate',
-      subtitle: 'Integrate',
-      title: 'Unified System & Data Integration',
+      subtitle: t('servicesPage.integrate.subtitle'),
+      title: t('servicesPage.integrate.title'),
       image: '/integrate.png',
-      description: 'Data trapped in disconnected systems is a barrier to growth. We specialize in breaking down these silos. We design and build robust APIs and automated data pipelines...',
+      description: t('servicesPage.integrate.description'),
       subServices: [
-        { title: 'API Development & Management', desc: 'Connect disparate systems for a unified data experience...' },
-        { title: 'Automated Data Pipelines (ETL)', desc: 'Transform data into actionable insights...' },
-        { title: 'Centralized Data Warehousing', desc: 'Transform data to actionable insights...' },
-        { title: 'Third-Party Software Integration', desc: 'Transform data into actionable insights...' }
+        { title: t('servicesPage.integrate.s1.title'), desc: t('servicesPage.integrate.s1.desc') },
+        { title: t('servicesPage.integrate.s2.title'), desc: t('servicesPage.integrate.s2.desc') },
+        { title: t('servicesPage.integrate.s3.title'), desc: t('servicesPage.integrate.s3.desc') },
+        { title: t('servicesPage.integrate.s4.title'), desc: t('servicesPage.integrate.s4.desc') }
       ]
     },
     {
       id: 'automate',
-      subtitle: 'Automate',
-      title: 'Intelligent Process Automation',
+      subtitle: t('servicesPage.automate.subtitle'),
+      title: t('servicesPage.automate.title'),
       image: '/automate.png',
-      description: 'Our Automate service leverages advanced AI technologies to streamline your operations and enhance efficiency. ...we implement automation that works 24/7, reducing errors...',
+      description: t('servicesPage.automate.description'),
       subServices: [
-        { title: 'AI Agent & Chatbot Development', desc: 'Connect systems for a unified data experience.' },
-        { title: 'Robotic Process Automation (RPA)', desc: 'Transform data into actionable insights...' },
-        { title: 'Automated Reporting & Alerts', desc: 'Transform data into actionable insights...' },
-        { title: 'Web Scraping & Data Extraction', desc: 'Transform data into actionable insights...' }
+        { title: t('servicesPage.automate.s1.title'), desc: t('servicesPage.automate.s1.desc') },
+        { title: t('servicesPage.automate.s2.title'), desc: t('servicesPage.automate.s2.desc') },
+        { title: t('servicesPage.automate.s3.title'), desc: t('servicesPage.automate.s3.desc') },
+        { title: t('servicesPage.automate.s4.title'), desc: t('servicesPage.automate.s4.desc') }
       ]
     }
   ];
 
   return (
     <div className="services-page">
-      <SEO 
-        title="Our Services - Comprehensive Digital Solutions" 
-        description="Explore Codify's core services: Simplify, Integrate, and Automate to transform your business operations."
+      <SEO
+        title={t('servicesPage.seoTitle')}
+        description={t('servicesPage.seoDescription')}
         path="/services"
       />
       <Header />

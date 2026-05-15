@@ -1,19 +1,22 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './TeamSection.css';
 
-const teamMembers = [
-  { name: "Jagad Nabil Tuah Imanda", role: "CEO & Product Development", initial: "J" },
-  { name: "Raden Fadil Aji Saputra", role: "Product Management", initial: "R" },
-  { name: "Muhammad Yudistira Mawadda", role: "Customer Management & Project Manager", initial: "M" },
-];
-
 export default function TeamSection() {
+  const { t } = useTranslation();
+
+  const teamMembers = [
+    { name: t('team.jagad.name'), role: t('team.jagad.role'), initial: "J" },
+    { name: t('team.fadil.name'), role: t('team.fadil.role'), initial: "R" },
+    { name: t('team.yudistira.name'), role: t('team.yudistira.role'), initial: "M" },
+  ];
+
   return (
     <section className="team-section">
       <div className="team-container">
-        
-        <h2 className="team-title">Our Team</h2>
-        <p className="team-subtitle">Meet the experts driving digital transformation.</p>
+
+        <h2 className="team-title">{t('team.title')}</h2>
+        <p className="team-subtitle">{t('team.subtitle')}</p>
 
         <div className="team-grid">
           {teamMembers.map((member, i) => (
@@ -26,8 +29,8 @@ export default function TeamSection() {
         </div>
 
         <div className="hiring-cta">
-          <p className="hiring-text">We're always looking for talented experts to join our team!</p>
-          <button className="hiring-button">View Open Positions</button>
+          <p className="hiring-text">{t('team.hiringText')}</p>
+          <button className="hiring-button">{t('team.hiringButton')}</button>
         </div>
 
       </div>

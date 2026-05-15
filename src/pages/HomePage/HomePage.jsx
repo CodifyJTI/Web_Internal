@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './HomePage.css';
 
 import Header from '../../components/Header/Header.jsx';
@@ -12,11 +13,13 @@ import FAQSection from '../../components/FAQ/FAQSection.jsx';
 import ContactCTA from '../../components/Contact/ContactCTA.jsx';
 
 function HomePage() {
+  const { t } = useTranslation();
+
   return (
     <div className="homepage">
-      <SEO 
-        title="Transform Your Business with Data & Automation" 
-        description="Codify helps businesses simplify, automate, and integrate processes for better operational efficiency."
+      <SEO
+        title={t('homePage.seoTitle')}
+        description={t('homePage.seoDescription')}
         path="/"
       />
       <Header />

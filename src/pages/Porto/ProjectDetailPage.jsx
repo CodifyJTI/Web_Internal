@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import portfolioData from '../../data/portfolioData.js';
 import './ProjectDetailPage.css';
 
 function ProjectDetailPage() {
+  const { t } = useTranslation();
   const { slug } = useParams();
   const navigate = useNavigate();
 

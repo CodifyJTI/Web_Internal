@@ -57,6 +57,31 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon > i {
+  position: absolute;
+  left: 12px;
+  color: var(--text-medium, #94a3b8);
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.input-with-icon input,
+.input-with-icon textarea {
+  padding-left: 38px !important;
+  width: 100%;
+}
+
+.textarea-icon > i {
+  top: 14px;
+  align-self: flex-start;
+}
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {

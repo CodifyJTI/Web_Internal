@@ -1,0 +1,418 @@
+{
+  "header": {
+    "aboutUs": "About Us",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "We Simplify, Integrate, and Automate Your Operations.",
+    "subtitle": "Senior data and software experts solving your toughest operational challenges with custom technology."
+  },
+
+  "challenges": {
+    "heading": "Is Your Business Facing These Challenges?",
+    "scatteredData": {
+      "title": "Scattered Data",
+      "description": "Data trapped across multiple spreadsheets and systems?"
+    },
+    "manualWork": {
+      "title": "Manual Work",
+      "description": "Wasting hours on repetitive tasks every week?"
+    },
+    "inefficientProcesses": {
+      "title": "Inefficient Processes",
+      "description": "Legacy systems slowing down your growth?"
+    },
+    "lackOfInsights": {
+      "title": "Lack of Insights",
+      "description": "Struggling to get clear, actionable insights from your data?"
+    }
+  },
+
+  "solutions": {
+    "heading": "You're in the right place. Codify builds the systems your business runs on.",
+    "subheading": "We simplify your workflows, connect your data, and automate what slows you down.",
+    "simplify": {
+      "title": "Simplify",
+      "description": "We build intuitive systems to replace your complex workflows"
+    },
+    "integrate": {
+      "title": "Integrate",
+      "description": "We connect your apps and data sources into one unified ecosystem"
+    },
+    "automate": {
+      "title": "Automate",
+      "description": "We deploy intelligent automation to handle repetitive tasks 24/7"
+    }
+  },
+
+  "expertise": {
+    "heading": "Our proven expertise",
+    "philosophy": "Hundreds of projects delivered. Our track record speaks for itself — we've helped businesses across Indonesia build the digital infrastructure they need to operate, grow, and lead.",
+    "learnMore": "Learn More",
+    "digitalPlatform": {
+      "title": "Digital Platform & Application Development",
+      "description": "From corporate websites and e-commerce platforms to internal web apps and mobile applications — we build digital products that are secure, scalable, and designed for your operations."
+    },
+    "unifiedData": {
+      "title": "Unified Data & Business Intelligence",
+      "description": "Data scattered across spreadsheets, marketplaces, and internal tools? We consolidate it into a single source of truth — typically a custom dashboard with real-time insights for faster, smarter decisions."
+    },
+    "revenueOps": {
+      "title": "Revenue & Operations Automation",
+      "description": "From AI agents that handle leads and customer inquiries to simple scripts that automate reporting — we focus on one outcome: more efficiency, fewer errors, and operations that scale."
+    }
+  },
+
+  "about": {
+    "heroTitle": "Built to Move Indonesian Businesses Forward",
+    "heroSubtitle": "Codify exists to simplify, integrate, and automate — so your business can grow without the growing pains.",
+    "learnMore": "Learn More",
+    "contact": "Contact"
+  },
+
+  "corePillars": {
+    "empowering": {
+      "title": "Data-Driven Software for Indonesian Businesses",
+      "description": "We combine deep data expertise with hands-on technical execution. The result: custom software, seamless integrations, and intelligent automation — built around how your business actually works.",
+      "imageAlt": "Digital transformation illustration"
+    },
+    "dataMeetsExecution": {
+      "title": "Data Meets Execution",
+      "description": "Strategy without execution is just a slide deck. We pair data insights with production-grade engineering to build solutions that work on day one.",
+      "dataStrategy": {
+        "title": "Data Strategy",
+        "description": "Turning raw data into clear insights that drive smarter decisions."
+      },
+      "technicalExecution": {
+        "title": "Technical Execution",
+        "description": "Building reliable software that fits right into your existing stack."
+      }
+    }
+  },
+
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Meet the experts driving digital transformation.",
+    "jagad": { "name": "Jagad Nabil Tuah Imanda", "role": "CEO & Product Development" },
+    "fadil": { "name": "Raden Fadil Aji Saputra", "role": "Product Management" },
+    "yudistira": { "name": "Muhammad Yudistira Mawadda", "role": "Customer Management & Project Manager" },
+    "hiringText": "We're always looking for talented experts to join our team!",
+    "hiringButton": "View Open Positions"
+  },
+
+  "milestones": {
+    "sectionTitle": "Our Journey: Key Milestones",
+    "2022": {
+      "title": "Founding Year",
+      "description": "Codify launched with a small team and a clear mission: help businesses run better through technology."
+    },
+    "2023": {
+      "title": "First Major Client Acquisition",
+      "description": "Landed our first major client and delivered a custom software project that set the standard for everything after."
+    },
+    "2024": {
+      "title": "Product Development Expansion",
+      "description": "Expanded into full-cycle product development — helping startups and enterprises build and scale digital products from zero to launch."
+    },
+    "futureVision": {
+      "title": "Our Vision for the Future",
+      "description": "Technology that disappears into your workflow — that's the future we're building toward.",
+      "cta": "See Our Roadmap"
+    }
+  },
+
+  "contactCTA": {
+    "title": "Start Your Digital Transformation Today",
+    "description": "Unlock the potential of your business with our tailored solutions. Let's discuss your needs!",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Message",
+    "acceptTerms": "I accept the Terms",
+    "connectButton": "Connect",
+    "alerts": {
+      "success": "Thank you! Your message has been sent.",
+      "error": "Sorry, an error occurred while sending your message.",
+      "connectionError": "A connection error occurred.",
+      "incomplete": "Please complete the form and agree to the terms."
+    }
+  },
+
+  "faq": {
+    "title": "FAQs",
+    "subtitle": "Find quick answers to common questions about our services.",
+    "q1": {
+      "question": "What services do you offer?",
+      "answer": "Custom software development, data integration, business intelligence dashboards, and AI-powered automation — all tailored to your operations."
+    },
+    "q2": {
+      "question": "How does your process work?",
+      "answer": "We start by understanding your business, then move through strategy, development, and deployment — with ongoing support after launch."
+    },
+    "q3": {
+      "question": "Can you provide case studies?",
+      "answer": "Yes — check out our portfolio page, or reach out and we'll share relevant case studies for your industry."
+    },
+    "q4": {
+      "question": "What industries do you serve?",
+      "answer": "Finance, healthcare, retail, technology, and more. If your business runs on data and processes, we can help."
+    },
+    "q5": {
+      "question": "How can I contact you?",
+      "answer": "Fill out the form on our contact page — we'll get back to you within one business day."
+    }
+  },
+
+  "simplifyFAQ": {
+    "title": "FAQs",
+    "subtitle": "Find answers to your questions about our custom development services below.",
+    "q1": {
+      "question": "What is custom development?",
+      "answer": "Software built specifically for your business — designed around your workflows and challenges, not a one-size-fits-all template."
+    },
+    "q2": {
+      "question": "How long does it take?",
+      "answer": "It depends on scope — typically a few weeks to a few months. We'll give you a clear timeline during our initial consultation."
+    },
+    "q3": {
+      "question": "What is the cost?",
+      "answer": "Pricing depends on scope and complexity. We provide a detailed quote after understanding your requirements — no surprises."
+    },
+    "q4": {
+      "question": "Can we see examples?",
+      "answer": "Absolutely. Check out our portfolio, or contact us and we'll share case studies relevant to your industry."
+    },
+    "q5": {
+      "question": "How do we start?",
+      "answer": "Reach out through our contact form. We'll set up a consultation to discuss your needs and next steps."
+    },
+    "footerTitle": "Still have questions?",
+    "footerSubtitle": "We're here to help!",
+    "contactButton": "Contact"
+  },
+
+  "footer": {
+    "address": "Ruko Grand Galaxy City, Jl. Boulevard Raya, Jaka Setia, Bekasi Selatan, Kota Bekasi.",
+    "phone": "Phone: +6285200634181",
+    "ourServices": "Our Services",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "faqSection": "FAQ Section",
+    "copyright": "©2025 Codify Agency All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiesSettings": "Cookies Settings"
+  },
+
+  "servicesHero": {
+    "subtitle": "Our Services",
+    "title": "Technology That Grows With Your Business",
+    "description": "A clear pathway: simplify complex processes, integrate scattered data, and automate for efficiency.",
+    "tagline": "Simplify. Integrate. Automate."
+  },
+
+  "servicesPage": {
+    "seoTitle": "Our Services - Comprehensive Digital Solutions",
+    "seoDescription": "Explore Codify's core services: Simplify, Integrate, and Automate to transform your business operations.",
+    "simplify": {
+      "subtitle": "Simplify",
+      "title": "Custom Software Development",
+      "description": "Off-the-shelf software can't solve every problem. We replace complex, manual, or outdated workflows with custom-built systems designed for how you actually work.",
+      "s1": { "title": "Web & Mobile Application Development", "desc": "Custom apps built around your business goals and user needs." },
+      "s2": { "title": "Content Management Systems (CMS)", "desc": "Easy-to-manage content platforms your team can update without a developer." },
+      "s3": { "title": "Backend Servers & Databases", "desc": "Reliable infrastructure engineered for performance and scale." },
+      "s4": { "title": "Interactive Business Dashboards", "desc": "Real-time dashboards that turn your data into decisions." }
+    },
+    "integrate": {
+      "subtitle": "Integrate",
+      "title": "Unified System & Data Integration",
+      "description": "Disconnected systems hold your business back. We break down data silos with robust APIs and automated pipelines that keep everything in sync.",
+      "s1": { "title": "API Development & Management", "desc": "Connect your systems so data flows where it needs to go." },
+      "s2": { "title": "Automated Data Pipelines (ETL)", "desc": "Extract, transform, and load data automatically — no manual exports." },
+      "s3": { "title": "Centralized Data Warehousing", "desc": "One source of truth for all your business data." },
+      "s4": { "title": "Third-Party Software Integration", "desc": "Link your existing tools into a unified workflow." }
+    },
+    "automate": {
+      "subtitle": "Automate",
+      "title": "Intelligent Process Automation",
+      "description": "We implement AI-powered automation that works 24/7 — reducing errors, eliminating busywork, and freeing your team to focus on growth.",
+      "s1": { "title": "AI Agent & Chatbot Development", "desc": "Intelligent agents that handle inquiries, qualify leads, and support customers." },
+      "s2": { "title": "Robotic Process Automation (RPA)", "desc": "Automate repetitive tasks across your existing software stack." },
+      "s3": { "title": "Automated Reporting & Alerts", "desc": "Get the right reports at the right time — no manual work required." },
+      "s4": { "title": "Web Scraping & Data Extraction", "desc": "Collect and structure data from any source, automatically." }
+    },
+    "learnMoreAbout": "Learn More about {{subject}}"
+  },
+
+  "simplifyPage": {
+    "seoTitle": "Simplify - Custom Software Development",
+    "seoDescription": "Replace complex manual workflows with intuitive, custom-built software tailored to your unique business needs.",
+    "heroLabel": "Simplify",
+    "heroTitle": "Custom Development Solutions",
+    "heroDescription": "Software built around your business — not the other way around.",
+    "section1Title": "Cut the Complexity. Keep the Results.",
+    "section1Description": "Our custom software replaces messy workflows with clean, efficient systems — so your team spends less time on process and more time on progress.",
+    "section2Label": "Success",
+    "section2Title": "From Complex Problem to Working Product",
+    "section2Description": "We delivered a custom solution that replaced a client's tangled manual workflows with a single streamlined system — cutting hours of daily busywork.",
+    "projectOverviewTitle": "Project Overview",
+    "projectOverviewDescription": "A custom system built to eliminate manual bottlenecks and speed up daily operations.",
+    "clientFeedbackTitle": "Client Feedback",
+    "clientFeedbackDescription": "\"It exceeded our expectations and completely changed how we work day-to-day.\"",
+    "section3Title": "How We Build",
+    "section3Description": "We pair data-driven insights with solid engineering to build software that solves your actual problems — not generic ones.",
+    "agile": "Agile methodologies for rapid development and deployment.",
+    "userCentered": "User-centered design to enhance user experience.",
+    "ci": "Continuous integration for seamless updates and improvements.",
+    "section4Title": "Less Complexity, More Growth",
+    "section4Description": "Simpler processes mean faster execution, lower costs, and a team that can focus on what actually moves the business forward."
+  },
+
+  "automatePage": {
+    "seoTitle": "Automate - Intelligent Process Automation",
+    "seoDescription": "Leverage AI and automation to streamline your business operations and reduce manual effort with Codify's Automate service.",
+    "heroLabel": "Automate",
+    "heroTitle": "Put Your Operations on Autopilot",
+    "heroDescription": "AI-driven automation built around your workflows — so your team can focus on what matters.",
+    "section1Title": "Stop Doing Work a Machine Should Handle",
+    "section1Description": "Automate the routine so your team can tackle the work that requires a human brain.",
+    "taskAutomationTitle": "Task Automation",
+    "taskAutomationDescription": "Automate data entry, report generation, and customer follow-ups effortlessly.",
+    "aiIntegrationTitle": "AI Integration",
+    "aiIntegrationDescription": "Leverage AI for smarter decision-making and optimized workflows across your organization.",
+    "section2Label": "Success Story",
+    "section2Title": "From Manual Bottleneck to Automated Workflow",
+    "section2Description": "We helped a local business eliminate hours of daily manual work — cutting costs and boosting output in weeks, not months.",
+    "challengeTitle": "The Challenge",
+    "challengeDescription": "Identifying bottlenecks in the workflow that hindered productivity and growth.",
+    "solutionTitle": "The Solution",
+    "solutionDescription": "Implementing an automated system that streamlined processes and improved efficiency.",
+    "section3Title": "The Results Speak for Themselves",
+    "section3Description": "Higher productivity. Fewer errors. Lower costs. Automation delivers measurable impact from day one.",
+    "boostLabel": "Boost",
+    "boostDescription": "Increase productivity with streamlined processes and workflows.",
+    "enhanceLabel": "Enhance",
+    "enhanceDescription": "Achieve higher accuracy through automated tasks.",
+    "section4Label": "Automate",
+    "section4Title": "How We Automate",
+    "section4Description": "From consultation to deployment, we handle the entire process — so the transition to automation is seamless for your team.",
+    "discoverTitle": "Discover",
+    "discoverDescription": "We map your workflows and find the highest-impact opportunities to automate.",
+    "designTitle": "Design",
+    "designDescription": "We architect the automation solution around your specific constraints and goals.",
+    "deployTitle": "Deploy",
+    "deployDescription": "We build, test, and launch — then monitor to make sure everything runs smoothly.",
+    "ctaTitle": "Ready to Automate?",
+    "ctaDescription": "Let's talk about which processes to tackle first."
+  },
+
+  "integratePage": {
+    "seoTitle": "Integrate - Unified System & Data Integration",
+    "seoDescription": "Break down data silos and connect your business systems with Codify's robust integration and API solutions.",
+    "heroLabel": "Integrate",
+    "heroTitle": "Connect Everything. See Everything.",
+    "heroDescription": "Break down data silos and unify your systems into one seamless workflow.",
+    "section1Title": "Your Systems, Finally Talking to Each Other",
+    "section1Description": "We build custom APIs and middleware that make your tools work together — not against each other.",
+    "customApisTitle": "Custom APIs",
+    "customApisDescription": "Purpose-built APIs designed for your specific systems and data flows.",
+    "middlewareTitle": "Middleware Solutions",
+    "middlewareDescription": "The glue layer that connects your disconnected tools into one smooth experience.",
+    "section2Title": "Real-Time Data, Real-Time Decisions",
+    "section2Description": "We optimize your data warehousing and ETL pipelines so your team always works with live, accurate information.",
+    "section3Label": "Success Stories",
+    "section3Title": "From Data Chaos to Clarity",
+    "section3Description": "We unified a client's scattered data sources into a single, accessible platform — giving their team instant visibility across the entire business.",
+    "section4Label": "Integrate",
+    "section4Title": "Why Integration Matters",
+    "section4Description": "When your data flows freely, your team moves faster, decides smarter, and operates leaner.",
+    "accessDataTitle": "Access Data Anywhere",
+    "accessDataDescription": "Pull critical data from any platform, any time.",
+    "decideTitle": "Decide with Confidence",
+    "decideDescription": "Real-time insights mean faster, better-informed decisions.",
+    "runLeanerTitle": "Run Leaner",
+    "runLeanerDescription": "Eliminate redundant work and cut operational overhead.",
+    "ctaTitle": "Ready to Connect Your Systems?",
+    "ctaDescription": "Let's figure out the fastest path to unified data.",
+    "getStarted": "Get Started"
+  },
+
+  "contactPage": {
+    "heroTitle": "Contact Us",
+    "heroDescription": "We're ready to help with your business's digital transformation. Fill out the form below or reach out using the contact information provided.",
+    "discussTitle": "Let's Discuss",
+    "discussDescription": "Whether you have questions about our services, a project proposal, or just want to say hello, our team is ready to respond.",
+    "emailLabel": "Email:",
+    "phoneLabel": "Phone:",
+    "addressLabel": "Address:",
+    "sendMessageTitle": "Send a Message",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your Full Name",
+    "emailFieldLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us about your project needs...",
+    "submitting": "Sending...",
+    "submitButton": "Send Message",
+    "alerts": {
+      "success": "Thank you! Your message has been sent to the Codify team. We'll get back to you shortly.",
+      "error": "Sorry, an error occurred while sending your message. Please try again later.",
+      "connectionError": "A connection error occurred. Please check your network.",
+      "incomplete": "Please fill in all required fields."
+    }
+  },
+
+  "chatWidget": {
+    "supportTitle": "Codify Support",
+    "greeting": "Hi! How can we help you today?",
+    "placeholder": "Type a message...",
+    "sendButton": "Send"
+  },
+
+  "breadcrumbs": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "simplify": "Simplify",
+    "integrate": "Integrate",
+    "automate": "Automate"
+  },
+
+  "notFound": {
+    "seoTitle": "404 - Page Not Found",
+    "seoDescription": "The page you are looking for might have been moved or doesn't exist.",
+    "title": "404",
+    "heading": "Oops! Page Not Found",
+    "description": "It looks like you're lost. The page you're looking for may have been moved or doesn't exist.",
+    "backHome": "Back to Homepage",
+    "backPortfolio": "Back to Portfolio"
+  },
+
+  "portfolio": {
+    "heading": "Portfolio",
+    "heroSubtitle": "Explore our best work in digitalizing and optimizing businesses.",
+    "featuredHeading": "Featured Portfolio",
+    "featuredSubheading": "Explore some of our live project deployments.",
+    "noProjects": "No projects in this category yet."
+  },
+
+  "formField": {
+    "required": "{{field}} is required"
+  },
+
+  "homePage": {
+    "seoTitle": "Transform Your Business with Data & Automation",
+    "seoDescription": "Codify helps businesses simplify, automate, and integrate processes for better operational efficiency."
+  },
+
+  "common": {
+    "learnMore": "Learn More",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  }
+}

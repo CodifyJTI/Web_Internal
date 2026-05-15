@@ -1,10 +1,16 @@
 import React from 'react';
 import './Challenges.css';
 
-function ChallengeCard({ title, description, icon }) {
+function ChallengeCard({ title, description, icon, faIcon }) {
   return (
     <div className="challenge-card">
-      <img src={icon} alt={title} className="challenge-icon" />
+      {faIcon ? (
+        <div className="challenge-fa-icon">
+          <i className={faIcon}></i>
+        </div>
+      ) : (
+        <img src={icon} alt={title} className="challenge-icon" />
+      )}
       <h3>{title}</h3>
       <p>{description}</p>
     </div>

@@ -1,0 +1,418 @@
+{
+  "header": {
+    "aboutUs": "Tentang Kami",
+    "services": "Layanan",
+    "portfolio": "Portofolio",
+    "contact": "Kontak"
+  },
+
+  "hero": {
+    "title": "Kami Menyederhanakan, Mengintegrasikan, dan Mengotomatiskan Operasi Anda.",
+    "subtitle": "Tim ahli data dan software senior yang menyelesaikan tantangan operasional terberat Anda dengan teknologi kustom."
+  },
+
+  "challenges": {
+    "heading": "Apakah Bisnis Anda Menghadapi Tantangan Ini?",
+    "scatteredData": {
+      "title": "Data Tersebar",
+      "description": "Data terjebak di berbagai spreadsheet dan sistem?"
+    },
+    "manualWork": {
+      "title": "Pekerjaan Manual",
+      "description": "Membuang waktu berjam-jam untuk tugas berulang setiap minggu?"
+    },
+    "inefficientProcesses": {
+      "title": "Proses Tidak Efisien",
+      "description": "Sistem lama menghambat pertumbuhan bisnis Anda?"
+    },
+    "lackOfInsights": {
+      "title": "Kurangnya Insight",
+      "description": "Kesulitan mendapatkan insight yang jelas dan actionable dari data Anda?"
+    }
+  },
+
+  "solutions": {
+    "heading": "Anda di tempat yang tepat. Codify membangun sistem yang menjalankan bisnis Anda.",
+    "subheading": "Kami menyederhanakan alur kerja, menghubungkan data, dan mengotomatiskan yang memperlambat Anda.",
+    "simplify": {
+      "title": "Simplify",
+      "description": "Kami membangun sistem intuitif untuk menggantikan alur kerja Anda yang kompleks"
+    },
+    "integrate": {
+      "title": "Integrate",
+      "description": "Kami menghubungkan aplikasi dan sumber data Anda menjadi satu ekosistem terpadu"
+    },
+    "automate": {
+      "title": "Automate",
+      "description": "Kami menerapkan otomatisasi cerdas untuk menangani tugas berulang 24/7"
+    }
+  },
+
+  "expertise": {
+    "heading": "Keahlian kami yang terbukti",
+    "philosophy": "Ratusan proyek terselesaikan. Rekam jejak kami berbicara sendiri — kami telah membantu bisnis di seluruh Indonesia membangun infrastruktur digital yang mereka butuhkan untuk beroperasi, berkembang, dan memimpin.",
+    "learnMore": "Selengkapnya",
+    "digitalPlatform": {
+      "title": "Pengembangan Platform & Aplikasi Digital",
+      "description": "Dari website korporat dan platform e-commerce hingga aplikasi web internal dan mobile — kami membangun produk digital yang aman, skalabel, dan dirancang untuk operasi Anda."
+    },
+    "unifiedData": {
+      "title": "Data Terpadu & Business Intelligence",
+      "description": "Data tersebar di spreadsheet, marketplace, dan tools internal? Kami mengkonsolidasikannya menjadi satu sumber kebenaran — biasanya dashboard kustom dengan insight real-time untuk keputusan yang lebih cepat dan cerdas."
+    },
+    "revenueOps": {
+      "title": "Otomatisasi Revenue & Operasi",
+      "description": "Dari AI agent yang menangani leads dan pertanyaan pelanggan hingga script sederhana yang mengotomatiskan pelaporan — kami fokus pada satu hasil: lebih efisien, lebih sedikit error, dan operasi yang skalabel."
+    }
+  },
+
+  "about": {
+    "heroTitle": "Dibangun untuk Memajukan Bisnis Indonesia",
+    "heroSubtitle": "Codify hadir untuk menyederhanakan, mengintegrasikan, dan mengotomatiskan — agar bisnis Anda bisa berkembang tanpa kendala.",
+    "learnMore": "Selengkapnya",
+    "contact": "Kontak"
+  },
+
+  "corePillars": {
+    "empowering": {
+      "title": "Software Berbasis Data untuk Bisnis Indonesia",
+      "description": "Kami menggabungkan keahlian data yang mendalam dengan eksekusi teknis langsung. Hasilnya: software kustom, integrasi mulus, dan otomatisasi cerdas — dibangun sesuai cara bisnis Anda bekerja.",
+      "imageAlt": "Ilustrasi transformasi digital"
+    },
+    "dataMeetsExecution": {
+      "title": "Data Bertemu Eksekusi",
+      "description": "Strategi tanpa eksekusi hanyalah slide presentasi. Kami menggabungkan insight data dengan engineering berkualitas produksi untuk membangun solusi yang berfungsi sejak hari pertama.",
+      "dataStrategy": {
+        "title": "Strategi Data",
+        "description": "Mengubah data mentah menjadi insight jelas yang mendorong keputusan lebih cerdas."
+      },
+      "technicalExecution": {
+        "title": "Eksekusi Teknis",
+        "description": "Membangun software andal yang cocok langsung dengan stack teknologi Anda."
+      }
+    }
+  },
+
+  "team": {
+    "title": "Tim Kami",
+    "subtitle": "Kenali para ahli yang mendorong transformasi digital.",
+    "jagad": { "name": "Jagad Nabil Tuah Imanda", "role": "CEO & Pengembangan Produk" },
+    "fadil": { "name": "Raden Fadil Aji Saputra", "role": "Manajemen Produk" },
+    "yudistira": { "name": "Muhammad Yudistira Mawadda", "role": "Manajemen Pelanggan & Manajer Proyek" },
+    "hiringText": "Kami selalu mencari talenta ahli untuk bergabung dengan tim kami!",
+    "hiringButton": "Lihat Posisi Terbuka"
+  },
+
+  "milestones": {
+    "sectionTitle": "Perjalanan Kami: Pencapaian Utama",
+    "2022": {
+      "title": "Tahun Berdiri",
+      "description": "Codify diluncurkan dengan tim kecil dan misi yang jelas: membantu bisnis berjalan lebih baik melalui teknologi."
+    },
+    "2023": {
+      "title": "Akuisisi Klien Besar Pertama",
+      "description": "Mendapatkan klien besar pertama dan menyelesaikan proyek software kustom yang menjadi standar untuk seterusnya."
+    },
+    "2024": {
+      "title": "Ekspansi Pengembangan Produk",
+      "description": "Berekspansi ke pengembangan produk siklus penuh — membantu startup dan enterprise membangun serta menskalakan produk digital dari nol hingga peluncuran."
+    },
+    "futureVision": {
+      "title": "Visi Kami untuk Masa Depan",
+      "description": "Teknologi yang menyatu dengan alur kerja Anda — itulah masa depan yang kami bangun.",
+      "cta": "Lihat Roadmap Kami"
+    }
+  },
+
+  "contactCTA": {
+    "title": "Mulai Transformasi Digital Anda Hari Ini",
+    "description": "Buka potensi bisnis Anda dengan solusi yang dirancang khusus. Mari diskusikan kebutuhan Anda!",
+    "namePlaceholder": "Nama",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Pesan",
+    "acceptTerms": "Saya menyetujui Syarat & Ketentuan",
+    "connectButton": "Hubungi",
+    "alerts": {
+      "success": "Terima kasih! Pesan Anda telah dikirim.",
+      "error": "Maaf, terjadi kesalahan saat mengirim pesan.",
+      "connectionError": "Terjadi kesalahan koneksi.",
+      "incomplete": "Mohon lengkapi formulir dan setujui syarat."
+    }
+  },
+
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Temukan jawaban cepat untuk pertanyaan umum tentang layanan kami.",
+    "q1": {
+      "question": "Layanan apa saja yang Anda tawarkan?",
+      "answer": "Pengembangan software kustom, integrasi data, dashboard business intelligence, dan otomatisasi berbasis AI — semua disesuaikan dengan operasi Anda."
+    },
+    "q2": {
+      "question": "Bagaimana proses kerja Anda?",
+      "answer": "Kami mulai dengan memahami bisnis Anda, lalu melanjutkan ke strategi, pengembangan, dan deployment — dengan dukungan berkelanjutan setelah peluncuran."
+    },
+    "q3": {
+      "question": "Bisakah Anda memberikan studi kasus?",
+      "answer": "Ya — kunjungi halaman portofolio kami, atau hubungi kami dan kami akan bagikan studi kasus yang relevan untuk industri Anda."
+    },
+    "q4": {
+      "question": "Industri apa saja yang Anda layani?",
+      "answer": "Keuangan, kesehatan, ritel, teknologi, dan lainnya. Jika bisnis Anda berjalan dengan data dan proses, kami bisa membantu."
+    },
+    "q5": {
+      "question": "Bagaimana cara menghubungi Anda?",
+      "answer": "Isi formulir di halaman kontak kami — kami akan merespons dalam satu hari kerja."
+    }
+  },
+
+  "simplifyFAQ": {
+    "title": "FAQ",
+    "subtitle": "Temukan jawaban untuk pertanyaan Anda tentang layanan pengembangan kustom kami di bawah ini.",
+    "q1": {
+      "question": "Apa itu pengembangan kustom?",
+      "answer": "Software yang dibangun khusus untuk bisnis Anda — dirancang sesuai alur kerja dan tantangan Anda, bukan template satu ukuran untuk semua."
+    },
+    "q2": {
+      "question": "Berapa lama pengerjaannya?",
+      "answer": "Tergantung cakupan — biasanya beberapa minggu hingga beberapa bulan. Kami akan memberikan timeline yang jelas saat konsultasi awal."
+    },
+    "q3": {
+      "question": "Berapa biayanya?",
+      "answer": "Harga tergantung pada cakupan dan kompleksitas. Kami memberikan penawaran detail setelah memahami kebutuhan Anda — tanpa kejutan."
+    },
+    "q4": {
+      "question": "Bisakah kami melihat contoh?",
+      "answer": "Tentu. Kunjungi portofolio kami, atau hubungi kami dan kami akan bagikan studi kasus yang relevan untuk industri Anda."
+    },
+    "q5": {
+      "question": "Bagaimana cara memulai?",
+      "answer": "Hubungi kami melalui formulir kontak. Kami akan menjadwalkan konsultasi untuk membahas kebutuhan dan langkah selanjutnya."
+    },
+    "footerTitle": "Masih punya pertanyaan?",
+    "footerSubtitle": "Kami siap membantu!",
+    "contactButton": "Kontak"
+  },
+
+  "footer": {
+    "address": "Ruko Grand Galaxy City, Jl. Boulevard Raya, Jaka Setia, Bekasi Selatan, Kota Bekasi.",
+    "phone": "Telepon: +6285200634181",
+    "ourServices": "Layanan Kami",
+    "quickLinks": "Tautan Cepat",
+    "aboutUs": "Tentang Kami",
+    "contact": "Kontak",
+    "faqSection": "Bagian FAQ",
+    "copyright": "©2025 Codify Agency Hak cipta dilindungi.",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfService": "Syarat & Ketentuan",
+    "cookiesSettings": "Pengaturan Cookie"
+  },
+
+  "servicesHero": {
+    "subtitle": "Layanan Kami",
+    "title": "Teknologi yang Tumbuh Bersama Bisnis Anda",
+    "description": "Jalur yang jelas: sederhanakan proses kompleks, integrasikan data yang tersebar, dan otomatiskan untuk efisiensi.",
+    "tagline": "Simplify. Integrate. Automate."
+  },
+
+  "servicesPage": {
+    "seoTitle": "Layanan Kami - Solusi Digital Komprehensif",
+    "seoDescription": "Jelajahi layanan inti Codify: Simplify, Integrate, dan Automate untuk mentransformasi operasi bisnis Anda.",
+    "simplify": {
+      "subtitle": "Simplify",
+      "title": "Pengembangan Software Kustom",
+      "description": "Software jadi tidak bisa menyelesaikan semua masalah. Kami mengganti alur kerja yang kompleks, manual, atau usang dengan sistem kustom yang dirancang sesuai cara Anda bekerja.",
+      "s1": { "title": "Pengembangan Aplikasi Web & Mobile", "desc": "Aplikasi kustom yang dibangun sesuai tujuan bisnis dan kebutuhan pengguna Anda." },
+      "s2": { "title": "Sistem Manajemen Konten (CMS)", "desc": "Platform konten yang mudah dikelola dan bisa di-update tim Anda tanpa developer." },
+      "s3": { "title": "Server Backend & Database", "desc": "Infrastruktur andal yang dibangun untuk performa dan skalabilitas." },
+      "s4": { "title": "Dashboard Bisnis Interaktif", "desc": "Dashboard real-time yang mengubah data Anda menjadi keputusan." }
+    },
+    "integrate": {
+      "subtitle": "Integrate",
+      "title": "Integrasi Sistem & Data Terpadu",
+      "description": "Sistem yang terputus menghambat bisnis Anda. Kami meruntuhkan silo data dengan API yang robust dan pipeline otomatis yang menjaga semuanya tetap sinkron.",
+      "s1": { "title": "Pengembangan & Manajemen API", "desc": "Hubungkan sistem Anda agar data mengalir ke tempat yang tepat." },
+      "s2": { "title": "Pipeline Data Otomatis (ETL)", "desc": "Ekstrak, transformasi, dan muat data secara otomatis — tanpa ekspor manual." },
+      "s3": { "title": "Data Warehousing Terpusat", "desc": "Satu sumber kebenaran untuk semua data bisnis Anda." },
+      "s4": { "title": "Integrasi Software Pihak Ketiga", "desc": "Hubungkan tools yang ada menjadi satu alur kerja terpadu." }
+    },
+    "automate": {
+      "subtitle": "Automate",
+      "title": "Otomatisasi Proses Cerdas",
+      "description": "Kami mengimplementasikan otomatisasi berbasis AI yang bekerja 24/7 — mengurangi error, menghilangkan pekerjaan berulang, dan membebaskan tim Anda untuk fokus pada pertumbuhan.",
+      "s1": { "title": "Pengembangan AI Agent & Chatbot", "desc": "Agent cerdas yang menangani pertanyaan, kualifikasi leads, dan mendukung pelanggan." },
+      "s2": { "title": "Robotic Process Automation (RPA)", "desc": "Otomatiskan tugas berulang di seluruh stack software Anda." },
+      "s3": { "title": "Pelaporan & Alert Otomatis", "desc": "Dapatkan laporan yang tepat di waktu yang tepat — tanpa pekerjaan manual." },
+      "s4": { "title": "Web Scraping & Ekstraksi Data", "desc": "Kumpulkan dan strukturkan data dari sumber manapun, secara otomatis." }
+    },
+    "learnMoreAbout": "Selengkapnya tentang {{subject}}"
+  },
+
+  "simplifyPage": {
+    "seoTitle": "Simplify - Pengembangan Software Kustom",
+    "seoDescription": "Ganti alur kerja manual yang kompleks dengan software kustom yang intuitif, dirancang khusus untuk kebutuhan bisnis unik Anda.",
+    "heroLabel": "Simplify",
+    "heroTitle": "Solusi Pengembangan Kustom",
+    "heroDescription": "Software yang dibangun sesuai bisnis Anda — bukan sebaliknya.",
+    "section1Title": "Kurangi Kompleksitas. Pertahankan Hasilnya.",
+    "section1Description": "Software kustom kami mengganti alur kerja yang berantakan dengan sistem yang bersih dan efisien — agar tim Anda menghabiskan lebih sedikit waktu pada proses dan lebih banyak pada kemajuan.",
+    "section2Label": "Sukses",
+    "section2Title": "Dari Masalah Kompleks ke Produk yang Berfungsi",
+    "section2Description": "Kami mengirimkan solusi kustom yang menggantikan alur kerja manual klien yang rumit dengan satu sistem yang efisien — memangkas jam kerja sibuk harian.",
+    "projectOverviewTitle": "Ikhtisar Proyek",
+    "projectOverviewDescription": "Sistem kustom yang dibangun untuk menghilangkan bottleneck manual dan mempercepat operasi harian.",
+    "clientFeedbackTitle": "Feedback Klien",
+    "clientFeedbackDescription": "\"Hasilnya melebihi ekspektasi kami dan benar-benar mengubah cara kami bekerja sehari-hari.\"",
+    "section3Title": "Cara Kami Membangun",
+    "section3Description": "Kami menggabungkan insight berbasis data dengan engineering yang solid untuk membangun software yang menyelesaikan masalah nyata Anda — bukan yang generik.",
+    "agile": "Metodologi agile untuk pengembangan dan deployment yang cepat.",
+    "userCentered": "Desain berpusat pada pengguna untuk meningkatkan pengalaman pengguna.",
+    "ci": "Continuous integration untuk pembaruan dan perbaikan yang mulus.",
+    "section4Title": "Lebih Sedikit Kompleksitas, Lebih Banyak Pertumbuhan",
+    "section4Description": "Proses yang lebih sederhana berarti eksekusi lebih cepat, biaya lebih rendah, dan tim yang bisa fokus pada hal yang benar-benar memajukan bisnis."
+  },
+
+  "automatePage": {
+    "seoTitle": "Automate - Otomatisasi Proses Cerdas",
+    "seoDescription": "Manfaatkan AI dan otomatisasi untuk menyederhanakan operasi bisnis dan mengurangi pekerjaan manual dengan layanan Automate dari Codify.",
+    "heroLabel": "Automate",
+    "heroTitle": "Jalankan Operasi Anda secara Otomatis",
+    "heroDescription": "Otomatisasi berbasis AI yang dibangun sesuai alur kerja Anda — agar tim Anda fokus pada yang penting.",
+    "section1Title": "Berhenti Melakukan Pekerjaan yang Seharusnya Ditangani Mesin",
+    "section1Description": "Otomatiskan yang rutin agar tim Anda bisa menangani pekerjaan yang membutuhkan otak manusia.",
+    "taskAutomationTitle": "Otomatisasi Tugas",
+    "taskAutomationDescription": "Otomatiskan entri data, pembuatan laporan, dan follow-up pelanggan dengan mudah.",
+    "aiIntegrationTitle": "Integrasi AI",
+    "aiIntegrationDescription": "Manfaatkan AI untuk pengambilan keputusan yang lebih cerdas dan alur kerja yang dioptimalkan di seluruh organisasi.",
+    "section2Label": "Kisah Sukses",
+    "section2Title": "Dari Bottleneck Manual ke Alur Kerja Otomatis",
+    "section2Description": "Kami membantu bisnis lokal menghilangkan jam kerja manual harian — memangkas biaya dan meningkatkan output dalam hitungan minggu, bukan bulan.",
+    "challengeTitle": "Tantangannya",
+    "challengeDescription": "Mengidentifikasi bottleneck dalam alur kerja yang menghambat produktivitas dan pertumbuhan.",
+    "solutionTitle": "Solusinya",
+    "solutionDescription": "Mengimplementasikan sistem otomatis yang menyederhanakan proses dan meningkatkan efisiensi.",
+    "section3Title": "Hasilnya Berbicara Sendiri",
+    "section3Description": "Produktivitas lebih tinggi. Lebih sedikit error. Biaya lebih rendah. Otomatisasi memberikan dampak terukur sejak hari pertama.",
+    "boostLabel": "Tingkatkan",
+    "boostDescription": "Tingkatkan produktivitas dengan proses dan alur kerja yang efisien.",
+    "enhanceLabel": "Optimalkan",
+    "enhanceDescription": "Capai akurasi lebih tinggi melalui tugas yang terotomatisasi.",
+    "section4Label": "Automate",
+    "section4Title": "Cara Kami Mengotomatiskan",
+    "section4Description": "Dari konsultasi hingga deployment, kami menangani seluruh proses — agar transisi ke otomatisasi berjalan mulus untuk tim Anda.",
+    "discoverTitle": "Temukan",
+    "discoverDescription": "Kami memetakan alur kerja Anda dan menemukan peluang otomatisasi dengan dampak tertinggi.",
+    "designTitle": "Rancang",
+    "designDescription": "Kami merancang solusi otomatisasi sesuai batasan dan tujuan spesifik Anda.",
+    "deployTitle": "Deploy",
+    "deployDescription": "Kami membangun, menguji, dan meluncurkan — lalu memantau untuk memastikan semuanya berjalan lancar.",
+    "ctaTitle": "Siap untuk Otomatisasi?",
+    "ctaDescription": "Mari bicara tentang proses mana yang harus ditangani terlebih dahulu."
+  },
+
+  "integratePage": {
+    "seoTitle": "Integrate - Integrasi Sistem & Data Terpadu",
+    "seoDescription": "Runtuhkan silo data dan hubungkan sistem bisnis Anda dengan solusi integrasi dan API yang robust dari Codify.",
+    "heroLabel": "Integrate",
+    "heroTitle": "Hubungkan Semuanya. Lihat Semuanya.",
+    "heroDescription": "Runtuhkan silo data dan satukan sistem Anda menjadi satu alur kerja yang mulus.",
+    "section1Title": "Sistem Anda, Akhirnya Saling Berkomunikasi",
+    "section1Description": "Kami membangun API kustom dan middleware yang membuat tools Anda bekerja bersama — bukan saling bertentangan.",
+    "customApisTitle": "API Kustom",
+    "customApisDescription": "API yang dibangun khusus untuk sistem dan alur data spesifik Anda.",
+    "middlewareTitle": "Solusi Middleware",
+    "middlewareDescription": "Lapisan penghubung yang menyatukan tools yang terputus menjadi satu pengalaman yang mulus.",
+    "section2Title": "Data Real-Time, Keputusan Real-Time",
+    "section2Description": "Kami mengoptimalkan data warehousing dan pipeline ETL Anda agar tim selalu bekerja dengan informasi yang akurat dan terkini.",
+    "section3Label": "Kisah Sukses",
+    "section3Title": "Dari Kekacauan Data ke Kejelasan",
+    "section3Description": "Kami menyatukan sumber data klien yang tersebar menjadi satu platform yang mudah diakses — memberikan visibilitas instan ke seluruh bisnis.",
+    "section4Label": "Integrate",
+    "section4Title": "Mengapa Integrasi Penting",
+    "section4Description": "Ketika data Anda mengalir bebas, tim Anda bergerak lebih cepat, memutuskan lebih cerdas, dan beroperasi lebih ramping.",
+    "accessDataTitle": "Akses Data di Mana Saja",
+    "accessDataDescription": "Ambil data penting dari platform manapun, kapan saja.",
+    "decideTitle": "Putuskan dengan Percaya Diri",
+    "decideDescription": "Insight real-time berarti keputusan yang lebih cepat dan terinformasi.",
+    "runLeanerTitle": "Operasi Lebih Ramping",
+    "runLeanerDescription": "Hilangkan pekerjaan yang redundan dan kurangi overhead operasional.",
+    "ctaTitle": "Siap Menghubungkan Sistem Anda?",
+    "ctaDescription": "Mari cari jalur tercepat menuju data yang terpadu.",
+    "getStarted": "Mulai Sekarang"
+  },
+
+  "contactPage": {
+    "heroTitle": "Hubungi Kami",
+    "heroDescription": "Kami siap membantu transformasi digital bisnis Anda. Silakan isi formulir di bawah ini atau hubungi kami melalui informasi kontak yang tersedia.",
+    "discussTitle": "Mari Berdiskusi",
+    "discussDescription": "Apakah Anda memiliki pertanyaan tentang layanan kami, proposal proyek, atau sekadar ingin menyapa, tim ahli kami siap merespons.",
+    "emailLabel": "Email:",
+    "phoneLabel": "Telepon:",
+    "addressLabel": "Alamat:",
+    "sendMessageTitle": "Kirim Pesan",
+    "nameLabel": "Nama",
+    "namePlaceholder": "Nama Lengkap Anda",
+    "emailFieldLabel": "Email",
+    "emailPlaceholder": "alamat@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Ceritakan kebutuhan proyek Anda...",
+    "submitting": "Mengirim...",
+    "submitButton": "Kirim Pesan",
+    "alerts": {
+      "success": "Terima kasih! Pesan Anda telah dikirim ke tim Codify. Kami akan segera menghubungi Anda.",
+      "error": "Maaf, terjadi kesalahan saat mengirim pesan. Silakan coba lagi nanti.",
+      "connectionError": "Terjadi kesalahan koneksi. Silakan periksa jaringan Anda.",
+      "incomplete": "Silakan lengkapi semua bidang yang diperlukan."
+    }
+  },
+
+  "chatWidget": {
+    "supportTitle": "Codify Support",
+    "greeting": "Halo! Ada yang bisa kami bantu hari ini?",
+    "placeholder": "Tulis pesan...",
+    "sendButton": "Kirim"
+  },
+
+  "breadcrumbs": {
+    "home": "Beranda",
+    "aboutUs": "Tentang Kami",
+    "services": "Layanan",
+    "portfolio": "Portofolio",
+    "contact": "Kontak",
+    "simplify": "Simplify",
+    "integrate": "Integrate",
+    "automate": "Automate"
+  },
+
+  "notFound": {
+    "seoTitle": "404 - Halaman Tidak Ditemukan",
+    "seoDescription": "Halaman yang Anda cari mungkin telah dipindahkan atau tidak ada.",
+    "title": "404",
+    "heading": "Oops! Halaman Tidak Ditemukan",
+    "description": "Sepertinya Anda tersesat. Halaman yang Anda cari mungkin telah dipindahkan atau tidak pernah ada.",
+    "backHome": "Kembali ke Beranda",
+    "backPortfolio": "Kembali ke Portofolio"
+  },
+
+  "portfolio": {
+    "heading": "Portofolio",
+    "heroSubtitle": "Jelajahi karya terbaik kami dalam digitalisasi dan optimalisasi bisnis.",
+    "featuredHeading": "Portofolio Unggulan",
+    "featuredSubheading": "Jelajahi beberapa deployment proyek live kami.",
+    "noProjects": "Belum ada proyek di kategori ini."
+  },
+
+  "formField": {
+    "required": "{{field}} wajib diisi"
+  },
+
+  "homePage": {
+    "seoTitle": "Transformasi Bisnis Anda dengan Data & Otomatisasi",
+    "seoDescription": "Codify membantu bisnis menyederhanakan, mengotomatiskan, dan mengintegrasikan proses untuk efisiensi operasional yang lebih baik."
+  },
+
+  "common": {
+    "learnMore": "Selengkapnya",
+    "contact": "Kontak",
+    "getStarted": "Mulai Sekarang"
+  }
+}

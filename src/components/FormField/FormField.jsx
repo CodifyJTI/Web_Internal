@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './FormField.css';
 
-const FormField = ({ label, type = 'text', name, value, onChange, placeholder, required = false, isTouched, errorText }) => {
+const FormField = ({ label, type = 'text', name, value, onChange, onBlur, placeholder, required = false, isTouched, errorText }) => {
+  const { t } = useTranslation();
   const isInvalid = required && isTouched && !value;
   const inputId = `input-${name}`;
 
@@ -17,6 +19,7 @@ const FormField = ({ label, type = 'text', name, value, onChange, placeholder, r
           name={name}
           value={value}
           onChange={onChange}
+          onBlur={onBlur}
           placeholder={placeholder}
           required={required}
           className={`form-field-input form-field-textarea ${isInvalid ? 'invalid' : ''}`}
@@ -29,12 +32,13 @@ const FormField = ({ label, type = 'text', name, value, onChange, placeholder, r
           name={name}
           value={value}
           onChange={onChange}
+          onBlur={onBlur}
           placeholder={placeholder}
           required={required}
           className={`form-field-input ${isInvalid ? 'invalid' : ''}`}
         />
       )}
-      {isInvalid && <p className="form-field-error">{errorText || `${label} is required`}</p>}
+      {isInvalid && <p className="form-field-error">{errorText || t('formField.required', { field: label })}</p>}
     </div>
   );
 };
