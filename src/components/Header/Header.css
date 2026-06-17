@@ -81,13 +81,15 @@
 
 .header-logo img {
   height: 150px; 
-  width: auto;
+  width: 150px;
+  aspect-ratio: 1 / 1;
   display: block;
-  transition: height 0.3s ease;
+  transition: height 0.3s ease, width 0.3s ease;
 }
 
 .header.scrolled .header-logo img {
   height: 80px;
+  width: 80px;
 }
 
 /* Nav */
@@ -134,6 +136,7 @@
 
   .header-logo img {
     height: 60px;
+    width: 60px;
   }
 
   .header-nav {

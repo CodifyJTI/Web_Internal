@@ -71,6 +71,7 @@
   max-width: 100%;
   width: 100%;
   height: auto;
+  aspect-ratio: 5 / 4;
   border-radius: var(--border-radius-sm);
   background-color: var(--bg-medium);
   display: block;

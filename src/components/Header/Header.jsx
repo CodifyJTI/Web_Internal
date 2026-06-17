@@ -23,7 +23,7 @@ function Header() {
 
         <div className="header-logo">
           <Link to="/">
-            <img src="/Logo_Codify.png" alt="Codify Logo" loading="lazy" />
+            <img src="/Logo_Codify.png" alt="Codify Logo" width="150" height="150" loading="lazy" />
           </Link>
         </div>
 

@@ -10,23 +10,72 @@ import portfolioData from '../../data/portfolioData.js';
 
 import './PortofolioPage.css';
 
+const getCategoriesAndProjects = (mainTab) => {
+  if (mainTab === 'All') {
+    const allCategories = [];
+    const allProjects = {};
+
+    Object.keys(portfolioData).forEach((tab) => {
+      const data = portfolioData[tab];
+      data.categories.forEach((cat) => {
+        if (!allCategories.includes(cat)) {
+          allCategories.push(cat);
+        }
+        if (data.projects[cat]) {
+          if (!allProjects[cat]) {
+            allProjects[cat] = [];
+          }
+          allProjects[cat] = [...allProjects[cat], ...data.projects[cat]];
+        }
+      });
+    });
+
+    return { categories: allCategories, projects: allProjects };
+  }
+
+  return portfolioData[mainTab] || { categories: [], projects: {} };
+};
+
 function PortfolioPage() {
   const { t } = useTranslation();
-  const mainTabs = Object.keys(portfolioData);
-  const [activeMainTab, setActiveMainTab] = useState(mainTabs[0]);
-  const [activeSubTab, setActiveSubTab] = useState(portfolioData[mainTabs[0]].categories[0]);
+
+  // Main tabs list with 'All' first, excluding 'Codify Simplify'
+  const mainTabs = [
+    'All',
+    ...Object.keys(portfolioData).filter((tab) => tab !== 'Codify Simplify')
+  ];
+
+  const [activeMainTab, setActiveMainTab] = useState(mainTabs[0] || 'All');
+  
+  const activeTabData = getCategoriesAndProjects(activeMainTab);
+
+  const [activeSubTab, setActiveSubTab] = useState(() => {
+    const initialData = getCategoriesAndProjects(mainTabs[0] || 'All');
+    const activeCategories = initialData.categories.filter(
+      (cat) => initialData.projects[cat] && initialData.projects[cat].length > 0
+    );
+    return activeCategories[0] || '';
+  });
 
   const carouselRef = useRef(null);
 
   useEffect(() => {
-    setActiveSubTab(portfolioData[activeMainTab].categories[0]);
+    if (activeMainTab) {
+      const data = getCategoriesAndProjects(activeMainTab);
+      const activeCategories = data.categories.filter(
+        (cat) => data.projects[cat] && data.projects[cat].length > 0
+      );
+      setActiveSubTab(activeCategories[0] || '');
+    } else {
+      setActiveSubTab('');
+    }
   }, [activeMainTab]);
 
   const handleMainTabChange = (tab) => {
     setActiveMainTab(tab);
   };
 
-  const currentProjects = portfolioData[activeMainTab].projects[activeSubTab] || [];
+  const currentProjects = (activeSubTab && activeTabData.projects[activeSubTab]) || [];
 
   return (
     <div className="portfolio-page">
@@ -55,15 +104,17 @@ function PortfolioPage() {
             </nav>
 
             <nav className="sub-tabs-nav">
-              {portfolioData[activeMainTab].categories.map((subTab) => (
-                <button
-                  key={subTab}
-                  className={`tab-item sub-tab ${activeSubTab === subTab ? 'active' : ''}`}
-                  onClick={() => setActiveSubTab(subTab)}
-                >
-                  {subTab}
-                </button>
-              ))}
+              {(activeTabData.categories || [])
+                .filter((subTab) => activeTabData.projects[subTab] && activeTabData.projects[subTab].length > 0)
+                .map((subTab) => (
+                  <button
+                    key={subTab}
+                    className={`tab-item sub-tab ${activeSubTab === subTab ? 'active' : ''}`}
+                    onClick={() => setActiveSubTab(subTab)}
+                  >
+                    {subTab}
+                  </button>
+                ))}
             </nav>
           </div>
         </section>
@@ -71,7 +122,7 @@ function PortfolioPage() {
         <section className="portfolio-display-section">
           <div className="container">
             <div className="carousel-container" ref={carouselRef}>
-              {currentProjects.length > 0 ? (
+              {currentProjects.length > 0 && (
                 <div className="projects-carousel">
                   {currentProjects.map((project) => (
                     <div key={project.id} className="project-card-v2">
@@ -92,10 +143,6 @@ function PortfolioPage() {
                       </div>
                     </div>
                   ))}
-                </div>
-              ) : (
-                <div className="no-projects">
-                  <p>{t('portfolio.noProjects')}</p>
                 </div>
               )}
             </div>
